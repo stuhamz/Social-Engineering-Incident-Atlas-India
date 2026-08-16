@@ -1,0 +1,68 @@
+[F] .gitignore
+[F] CHANGELOG.md
+[F] CONTRIBUTING.md
+[F] DATA_LICENSE.md
+[F] LICENSE
+[F] PACKAGE_MANIFEST.txt
+[F] PROJECT_TREE.txt
+[F] README.md
+[F] START_HERE.md
+[D] analysis
+  [D] notebooks
+    [F] .gitkeep
+  [D] output
+    [F] .gitkeep
+    [F] v0.1_validation_report.txt
+  [D] scripts
+    [F] basic_summary.py
+    [F] new_case.py
+    [F] validate_dataset.py
+[D] cases
+  [F] CASE_TEMPLATE.md
+  [F] README.md
+  [F] SEIAI-0001-gwalior-ramakrishna-digital-arrest.md
+  [F] SEIAI-0002-vip-profit-makers-fake-investment-app-fraud.md
+  [F] SEIAI-0003-fake-hr-work-from-home-task-scam.md
+  [F] SEIAI-0004-canada-relative-and-medical-emergency-impersonation-fraud.md
+  [F] SEIAI-0005-fake-yahoo-customer-care-apk-fraud-against-senior-citizen.md
+  [F] SEIAI-0006-tekku-samurai-cross-border-tech-support-fraud.md
+  [F] SEIAI-0007-sangam-com-nri-matrimonial-impersonation-fraud.md
+  [F] SEIAI-0008-sms-service-closure-phishing-and-vishing-bank-fraud.md
+  [F] SEIAI-0009-hacked-superior-whatsapp-payment-impersonation.md
+  [F] SEIAI-0010-whatsapp-sexual-blackmail-and-fake-cyber-offence-extortion.md
+[D] data
+  [F] README.md
+  [F] cases.csv
+  [F] controlled_vocabulary.md
+  [F] data_dictionary.md
+[D] docs
+  [F] GITHUB_PUSH.md
+  [F] RELEASE_NOTES_v0.1.md
+  [F] project_scope.md
+  [F] research_questions.md
+  [F] roadmap.md
+  [F] v0.1_case_index.md
+  [F] v0.1_initial_audit.md
+  [F] v0.1_release_audit.md
+  [F] v0.1_review_checklist.md
+[D] methodology
+  [F] attribution_framework.md
+  [F] coding_protocol.md
+  [F] deduplication_protocol.md
+  [F] evidence_framework.md
+  [F] exclusion_criteria.md
+  [F] inclusion_criteria.md
+  [F] intercoder_reliability.md
+  [F] sampling_strategy.md
+  [F] source_quality.md
+  [F] versioning.md
+[D] references
+  [F] README.md
+  [F] screening_log.csv
+  [F] sources.csv
+[D] schemas
+  [F] case_record.schema.json
+  [F] controlled_vocabulary.json
+[D] working
+  [F] Incident_Atlas_Coding_Workbook.xlsx
+  [F] README.md

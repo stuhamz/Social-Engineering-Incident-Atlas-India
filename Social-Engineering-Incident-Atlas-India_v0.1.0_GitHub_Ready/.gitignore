@@ -1,0 +1,23 @@
+# Local working files
+working/*.xlsx
+working/*.xls
+working/*.ods
+working/~$*
+working/private/
+working/temp/
+
+# Generated outputs
+analysis/output/*
+!analysis/output/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

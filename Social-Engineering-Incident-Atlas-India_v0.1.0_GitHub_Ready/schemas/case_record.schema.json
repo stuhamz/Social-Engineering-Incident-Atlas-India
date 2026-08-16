@@ -1,0 +1,673 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Social Engineering Incident Atlas India Case Record",
+  "type": "object",
+  "required": [
+    "case_id",
+    "record_status",
+    "coding_version",
+    "coder",
+    "date_coded",
+    "case_title",
+    "incident_year",
+    "state",
+    "primary_source_id",
+    "primary_source_tier",
+    "source_stage",
+    "case_status",
+    "attack_category_primary",
+    "contact_channel_primary",
+    "impersonated_identity_category",
+    "target_type",
+    "initial_contact_summary",
+    "pretext_summary",
+    "requested_action",
+    "victim_action",
+    "attribution_strength",
+    "attribution_limitations",
+    "primary_evidentiary_gap",
+    "case_summary"
+  ],
+  "properties": {
+    "case_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^SEIAI-\\d{4}$"
+    },
+    "record_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "draft",
+        "reviewed",
+        "verified"
+      ]
+    },
+    "coding_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "coder": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "date_coded": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "case_title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "incident_start_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "incident_end_date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "incident_year": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "city": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cross_border_dimension": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primary_source_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primary_source_tier": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    "source_stage": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "final_judgment",
+        "appellate_judgment",
+        "interim_order",
+        "bail_order",
+        "procedural_order",
+        "charge_sheet_or_fir_summary",
+        "official_release",
+        "regulatory_advisory",
+        "journalistic_report",
+        "other"
+      ]
+    },
+    "court_or_authority": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "case_number": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "case_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "reported",
+        "investigation",
+        "arrest",
+        "charge_sheet",
+        "trial",
+        "bail_or_interim",
+        "judgment",
+        "appeal",
+        "closed_unknown_outcome",
+        "unknown"
+      ]
+    },
+    "attack_category_primary": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "digital_arrest",
+        "phishing",
+        "vishing",
+        "smishing",
+        "business_email_compromise",
+        "bank_impersonation",
+        "police_impersonation",
+        "government_impersonation",
+        "customer_support_fraud",
+        "investment_fraud",
+        "job_fraud",
+        "romance_fraud",
+        "social_media_impersonation",
+        "account_takeover_social_engineering",
+        "identity_theft_deception",
+        "tech_support_fraud",
+        "marketplace_fraud",
+        "family_impersonation",
+        "sextortion",
+        "other",
+        "unclear"
+      ]
+    },
+    "attack_category_secondary": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "digital_arrest",
+        "phishing",
+        "vishing",
+        "smishing",
+        "business_email_compromise",
+        "bank_impersonation",
+        "police_impersonation",
+        "government_impersonation",
+        "customer_support_fraud",
+        "investment_fraud",
+        "job_fraud",
+        "romance_fraud",
+        "social_media_impersonation",
+        "account_takeover_social_engineering",
+        "identity_theft_deception",
+        "tech_support_fraud",
+        "marketplace_fraud",
+        "family_impersonation",
+        "sextortion",
+        "other",
+        "unclear",
+        ""
+      ]
+    },
+    "contact_channel_primary": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "phone",
+        "whatsapp",
+        "email",
+        "sms",
+        "telegram",
+        "instagram",
+        "facebook",
+        "linkedin",
+        "website",
+        "video_call",
+        "in_person",
+        "multiple",
+        "other",
+        "unknown"
+      ]
+    },
+    "contact_channels_other": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "platform_primary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "impersonated_identity_category": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "police",
+        "court_or_judiciary",
+        "government_official",
+        "bank_or_financial_institution",
+        "executive_or_employer",
+        "coworker",
+        "vendor_or_business",
+        "customer_support",
+        "recruiter",
+        "investment_advisor",
+        "romantic_or_social_identity",
+        "family_or_friend",
+        "platform_or_service",
+        "other",
+        "none",
+        "unknown"
+      ]
+    },
+    "impersonated_identity_detail": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "target_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "individual",
+        "employee",
+        "executive",
+        "business",
+        "government_official",
+        "professional",
+        "student",
+        "elderly_person",
+        "job_seeker",
+        "investor",
+        "online_seller_or_buyer",
+        "other",
+        "unknown"
+      ]
+    },
+    "target_sector": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "target_selection_known": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reconnaissance_present": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reconnaissance_description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "initial_contact_summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pretext_summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "authority_mechanism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fear_mechanism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "urgency_mechanism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "trust_mechanism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scarcity_mechanism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reciprocity_mechanism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "isolation_mechanism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "repeated_contact_mechanism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "other_psychological_mechanism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "requested_action": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "victim_action": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "credential_compromise": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "device_compromise": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "remote_access_tool": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "financial_loss_inr": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "payment_method": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "bank_transfer",
+        "upi",
+        "card",
+        "wallet",
+        "cash",
+        "cryptocurrency",
+        "gift_card_or_voucher",
+        "multiple",
+        "other",
+        "not_applicable",
+        "unknown"
+      ]
+    },
+    "money_mule_reported": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "known_account_count": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "phone_or_sim_evidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cdr_evidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bank_evidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ip_or_login_evidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "device_evidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "chat_message_evidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "email_evidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "social_media_evidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cctv_evidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "platform_provider_records": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "forensic_examination_reported": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "other_evidence": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "electronic_evidence_authentication_discussed": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "chain_of_custody_discussed": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_integrity_issue_reported": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "attribution_target": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "attribution_basis_primary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "attribution_basis_secondary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "attribution_strength": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "strong",
+        "moderate",
+        "limited",
+        "unclear",
+        "not_assessed"
+      ]
+    },
+    "attribution_limitations": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "alternative_explanation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "primary_evidentiary_gap": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "legal_provisions": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "accused_count": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "arrest_reported": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "charge_sheet_reported": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "conviction_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "convicted",
+        "acquitted",
+        "mixed",
+        "pending",
+        "not_applicable",
+        "unknown",
+        "not_yet_adjudicated"
+      ]
+    },
+    "disposition": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "case_summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "research_notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
