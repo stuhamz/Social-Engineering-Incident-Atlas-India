@@ -1,14 +1,16 @@
 # Social Engineering Incident Atlas India
 
+> **Current dataset release: v0.1.4.** The repository contains **50 reviewed incident records** and **148 reviewed actor-role attribution records**. The actor-role schema introduced in v0.1.2 remains stable and separates victim-facing, financial, technical and organisational conduct.
+
 A structured research dataset and analytical framework for studying **social-engineering-enabled cybercrime, digital evidence, and attribution in India**.
 
-## v0.1.1 expanded validation set
+## 50-case expanded validation set
 
-The repository now contains **30 incident records**. The first 10 were purposively selected to test the coding schema. Cases 11-30 were collected under a versioned, protocolized retrieval process with documented query families, candidate logging, duplicate rules, a category-diversity constraint and a fixed stopping rule.
+The first 10 incidents were purposively selected to test the schema. Later batches use documented candidate logging, inclusion/exclusion rules, duplicate handling and diversity-focused retrieval. The 41–50 batch deliberately increases category, geography, source-stage and evidentiary diversity.
 
 This remains a **methodology and schema-validation dataset, not a representative sample of Indian cybercrime**. It must not be used to estimate national prevalence, state rankings, average losses, category frequencies or conviction rates.
 
-See [`docs/v0.1_case_index.md`](docs/v0.1_case_index.md) for all 30 incidents and [`methodology/retrieval_protocol_v0.1.1.md`](methodology/retrieval_protocol_v0.1.1.md) for the expansion protocol.
+See [`docs/v0.1_case_index.md`](docs/v0.1_case_index.md) for the incident index, [`methodology/retrieval_protocol_v0.1.1.md`](methodology/retrieval_protocol_v0.1.1.md) for the protocolized expansion foundation and [`docs/v0.1.4_50_case_expansion_audit.md`](docs/v0.1.4_50_case_expansion_audit.md) for the current release audit.
 
 ## Core research question
 
@@ -16,14 +18,9 @@ See [`docs/v0.1_case_index.md`](docs/v0.1_case_index.md) for all 30 incidents an
 
 The project studies three connected layers:
 
-1. **Social engineering**  
-   How targets are approached and influenced through impersonation, authority, fear, urgency, trust, social proof, relationship-building, isolation, repeated contact, and related mechanisms.
-
-2. **Digital evidence**  
-   What public case records report about devices, communications, bank records, telecom records, IP/login evidence, platform records, CCTV, and forensic examinations.
-
-3. **Attribution**  
-   What the available evidence can actually connect to a person, account, device, role, or transaction, and what remains inferential.
+1. **Social engineering**: how targets are approached and influenced through impersonation, authority, fear, urgency, trust, social proof, relationship-building, isolation and related mechanisms.
+2. **Digital evidence**: what public case records report about devices, communications, bank records, telecom records, IP/login evidence, platform records, CCTV and forensic examinations.
+3. **Attribution**: what the evidence can actually connect to a person, account, device, role or transaction, and what remains inferential.
 
 ## Research principle
 
@@ -33,28 +30,45 @@ A SIM registration, bank account, IP address, device, or receipt of funds may be
 
 ## Source hierarchy
 
-The pilot uses publicly accessible material and records source stage separately from source tier.
+- **T1**: judicial and formal adjudicatory material
+- **T2**: official institutional material
+- **T3**: credible journalism with substantive case detail
 
-- **T1: Judicial and formal adjudicatory material**, including judgments, bail/procedural orders, and reasoned statutory adjudicatory decisions
-- **T2: Official institutional material**, including police, government, regulator, or investigative-agency sources
-- **T3: Credible journalism** containing substantive case detail
+A judicial order may reproduce prosecution allegations, defence claims or prima facie observations without finally determining guilt. The Atlas records procedural stage and uses final-judgment language only for propositions actually adjudicated.
 
-A judicial order may reproduce prosecution allegations, defence claims, or prima facie observations without finally determining guilt. The dataset preserves this distinction.
+## Data model
 
-The tier refers to the **underlying material**, not necessarily the website hosting the accessible copy. The source registry records the URL actually used for verification.
+`data/cases.csv` remains the incident-level table.
+
+`data/actors.csv` is a companion actor-role attribution layer. One actor row represents one analytically distinct role/conduct assessment within an incident. It is not necessarily one named accused and it is not a finding of guilt.
+
+This allows the Atlas to represent, for example, moderate evidence that a person controlled a receiving account while separately coding limited or unclear evidence that the same person operated the original impersonating account.
+
+Definitions are in [`data/data_dictionary.md`](data/data_dictionary.md) and [`data/actor_data_dictionary.md`](data/actor_data_dictionary.md).
+
+## Attribution scale
+
+- **strong**: multiple independent evidence streams connect the target to the relevant conduct, or an adjudicated finding establishes that role
+- **moderate**: meaningful linkage exists but a material inferential step or plausible alternative explanation remains
+- **limited**: association is established but the relevant conduct is not substantially established
+- **unclear**: public material is too incomplete or ambiguous
+- **not_assessed**: insufficient attribution material exists to evaluate
+
+See [`methodology/attribution_framework.md`](methodology/attribution_framework.md).
 
 ## Repository structure
 
 ```text
 data/
   cases.csv
+  actors.csv
   data_dictionary.md
-  controlled_vocabulary.md
+  actor_data_dictionary.md
 
 cases/
   SEIAI-0001-....md
   ...
-  SEIAI-0030-....md
+  SEIAI-0050-....md
 
 references/
   sources.csv
@@ -65,66 +79,23 @@ methodology/
   exclusion_criteria.md
   sampling_strategy.md
   retrieval_protocol_v0.1.1.md
-  source_quality.md
   coding_protocol.md
   attribution_framework.md
+  actor_coding_protocol_v0.1.2.md
   evidence_framework.md
   deduplication_protocol.md
-  intercoder_reliability.md
-  versioning.md
 
 schemas/
   case_record.schema.json
+  actor_record.schema.json
   controlled_vocabulary.json
+  actor_controlled_vocabulary.json
 
 analysis/scripts/
   validate_dataset.py
+  validate_actors.py
   basic_summary.py
-  new_case.py
-
-docs/
-  research_questions.md
-  project_scope.md
-  roadmap.md
-  v0.1_case_index.md
-  v0.1_release_audit.md
-  v0.1.1_release_audit.md
-  v0.1.1_schema_stress_test.md
 ```
-
-## Data model
-
-The unit of analysis is the **incident**, not the source, accused person, transaction, or court order.
-
-Each incident row can be linked to multiple source records in `references/sources.csv`.
-
-The dataset records, where available:
-
-- incident context and geography
-- attack category and communication channel
-- impersonated identity
-- pretext and manipulation mechanisms
-- requested and victim actions
-- financial consequences
-- reported digital and financial evidence
-- procedural status
-- attribution basis
-- attribution strength and limitations
-- primary evidentiary gaps
-
-Field definitions are in [`data/data_dictionary.md`](data/data_dictionary.md).
-
-## Attribution scale
-
-The pilot uses five values:
-
-- **strong**: multiple independent evidence streams connect the target to the relevant conduct, or a judicial finding establishes that role
-- **moderate**: meaningful linkage exists, but a material inferential step or plausible alternative explanation remains
-- **limited**: evidence establishes association with an account, transaction, device, SIM, or person but does not substantially establish the relevant conduct
-- **unclear**: public material is too incomplete or ambiguous
-- **not_assessed**: insufficient attribution material exists to evaluate
-
-See [`methodology/attribution_framework.md`](methodology/attribution_framework.md).
 
 ## Reproducibility and validation
 
@@ -132,52 +103,43 @@ Run:
 
 ```bash
 python analysis/scripts/validate_dataset.py
+python analysis/scripts/validate_actors.py
 ```
 
-Run the validator after each dataset update. The reviewed v0.1.1 30-case dataset validates with 0 structural errors and 0 warnings.
-
-A basic non-inferential summary can be generated with:
-
-```bash
-python analysis/scripts/basic_summary.py
-```
-
-The first ten cases were selected for schema diversity. Cases 11-30 use a more explicit retrieval protocol, but the combined set remains purposive and descriptive counts are not population estimates.
+The public release should be tagged only after both validators return zero errors and zero warnings and the privacy scan is clean.
 
 ## Known limitations
 
-- The pilot is purposively sampled.
-- Most records are based on judicial material generated for litigation, not purpose-built forensic datasets.
-- Bail orders can contain unusually rich facts but are not final findings of guilt.
-- Public records often expose downstream financial and telecom evidence more clearly than provider-side account metadata or full forensic provenance.
-- A single incident row may summarise multiple actors. A later release may introduce actor-level and source-claim companion tables.
-- Some fields remain `unknown` or `not_reported` by design rather than being inferred.
+- The corpus is purposively sampled and retrieval is not prevalence-representative.
+- Judicial material is created for litigation, not for forensic-dataset completeness.
+- Bail and charge-stage records can contain detailed allegations without final guilt findings.
+- Public records often expose downstream financial/telecom evidence more clearly than provider-side metadata or full forensic provenance.
+- `unknown` and `not_reported` are used deliberately instead of researcher inference.
+- `source_claims.csv` remains deferred because the actor-role layer currently solves the main attribution-compression problem without disproportionate annotation burden.
 
 ## Privacy and source handling
 
-The Atlas does not republish underlying judgments, screenshots, phone numbers, bank-account numbers, or other source documents. It stores researcher-created structured coding, neutral reconstruction notes, and source links.
-
-Names appearing in source titles are retained only where necessary to identify the cited public judicial record.
+The Atlas does not republish underlying judgments, screenshots, phone numbers, bank-account numbers or private source material. It stores researcher-created structured coding, neutral reconstruction notes and source links. Names appearing in source titles are retained only where necessary to identify the cited public judicial/adjudicatory record.
 
 ## Licensing
 
-- Software and scripts are licensed under the [MIT License](LICENSE).
-- The compiled dataset and researcher-created research documentation are licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**. See [`DATA_LICENSE.md`](DATA_LICENSE.md).
-- Underlying judgments, news reports, and third-party source material remain subject to their original rights and are not relicensed by this repository.
+- Software/scripts: [MIT License](LICENSE)
+- Compiled dataset and researcher-created documentation: **CC BY 4.0**, see [`DATA_LICENSE.md`](DATA_LICENSE.md)
+- Underlying third-party source material remains subject to its original rights.
 
 ## Citation
 
 Suggested citation:
 
-> Hamzah. (2026). *Social Engineering Incident Atlas India* (v0.1.1). GitHub repository.
+> Hamzah. (2026). *Social Engineering Incident Atlas India* (v0.1.4). GitHub repository.
 
-If you use individual cases, cite the original source(s) listed in `references/sources.csv` as well as the Atlas.
+If using individual incident records, cite the original source(s) in `references/sources.csv` as well as the Atlas.
 
 ## Status
 
-**v0.1.1: reviewed 30-case expanded validation set**
+**v0.1.4: 50 reviewed incidents, 148 reviewed actor-role records.**
 
-Cases 11-30 have completed their second-pass source and coding audit. The next stage is a schema review before the larger v0.2 collection.
+The next stage should prioritize source/attack/geographic gaps and continued stability testing rather than rapid undifferentiated case growth.
 
 ## Author
 

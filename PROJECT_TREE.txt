@@ -1,90 +1,110 @@
-[D] analysis
-  [D] notebooks
-    [F] .gitkeep
-  [D] output
-    [F] .gitkeep
-  [D] scripts
-    [F] basic_summary.py
-    [F] new_case.py
-    [F] validate_dataset.py
-[D] cases
-  [F] CASE_TEMPLATE.md
-  [F] README.md
-  [F] SEIAI-0001-gwalior-ramakrishna-digital-arrest.md
-  [F] SEIAI-0002-vip-profit-makers-fake-investment-app-fraud.md
-  [F] SEIAI-0003-fake-hr-work-from-home-task-scam.md
-  [F] SEIAI-0004-canada-relative-and-medical-emergency-impersonation-fraud.md
-  [F] SEIAI-0005-fake-yahoo-customer-care-apk-fraud-against-senior-citizen.md
-  [F] SEIAI-0006-tekku-samurai-cross-border-tech-support-fraud.md
-  [F] SEIAI-0007-sangam-com-nri-matrimonial-impersonation-fraud.md
-  [F] SEIAI-0008-sms-service-closure-phishing-and-vishing-bank-fraud.md
-  [F] SEIAI-0009-hacked-superior-whatsapp-payment-impersonation.md
-  [F] SEIAI-0010-whatsapp-sexual-blackmail-and-fake-cyber-offence-extortion.md
-  [F] SEIAI-0011-fake-surveillance-officer-cbi-and-judge-digital-arrest-fraud.md
-  [F] SEIAI-0012-fedex-and-mumbai-cyber-crime-digital-confinement-fraud.md
-  [F] SEIAI-0013-stan-chart-dialogue-forum-l7-fake-investment-app-fraud.md
-  [F] SEIAI-0014-airtel-to-cbi-senior-citizen-digital-arrest-fraud.md
-  [F] SEIAI-0015-rbi-and-mumbai-police-11-hour-digital-arrest-fraud.md
-  [F] SEIAI-0016-blackrock-investment-learning-group-and-angel-one-account-fraud.md
-  [F] SEIAI-0017-trai-mumbai-police-and-fake-cbi-court-digital-arrest-fraud.md
-  [F] SEIAI-0018-equity-hub-41-and-act-alpha-fake-investment-fraud.md
-  [F] SEIAI-0019-franklin-templeton-impersonation-and-sends-inv-investment-fraud.md
-  [F] SEIAI-0020-multi-agency-family-digital-arrest-fraud-with-account-credential-elicitation.md
-  [F] SEIAI-0021-daiwa-securities-whatsapp-and-telegram-investment-fraud.md
-  [F] SEIAI-0022-global-telegram-work-from-home-review-scam.md
-  [F] SEIAI-0023-cos-telegram-work-from-home-investment-task-fraud.md
-  [F] SEIAI-0024-bajaj-finance-hr-impersonation-and-review-task-fraud.md
-  [F] SEIAI-0025-facebook-to-telegram-hotel-rating-task-fraud.md
-  [F] SEIAI-0026-fake-army-major-marriage-and-financial-exploitation-case.md
-  [F] SEIAI-0027-facebook-to-whatsapp-romance-deception-and-sexual-extortion.md
-  [F] SEIAI-0028-matrimonial-relationship-with-alleged-army-officer-impersonation.md
-  [F] SEIAI-0029-olx-payment-and-upi-manipulation-fraud.md
-  [F] SEIAI-0030-microsoft-and-amazon-tech-support-remote-access-fraud-network.md
-[D] data
-  [F] cases.csv
-  [F] controlled_vocabulary.md
-  [F] data_dictionary.md
-  [F] README.md
-[D] docs
-  [F] GITHUB_PUSH.md
-  [F] project_scope.md
-  [F] RELEASE_NOTES_v0.1.1.md
-  [F] RELEASE_NOTES_v0.1.md
-  [F] research_questions.md
-  [F] roadmap.md
-  [F] v0.1.1_release_audit.md
-  [F] v0.1.1_schema_stress_test.md
-  [F] v0.1_case_index.md
-  [F] v0.1_initial_audit.md
-  [F] v0.1_release_audit.md
-  [F] v0.1_review_checklist.md
-[D] methodology
-  [F] attribution_framework.md
-  [F] coding_protocol.md
-  [F] deduplication_protocol.md
-  [F] evidence_framework.md
-  [F] exclusion_criteria.md
-  [F] inclusion_criteria.md
-  [F] intercoder_reliability.md
-  [F] retrieval_protocol_v0.1.1.md
-  [F] sampling_strategy.md
-  [F] source_quality.md
-  [F] versioning.md
-[D] references
-  [F] README.md
-  [F] screening_log.csv
-  [F] sources.csv
-[D] schemas
-  [F] case_record.schema.json
-  [F] controlled_vocabulary.json
-[D] working
-  [F] README.md
-[F] .gitignore
-[F] CHANGELOG.md
-[F] CONTRIBUTING.md
-[F] DATA_LICENSE.md
-[F] LICENSE
-[F] PACKAGE_MANIFEST.txt
-[F] PROJECT_TREE.txt
-[F] README.md
-[F] START_HERE.md
+.gitignore
+CHANGELOG.md
+CONTRIBUTING.md
+DATA_LICENSE.md
+LICENSE
+README.md
+START_HERE.md
+analysis/notebooks/.gitkeep
+analysis/output/.gitkeep
+analysis/scripts/basic_summary.py
+analysis/scripts/new_case.py
+analysis/scripts/validate_actors.py
+analysis/scripts/validate_dataset.py
+cases/CASE_TEMPLATE.md
+cases/README.md
+cases/SEIAI-0001-gwalior-ramakrishna-digital-arrest.md
+cases/SEIAI-0002-vip-profit-makers-fake-investment-app-fraud.md
+cases/SEIAI-0003-fake-hr-work-from-home-task-scam.md
+cases/SEIAI-0004-canada-relative-and-medical-emergency-impersonation-fraud.md
+cases/SEIAI-0005-fake-yahoo-customer-care-apk-fraud-against-senior-citizen.md
+cases/SEIAI-0006-tekku-samurai-cross-border-tech-support-fraud.md
+cases/SEIAI-0007-sangam-com-nri-matrimonial-impersonation-fraud.md
+cases/SEIAI-0008-sms-service-closure-phishing-and-vishing-bank-fraud.md
+cases/SEIAI-0009-hacked-superior-whatsapp-payment-impersonation.md
+cases/SEIAI-0010-whatsapp-sexual-blackmail-and-fake-cyber-offence-extortion.md
+cases/SEIAI-0011-fake-surveillance-officer-cbi-and-judge-digital-arrest-fraud.md
+cases/SEIAI-0012-fedex-and-mumbai-cyber-crime-digital-confinement-fraud.md
+cases/SEIAI-0013-stan-chart-dialogue-forum-l7-fake-investment-app-fraud.md
+cases/SEIAI-0014-airtel-to-cbi-senior-citizen-digital-arrest-fraud.md
+cases/SEIAI-0015-rbi-and-mumbai-police-11-hour-digital-arrest-fraud.md
+cases/SEIAI-0016-blackrock-investment-learning-group-and-angel-one-account-fraud.md
+cases/SEIAI-0017-trai-mumbai-police-and-fake-cbi-court-digital-arrest-fraud.md
+cases/SEIAI-0018-equity-hub-41-and-act-alpha-fake-investment-fraud.md
+cases/SEIAI-0019-franklin-templeton-impersonation-and-sends-inv-investment-fraud.md
+cases/SEIAI-0020-multi-agency-family-digital-arrest-fraud-with-account-credential-elicitation.md
+cases/SEIAI-0021-daiwa-securities-whatsapp-and-telegram-investment-fraud.md
+cases/SEIAI-0022-global-telegram-work-from-home-review-scam.md
+cases/SEIAI-0023-cos-telegram-work-from-home-investment-task-fraud.md
+cases/SEIAI-0024-bajaj-finance-hr-impersonation-and-review-task-fraud.md
+cases/SEIAI-0025-facebook-to-telegram-hotel-rating-task-fraud.md
+cases/SEIAI-0026-fake-army-major-marriage-and-financial-exploitation-case.md
+cases/SEIAI-0027-facebook-to-whatsapp-romance-deception-and-sexual-extortion.md
+cases/SEIAI-0028-matrimonial-relationship-with-alleged-army-officer-impersonation.md
+cases/SEIAI-0029-olx-payment-and-upi-manipulation-fraud.md
+cases/SEIAI-0030-microsoft-and-amazon-tech-support-remote-access-fraud-network.md
+cases/SEIAI-0031-canada-relative-escalating-emergency-family-impersonation-fraud.md
+cases/SEIAI-0032-icici-kyc-update-impersonation-unauthorized-loan-fraud.md
+cases/SEIAI-0033-fake-paytm-customer-care-callback-fraud.md
+cases/SEIAI-0034-fake-amazon-customer-care-subscription-support-fraud.md
+cases/SEIAI-0035-whatsapp-sextortion-fake-police-youtube-callers.md
+cases/SEIAI-0036-facebook-romance-deception-prolonged-sextortion.md
+cases/SEIAI-0037-jamtara-bank-manager-impersonation-otp-cvv-fraud.md
+cases/SEIAI-0038-lumikai-lookalike-domain-investor-payment-diversion-attempt.md
+cases/SEIAI-0039-dynamic-brands-invoice-diversion-business-email-compromise.md
+cases/SEIAI-0040-fake-sp-mandi-facebook-donation-impersonation.md
+cases/SEIAI-0041-whatsapp-managing-director-impersonation-and-corporate-payment-diversion.md
+cases/SEIAI-0042-bank-kyc-suspension-smishing-and-paytm-activation-fraud.md
+cases/SEIAI-0043-court-staff-influence-impersonation-and-electronic-evidence-failure-case.md
+cases/SEIAI-0044-fake-makemytrip-customer-support-and-anydesk-remote-access-fraud.md
+cases/SEIAI-0045-electricity-disconnection-smishing-and-fraudulent-bescom-app-transaction.md
+cases/SEIAI-0046-fake-indus-towers-facebook-tower-installation-and-fee-fraud.md
+cases/SEIAI-0047-sim-swap-identity-theft-and-pension-account-takeover-fraud.md
+cases/SEIAI-0048-facebook-relationship-manipulation-and-false-suicide-sextortion-scheme.md
+cases/SEIAI-0049-fedex-narcotics-pretext-and-mumbai-cyber-crime-digital-arrest-fraud.md
+cases/SEIAI-0050-spoofed-cbi-and-mha-official-impersonation-extortion-conspiracy.md
+data/README.md
+data/actor_data_dictionary.md
+data/actors.csv
+data/cases.csv
+data/controlled_vocabulary.md
+data/data_dictionary.md
+docs/GITHUB_PUSH.md
+docs/RELEASE_NOTES_v0.1.1.md
+docs/RELEASE_NOTES_v0.1.2.md
+docs/RELEASE_NOTES_v0.1.3.md
+docs/RELEASE_NOTES_v0.1.4.md
+docs/RELEASE_NOTES_v0.1.md
+docs/project_scope.md
+docs/research_questions.md
+docs/roadmap.md
+docs/v0.1.1_release_audit.md
+docs/v0.1.1_schema_stress_test.md
+docs/v0.1.2_actor_model_full_audit.md
+docs/v0.1.2_validation_result.txt
+docs/v0.1.3_40_case_expansion_audit.md
+docs/v0.1.4_50_case_expansion_audit.md
+docs/v0.1_case_index.md
+docs/v0.1_initial_audit.md
+docs/v0.1_release_audit.md
+docs/v0.1_review_checklist.md
+methodology/actor_coding_protocol_v0.1.2.md
+methodology/attribution_framework.md
+methodology/coding_protocol.md
+methodology/deduplication_protocol.md
+methodology/evidence_framework.md
+methodology/exclusion_criteria.md
+methodology/inclusion_criteria.md
+methodology/intercoder_reliability.md
+methodology/retrieval_protocol_v0.1.1.md
+methodology/sampling_strategy.md
+methodology/source_quality.md
+methodology/versioning.md
+references/README.md
+references/screening_log.csv
+references/sources.csv
+schemas/actor_controlled_vocabulary.json
+schemas/actor_record.schema.json
+schemas/case_record.schema.json
+schemas/controlled_vocabulary.json
+working/README.md

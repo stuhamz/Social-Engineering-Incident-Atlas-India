@@ -1,0 +1,5 @@
+v0.1.2 actor migration validation
+Actor rows: 90
+Cases represented: 30
+Errors: 0
+Warnings: 0

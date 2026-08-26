@@ -1,0 +1,33 @@
+{
+  "identity_resolution": [
+    "identified",
+    "partially_identified",
+    "unknown",
+    "actor_cluster"
+  ],
+  "role_layer": [
+    "victim_facing",
+    "financial",
+    "technical",
+    "organisational",
+    "hybrid",
+    "unknown"
+  ],
+  "role_primary": [
+    "victim_facing_operator",
+    "social_engineering_operator",
+    "organiser",
+    "account_provider",
+    "bank_account_controller",
+    "money_mule",
+    "cashout_actor",
+    "sim_or_device_user",
+    "technical_infrastructure_operator",
+    "platform_account_operator",
+    "recruiter",
+    "intermediary",
+    "coordinator",
+    "unknown_role",
+    "other"
+  ]
+}

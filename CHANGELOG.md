@@ -1,5 +1,38 @@
 # Changelog
 
+## v0.1.4 - 2026-08-26
+
+- expanded the reviewed incident corpus from 40 to 50 cases
+- expanded actor-role coverage from 116 to 148 reviewed records
+- added the first primary `smishing` and `identity_theft_deception` cases
+- added executive/Managing-Director, court-influence, electricity-utility and government-official spoofing cases
+- added a final acquittal centered on Section 65-B/electronic-evidence and SIM-attribution failures
+- increased geographic diversity with Maharashtra, West Bengal, Goa, Punjab, Assam, Kerala and Telangana additions in the 41–50 batch
+- retained the v0.1.2 actor schema without breaking changes
+- completed second-pass incident, actor, procedural-posture and privacy audits for SEIAI-0041 through SEIAI-0050
+- validation completed with zero structural errors and zero warnings
+
+## v0.1.3 - 2026-08-26
+
+- expanded the reviewed incident corpus from 30 to 40 cases
+- expanded the actor-role table from 90 to 116 reviewed records
+- added the first `business_email_compromise` cases and the first `social_media_impersonation` primary case
+- added two new `bank_impersonation` records, including a final criminal appellate conviction
+- added final/appellate consumer and commercial adjudicatory sources to reduce reliance on bail orders
+- retained the v0.1.2 actor schema without breaking changes
+- added 15 screening-log candidates, including explicit deferrals under the category-diversity stopping rule
+- completed incident, actor, procedural-posture and privacy second-pass audits for SEIAI-0031 through SEIAI-0040
+- validation completed with zero structural errors and zero warnings
+
+## v0.1.2 - 2026-08-26
+
+- Added `data/actors.csv` with 90 reviewed actor-role attribution records across all 30 incidents.
+- Added actor-level coding protocol, controlled vocabulary, JSON schema and validator.
+- Separated identity resolution from attribution strength.
+- Defined attribution strength as conduct-specific rather than person-wide.
+- Retained all v0.1.1 incident records without breaking field changes.
+- Deferred proposition-level `source_claims.csv` pending evidence that it is necessary.
+
 ## 0.1.1 - 2026-08-26
 - Expanded the Atlas from 10 to 30 incident records for schema/method validation.
 - Added a versioned retrieval protocol with documented search families, duplicate handling, category-diversity constraint and stopping rule.

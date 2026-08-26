@@ -1,16 +1,22 @@
+Social Engineering Incident Atlas India v0.1.4
+Files: 112
+Cases: 50
+Actors: 148
+Sources: 57
+Screening candidates: 69
+
 .gitignore
 CHANGELOG.md
 CONTRIBUTING.md
 DATA_LICENSE.md
 LICENSE
-PACKAGE_MANIFEST.txt
-PROJECT_TREE.txt
 README.md
 START_HERE.md
 analysis/notebooks/.gitkeep
 analysis/output/.gitkeep
 analysis/scripts/basic_summary.py
 analysis/scripts/new_case.py
+analysis/scripts/validate_actors.py
 analysis/scripts/validate_dataset.py
 cases/CASE_TEMPLATE.md
 cases/README.md
@@ -44,22 +50,52 @@ cases/SEIAI-0027-facebook-to-whatsapp-romance-deception-and-sexual-extortion.md
 cases/SEIAI-0028-matrimonial-relationship-with-alleged-army-officer-impersonation.md
 cases/SEIAI-0029-olx-payment-and-upi-manipulation-fraud.md
 cases/SEIAI-0030-microsoft-and-amazon-tech-support-remote-access-fraud-network.md
+cases/SEIAI-0031-canada-relative-escalating-emergency-family-impersonation-fraud.md
+cases/SEIAI-0032-icici-kyc-update-impersonation-unauthorized-loan-fraud.md
+cases/SEIAI-0033-fake-paytm-customer-care-callback-fraud.md
+cases/SEIAI-0034-fake-amazon-customer-care-subscription-support-fraud.md
+cases/SEIAI-0035-whatsapp-sextortion-fake-police-youtube-callers.md
+cases/SEIAI-0036-facebook-romance-deception-prolonged-sextortion.md
+cases/SEIAI-0037-jamtara-bank-manager-impersonation-otp-cvv-fraud.md
+cases/SEIAI-0038-lumikai-lookalike-domain-investor-payment-diversion-attempt.md
+cases/SEIAI-0039-dynamic-brands-invoice-diversion-business-email-compromise.md
+cases/SEIAI-0040-fake-sp-mandi-facebook-donation-impersonation.md
+cases/SEIAI-0041-whatsapp-managing-director-impersonation-and-corporate-payment-diversion.md
+cases/SEIAI-0042-bank-kyc-suspension-smishing-and-paytm-activation-fraud.md
+cases/SEIAI-0043-court-staff-influence-impersonation-and-electronic-evidence-failure-case.md
+cases/SEIAI-0044-fake-makemytrip-customer-support-and-anydesk-remote-access-fraud.md
+cases/SEIAI-0045-electricity-disconnection-smishing-and-fraudulent-bescom-app-transaction.md
+cases/SEIAI-0046-fake-indus-towers-facebook-tower-installation-and-fee-fraud.md
+cases/SEIAI-0047-sim-swap-identity-theft-and-pension-account-takeover-fraud.md
+cases/SEIAI-0048-facebook-relationship-manipulation-and-false-suicide-sextortion-scheme.md
+cases/SEIAI-0049-fedex-narcotics-pretext-and-mumbai-cyber-crime-digital-arrest-fraud.md
+cases/SEIAI-0050-spoofed-cbi-and-mha-official-impersonation-extortion-conspiracy.md
 data/README.md
+data/actor_data_dictionary.md
+data/actors.csv
 data/cases.csv
 data/controlled_vocabulary.md
 data/data_dictionary.md
 docs/GITHUB_PUSH.md
 docs/RELEASE_NOTES_v0.1.1.md
+docs/RELEASE_NOTES_v0.1.2.md
+docs/RELEASE_NOTES_v0.1.3.md
+docs/RELEASE_NOTES_v0.1.4.md
 docs/RELEASE_NOTES_v0.1.md
 docs/project_scope.md
 docs/research_questions.md
 docs/roadmap.md
 docs/v0.1.1_release_audit.md
 docs/v0.1.1_schema_stress_test.md
+docs/v0.1.2_actor_model_full_audit.md
+docs/v0.1.2_validation_result.txt
+docs/v0.1.3_40_case_expansion_audit.md
+docs/v0.1.4_50_case_expansion_audit.md
 docs/v0.1_case_index.md
 docs/v0.1_initial_audit.md
 docs/v0.1_release_audit.md
 docs/v0.1_review_checklist.md
+methodology/actor_coding_protocol_v0.1.2.md
 methodology/attribution_framework.md
 methodology/coding_protocol.md
 methodology/deduplication_protocol.md
@@ -74,6 +110,10 @@ methodology/versioning.md
 references/README.md
 references/screening_log.csv
 references/sources.csv
+schemas/actor_controlled_vocabulary.json
+schemas/actor_record.schema.json
 schemas/case_record.schema.json
 schemas/controlled_vocabulary.json
 working/README.md
+PROJECT_TREE.txt
+PACKAGE_MANIFEST.txt

@@ -1,11 +1,6 @@
 # References
 
-## `sources.csv`
+- `sources.csv`: 57 registered public sources.
+- `screening_log.csv`: 69 logged candidates with include/exclude/duplicate/pending decisions.
 
-One row per source. A single case may have many sources.
-
-## `screening_log.csv`
-
-One row per candidate incident reviewed, including excluded and duplicate incidents.
-
-The screening log is part of the research record and should not be cleaned to show only successful inclusions.
+Source URLs identify the public material used for coding; underlying source documents are not republished by the Atlas.

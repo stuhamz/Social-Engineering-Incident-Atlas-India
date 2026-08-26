@@ -1,9 +1,6 @@
-# Data Directory
+# Data
 
-`cases.csv` is the publication layer for incident-level coding.
+- `cases.csv`: 50 reviewed incident records.
+- `actors.csv`: 148 reviewed actor-role attribution records linked by `case_id`.
 
-Do not put source-level rows in `cases.csv`. Each source belongs in `references/sources.csv`.
-
-The authoritative column definitions are in `data_dictionary.md`.
-
-The permitted categorical values are in `controlled_vocabulary.md`.
+See the data dictionaries for field definitions. The dataset is purposive and must not be used for prevalence estimates.

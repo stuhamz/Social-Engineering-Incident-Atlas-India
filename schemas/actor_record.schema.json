@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SEIAI actor-role attribution record",
+  "description": "One record is one analytically distinct actor-role attribution assessment, not a finding of identity or guilt.",
+  "type": "object",
+  "required": [
+    "actor_id",
+    "case_id",
+    "record_status",
+    "coding_version",
+    "actor_label",
+    "identity_resolution",
+    "role_layer",
+    "role_primary",
+    "conduct_assessed",
+    "direct_victim_contact",
+    "attribution_strength",
+    "attribution_limitations",
+    "source_ids"
+  ],
+  "properties": {
+    "actor_id": {
+      "type": "string",
+      "pattern": "^SEIAI-[0-9]{4}-A[0-9]{2}$"
+    },
+    "case_id": {
+      "type": "string",
+      "pattern": "^SEIAI-[0-9]{4}$"
+    },
+    "record_status": {
+      "enum": [
+        "draft",
+        "reviewed",
+        "verified"
+      ]
+    },
+    "identity_resolution": {
+      "enum": [
+        "identified",
+        "partially_identified",
+        "unknown",
+        "actor_cluster"
+      ]
+    },
+    "role_layer": {
+      "enum": [
+        "victim_facing",
+        "financial",
+        "technical",
+        "organisational",
+        "hybrid",
+        "unknown"
+      ]
+    },
+    "role_primary": {
+      "enum": [
+        "victim_facing_operator",
+        "social_engineering_operator",
+        "organiser",
+        "account_provider",
+        "bank_account_controller",
+        "money_mule",
+        "cashout_actor",
+        "sim_or_device_user",
+        "technical_infrastructure_operator",
+        "platform_account_operator",
+        "recruiter",
+        "intermediary",
+        "coordinator",
+        "unknown_role",
+        "other"
+      ]
+    },
+    "role_secondary": {
+      "type": "string"
+    },
+    "conduct_assessed": {
+      "type": "string"
+    },
+    "direct_victim_contact": {
+      "enum": [
+        "yes",
+        "no",
+        "unknown",
+        "not_reported",
+        "not_applicable"
+      ]
+    },
+    "attribution_strength": {
+      "enum": [
+        "strong",
+        "moderate",
+        "limited",
+        "unclear",
+        "not_assessed"
+      ]
+    },
+    "attribution_limitations": {
+      "type": "string"
+    },
+    "source_ids": {
+      "type": "string"
+    }
+  }
+}
