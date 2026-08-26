@@ -183,4 +183,4 @@ Cases 11-30 have completed their second-pass source and coding audit. The next s
 
 **Hamzah**  
 MSc Digital Forensics and Information Security  
-National Forensic Sciences University, Bhopal
+National Forensic Sciences University, Delhi
