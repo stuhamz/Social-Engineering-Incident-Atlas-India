@@ -1,73 +1,67 @@
-# GitHub Push Guide
+# GitHub Update Guide for v0.1.1
 
-Repository target:
+Repository:
 
 `https://github.com/stuhamz/Social-Engineering-Incident-Atlas-India`
 
-## First push into an empty remote repository
+This package is intended to update the existing repository from the ten-case v0.1.0 release to the reviewed thirty-case v0.1.1 release.
 
-Open a terminal inside the extracted project folder and run:
+## Recommended update
 
-```bash
-git init
-git branch -M main
-git remote add origin https://github.com/stuhamz/Social-Engineering-Incident-Atlas-India.git
-git add .
+From your existing local clone:
+
+```powershell
+git pull origin main
+```
+
+Replace the repository files with the contents of the v0.1.1 GitHub-ready package, preserving the local `.git/` directory.
+
+Then run:
+
+```powershell
 git status
-git commit -m "Release v0.1.0 ten-case methodology pilot"
-git push -u origin main
+git add -A
+git status
+git commit -m "Expand Atlas to 30 reviewed cases"
+git push origin main
 ```
 
-Before the commit, inspect `git status`.
+Do not force-push.
 
-The local Excel workbook under `working/` is intentionally ignored by `.gitignore`. The authoritative public dataset is `data/cases.csv`.
+## Tag
 
-## Tag the release
+After the push:
 
-After the push succeeds:
-
-```bash
-git tag -a v0.1.0 -m "Social Engineering Incident Atlas India v0.1"
-git push origin v0.1.0
+```powershell
+git tag -a v0.1.1 -m "Social Engineering Incident Atlas India v0.1.1"
+git push origin v0.1.1
 ```
 
-Then create a GitHub Release from tag `v0.1.0`.
+If `v0.1.1` already exists in your remote repository, **do not move it**. Use the next unused patch version instead and update the release title accordingly.
 
-Suggested release title:
+## GitHub Release
 
-`Social Engineering Incident Atlas India v0.1`
+Suggested title:
 
-Suggested release summary:
+`Social Engineering Incident Atlas India v0.1.1 - 30-case expanded validation set`
 
-`First public methodology-pilot release containing 10 reviewed social-engineering-enabled cybercrime incident records, 16 registered public sources, case reconstructions, coding methodology, evidence and attribution frameworks, controlled vocabularies, and validation tooling.`
+Suggested summary:
 
-The Excel coding workbook can be attached to the GitHub Release as a binary asset rather than committed to the repository.
+`Expands the Atlas from 10 to 30 reviewed social-engineering-enabled cybercrime incidents. Cases 11-30 were collected under a versioned retrieval protocol with candidate logging, duplicate rules, a diversity constraint and a fixed stopping rule. The combined dataset remains a methodology/schema-validation set and is not representative of Indian cybercrime.`
 
-## If the remote is not empty
+Attach the reviewed Excel coding workbook as a release asset rather than committing it to Git.
 
-If GitHub already contains a commit that is not in the local folder, do not force-push.
+## Pre-push check
 
-Use:
+Confirm that the repository root contains:
 
-```bash
-git pull origin main --rebase
-```
+- `README.md`
+- `data/`
+- `cases/`
+- `references/`
+- `methodology/`
+- `schemas/`
+- `analysis/`
+- `docs/`
 
-Resolve any conflict, then:
-
-```bash
-git push -u origin main
-```
-
-## Recommended repository topics
-
-- `digital-forensics`
-- `social-engineering`
-- `cybercrime`
-- `osint`
-- `dfir`
-- `cybercrime-investigation`
-- `electronic-evidence`
-- `incident-reconstruction`
-- `threat-intelligence`
-- `india`
+The local Excel workbook should not be tracked by Git.

@@ -1,19 +1,79 @@
-Social Engineering Incident Atlas India v0.1.0
-Release audit: 2026-08-16
-Pilot cases: 10
-Registered sources: 16
-Screened candidates: 10
-Record status: reviewed
-Validation: 0 errors, 0 warnings
-
-Cases:
-- SEIAI-0001 | Ramakrishna Mission Gwalior digital arrest fraud | digital_arrest | Madhya Pradesh | 2025
-- SEIAI-0002 | VIP Profit Makers fake investment app fraud | investment_fraud | Haryana | 2025
-- SEIAI-0003 | Fake HR work-from-home task scam | job_fraud | Delhi | 2025
-- SEIAI-0004 | Canada relative and medical emergency impersonation fraud | family_impersonation | Haryana | 2025
-- SEIAI-0005 | Fake Yahoo customer care APK fraud against senior citizen | customer_support_fraud | Delhi | 2025
-- SEIAI-0006 | Tekku Samurai cross-border tech-support fraud | tech_support_fraud | Uttar Pradesh | 2025
-- SEIAI-0007 | Sangam.com NRI matrimonial impersonation fraud | romance_fraud | Delhi | 2021
-- SEIAI-0008 | SMS-service closure phishing and vishing bank fraud | phishing | Uttar Pradesh | 2021
-- SEIAI-0009 | Hacked superior WhatsApp payment impersonation | account_takeover_social_engineering | Delhi | 2025
-- SEIAI-0010 | WhatsApp sexual blackmail and fake cyber-offence extortion | sextortion | Haryana | 2023
+.gitignore
+CHANGELOG.md
+CONTRIBUTING.md
+DATA_LICENSE.md
+LICENSE
+PACKAGE_MANIFEST.txt
+PROJECT_TREE.txt
+README.md
+START_HERE.md
+analysis/notebooks/.gitkeep
+analysis/output/.gitkeep
+analysis/scripts/basic_summary.py
+analysis/scripts/new_case.py
+analysis/scripts/validate_dataset.py
+cases/CASE_TEMPLATE.md
+cases/README.md
+cases/SEIAI-0001-gwalior-ramakrishna-digital-arrest.md
+cases/SEIAI-0002-vip-profit-makers-fake-investment-app-fraud.md
+cases/SEIAI-0003-fake-hr-work-from-home-task-scam.md
+cases/SEIAI-0004-canada-relative-and-medical-emergency-impersonation-fraud.md
+cases/SEIAI-0005-fake-yahoo-customer-care-apk-fraud-against-senior-citizen.md
+cases/SEIAI-0006-tekku-samurai-cross-border-tech-support-fraud.md
+cases/SEIAI-0007-sangam-com-nri-matrimonial-impersonation-fraud.md
+cases/SEIAI-0008-sms-service-closure-phishing-and-vishing-bank-fraud.md
+cases/SEIAI-0009-hacked-superior-whatsapp-payment-impersonation.md
+cases/SEIAI-0010-whatsapp-sexual-blackmail-and-fake-cyber-offence-extortion.md
+cases/SEIAI-0011-fake-surveillance-officer-cbi-and-judge-digital-arrest-fraud.md
+cases/SEIAI-0012-fedex-and-mumbai-cyber-crime-digital-confinement-fraud.md
+cases/SEIAI-0013-stan-chart-dialogue-forum-l7-fake-investment-app-fraud.md
+cases/SEIAI-0014-airtel-to-cbi-senior-citizen-digital-arrest-fraud.md
+cases/SEIAI-0015-rbi-and-mumbai-police-11-hour-digital-arrest-fraud.md
+cases/SEIAI-0016-blackrock-investment-learning-group-and-angel-one-account-fraud.md
+cases/SEIAI-0017-trai-mumbai-police-and-fake-cbi-court-digital-arrest-fraud.md
+cases/SEIAI-0018-equity-hub-41-and-act-alpha-fake-investment-fraud.md
+cases/SEIAI-0019-franklin-templeton-impersonation-and-sends-inv-investment-fraud.md
+cases/SEIAI-0020-multi-agency-family-digital-arrest-fraud-with-account-credential-elicitation.md
+cases/SEIAI-0021-daiwa-securities-whatsapp-and-telegram-investment-fraud.md
+cases/SEIAI-0022-global-telegram-work-from-home-review-scam.md
+cases/SEIAI-0023-cos-telegram-work-from-home-investment-task-fraud.md
+cases/SEIAI-0024-bajaj-finance-hr-impersonation-and-review-task-fraud.md
+cases/SEIAI-0025-facebook-to-telegram-hotel-rating-task-fraud.md
+cases/SEIAI-0026-fake-army-major-marriage-and-financial-exploitation-case.md
+cases/SEIAI-0027-facebook-to-whatsapp-romance-deception-and-sexual-extortion.md
+cases/SEIAI-0028-matrimonial-relationship-with-alleged-army-officer-impersonation.md
+cases/SEIAI-0029-olx-payment-and-upi-manipulation-fraud.md
+cases/SEIAI-0030-microsoft-and-amazon-tech-support-remote-access-fraud-network.md
+data/README.md
+data/cases.csv
+data/controlled_vocabulary.md
+data/data_dictionary.md
+docs/GITHUB_PUSH.md
+docs/RELEASE_NOTES_v0.1.1.md
+docs/RELEASE_NOTES_v0.1.md
+docs/project_scope.md
+docs/research_questions.md
+docs/roadmap.md
+docs/v0.1.1_release_audit.md
+docs/v0.1.1_schema_stress_test.md
+docs/v0.1_case_index.md
+docs/v0.1_initial_audit.md
+docs/v0.1_release_audit.md
+docs/v0.1_review_checklist.md
+methodology/attribution_framework.md
+methodology/coding_protocol.md
+methodology/deduplication_protocol.md
+methodology/evidence_framework.md
+methodology/exclusion_criteria.md
+methodology/inclusion_criteria.md
+methodology/intercoder_reliability.md
+methodology/retrieval_protocol_v0.1.1.md
+methodology/sampling_strategy.md
+methodology/source_quality.md
+methodology/versioning.md
+references/README.md
+references/screening_log.csv
+references/sources.csv
+schemas/case_record.schema.json
+schemas/controlled_vocabulary.json
+working/README.md

@@ -2,14 +2,15 @@
 
 Source tier and source stage are recorded separately.
 
-## Tier T1: Judicial material
+## Tier T1: Judicial and formal adjudicatory material
 
 Examples:
 
-- final judgments
+- final court judgments
 - appellate judgments
 - bail orders
-- interim or procedural orders
+- interim or procedural court orders
+- reasoned orders of formal statutory adjudicatory bodies, such as consumer commissions, where the source resolves the dispute before it
 
 Important: a bail or interim order may accurately report that an allegation was made without establishing the truth of the allegation. Preserve the procedural stage.
 
@@ -49,3 +50,6 @@ Do not silently convert one category into another.
 The tier classifies the **underlying material**, not the website that hosts the accessible copy.
 
 For example, a High Court order accessed through a legal-search mirror is coded as judicial material, while the exact access URL is recorded in `references/sources.csv`. The repository should not describe a mirror URL as an official court-hosted URL.
+
+
+A source is not elevated to T1 merely because it appears on a legal-search website. The tier follows the underlying institution and procedural character of the material.

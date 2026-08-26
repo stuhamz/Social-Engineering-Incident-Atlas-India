@@ -2,11 +2,13 @@
 
 A structured research dataset and analytical framework for studying **social-engineering-enabled cybercrime, digital evidence, and attribution in India**.
 
-## v0.1 pilot
+## v0.1.1 expanded validation set
 
-The first public release contains **10 reviewed incident records** selected purposively to test the coding framework across substantially different social-engineering patterns.
+The repository now contains **30 incident records**. The first 10 were purposively selected to test the coding schema. Cases 11-30 were collected under a versioned, protocolized retrieval process with documented query families, candidate logging, duplicate rules, a category-diversity constraint and a fixed stopping rule.
 
-This is a **methodology pilot**, not a representative sample of Indian cybercrime. It must not be used to estimate national prevalence, state rankings, average losses, or the frequency of scam categories.
+This remains a **methodology and schema-validation dataset, not a representative sample of Indian cybercrime**. It must not be used to estimate national prevalence, state rankings, average losses, category frequencies or conviction rates.
+
+See [`docs/v0.1_case_index.md`](docs/v0.1_case_index.md) for all 30 incidents and [`methodology/retrieval_protocol_v0.1.1.md`](methodology/retrieval_protocol_v0.1.1.md) for the expansion protocol.
 
 ## Core research question
 
@@ -29,28 +31,11 @@ The project studies three connected layers:
 
 A SIM registration, bank account, IP address, device, or receipt of funds may be important evidence, but none automatically proves who conducted the original social-engineering interaction.
 
-## Pilot case set
-
-| Case | Category | State | Year | Loss recorded for focal incident |
-|---|---|---|---:|---:|
-| SEIAI-0001 | Digital arrest | Madhya Pradesh | 2025 | INR 25,299,000 |
-| SEIAI-0002 | Fake investment | Haryana | 2025 | INR 8,248,021 |
-| SEIAI-0003 | Work-from-home task fraud | Delhi | 2025 | INR 375,000 |
-| SEIAI-0004 | Family-member impersonation | Haryana | 2025 | INR 400,000 |
-| SEIAI-0005 | Fake customer care / APK | Delhi | 2025 | about INR 2,600,000 |
-| SEIAI-0006 | Cross-border tech-support fraud | Uttar Pradesh | 2025 | not normalised at victim level |
-| SEIAI-0007 | Matrimonial impersonation | Delhi | 2021 | INR 55,900 |
-| SEIAI-0008 | Phishing + vishing | Uttar Pradesh | 2021 | INR 260,000 |
-| SEIAI-0009 | Compromised-superior impersonation | Delhi | 2025 | INR 45,000 |
-| SEIAI-0010 | Sextortion / pseudo-legal coercion | Haryana | 2023 | INR 1,347,499 |
-
-See [`docs/v0.1_case_index.md`](docs/v0.1_case_index.md) and the individual files in [`cases/`](cases/) for reconstruction notes.
-
 ## Source hierarchy
 
 The pilot uses publicly accessible material and records source stage separately from source tier.
 
-- **T1: Judicial material**, including judgments and bail/procedural orders
+- **T1: Judicial and formal adjudicatory material**, including judgments, bail/procedural orders, and reasoned statutory adjudicatory decisions
 - **T2: Official institutional material**, including police, government, regulator, or investigative-agency sources
 - **T3: Credible journalism** containing substantive case detail
 
@@ -69,7 +54,7 @@ data/
 cases/
   SEIAI-0001-....md
   ...
-  SEIAI-0010-....md
+  SEIAI-0030-....md
 
 references/
   sources.csv
@@ -79,6 +64,7 @@ methodology/
   inclusion_criteria.md
   exclusion_criteria.md
   sampling_strategy.md
+  retrieval_protocol_v0.1.1.md
   source_quality.md
   coding_protocol.md
   attribution_framework.md
@@ -102,6 +88,8 @@ docs/
   roadmap.md
   v0.1_case_index.md
   v0.1_release_audit.md
+  v0.1.1_release_audit.md
+  v0.1.1_schema_stress_test.md
 ```
 
 ## Data model
@@ -146,7 +134,7 @@ Run:
 python analysis/scripts/validate_dataset.py
 ```
 
-The v0.1 release candidate validates **10 populated case rows with 0 structural errors and 0 warnings**.
+Run the validator after each dataset update. The reviewed v0.1.1 30-case dataset validates with 0 structural errors and 0 warnings.
 
 A basic non-inferential summary can be generated with:
 
@@ -154,7 +142,7 @@ A basic non-inferential summary can be generated with:
 python analysis/scripts/basic_summary.py
 ```
 
-The first ten cases were selected for schema diversity. Descriptive counts from them are not population estimates.
+The first ten cases were selected for schema diversity. Cases 11-30 use a more explicit retrieval protocol, but the combined set remains purposive and descriptive counts are not population estimates.
 
 ## Known limitations
 
@@ -181,15 +169,15 @@ Names appearing in source titles are retained only where necessary to identify t
 
 Suggested citation:
 
-> Hamzah. (2026). *Social Engineering Incident Atlas India* (v0.1). GitHub repository.
+> Hamzah. (2026). *Social Engineering Incident Atlas India* (v0.1.1). GitHub repository.
 
 If you use individual cases, cite the original source(s) listed in `references/sources.csv` as well as the Atlas.
 
 ## Status
 
-**v0.1: reviewed 10-case methodology pilot**
+**v0.1.1: reviewed 30-case expanded validation set**
 
-The next stage is to define a systematic retrieval strategy before expanding the dataset beyond the schema-testing sample.
+Cases 11-30 have completed their second-pass source and coding audit. The next stage is a schema review before the larger v0.2 collection.
 
 ## Author
 

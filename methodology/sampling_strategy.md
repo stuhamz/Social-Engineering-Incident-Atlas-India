@@ -1,35 +1,42 @@
 # Sampling Strategy
 
-## v0.1
+## v0.1.0: 10-case methodology pilot
 
-The first 10 cases use **purposive diversity sampling** solely to test the coding framework.
+The first 10 cases use **purposive diversity sampling** solely to test the coding framework across different attack categories, channels, evidentiary patterns, and procedural stages.
 
-The aim is to include different attack categories, channels, evidentiary patterns, and procedural stages.
+## v0.1.1: 30-case expanded validation set
 
-The v0.1 sample must not be used to estimate:
+Cases 11-30 are collected under the versioned retrieval protocol in [`retrieval_protocol_v0.1.1.md`](retrieval_protocol_v0.1.1.md).
 
-- national prevalence
-- state prevalence
-- average loss
-- comparative frequency of attack categories
-- demographic risk
-- conviction rates
+The expansion introduces:
+
+- documented query families
+- a defined search date/window
+- explicit candidate logging
+- incident-level duplicate resolution
+- a category-diversity constraint
+- a 20-new-case stopping rule
+- preservation of eligible-but-deferred cases as `pending`
+
+This remains a **protocolized purposive validation set**, not a representative sample.
 
 ## Candidate logging
 
-Every candidate reviewed must be entered in `references/screening_log.csv`, including excluded and duplicate cases.
+Every substantively inspected candidate must be entered in `references/screening_log.csv`, including excluded, duplicate and deferred/pending cases.
 
-This creates an auditable record of how the dataset was assembled.
+This prevents invisible cherry-picking and creates an auditable record of how the dataset was assembled.
 
-## v0.2 and later
+## Prohibited inference from v0.1.x
 
-Before expanding beyond the methodology pilot, define a reproducible retrieval strategy, including:
+The 10-case pilot and 30-case expanded validation set must not be used to estimate:
 
-- source databases
-- search terms
-- date range
-- screening procedure
-- duplicate resolution
-- stopping rule
+- national or state prevalence
+- average financial loss
+- comparative frequency of attack categories
+- demographic risk
+- arrest, bail, charge-sheet or conviction rates
+- the population frequency of any evidence or attribution type
 
-The sampling design should be versioned when changed.
+## Toward v0.2
+
+Before a larger empirical release, the project should evaluate the 30-case schema audit and decide whether actor-level, source-claim, transaction-level or provider-evidence companion tables are necessary. A later sampling strategy should further reduce dependence on relevance-ranked manual search results.

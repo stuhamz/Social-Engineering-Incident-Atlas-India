@@ -1,18 +1,8 @@
-[F] .gitignore
-[F] CHANGELOG.md
-[F] CONTRIBUTING.md
-[F] DATA_LICENSE.md
-[F] LICENSE
-[F] PACKAGE_MANIFEST.txt
-[F] PROJECT_TREE.txt
-[F] README.md
-[F] START_HERE.md
 [D] analysis
   [D] notebooks
     [F] .gitkeep
   [D] output
     [F] .gitkeep
-    [F] v0.1_validation_report.txt
   [D] scripts
     [F] basic_summary.py
     [F] new_case.py
@@ -30,17 +20,40 @@
   [F] SEIAI-0008-sms-service-closure-phishing-and-vishing-bank-fraud.md
   [F] SEIAI-0009-hacked-superior-whatsapp-payment-impersonation.md
   [F] SEIAI-0010-whatsapp-sexual-blackmail-and-fake-cyber-offence-extortion.md
+  [F] SEIAI-0011-fake-surveillance-officer-cbi-and-judge-digital-arrest-fraud.md
+  [F] SEIAI-0012-fedex-and-mumbai-cyber-crime-digital-confinement-fraud.md
+  [F] SEIAI-0013-stan-chart-dialogue-forum-l7-fake-investment-app-fraud.md
+  [F] SEIAI-0014-airtel-to-cbi-senior-citizen-digital-arrest-fraud.md
+  [F] SEIAI-0015-rbi-and-mumbai-police-11-hour-digital-arrest-fraud.md
+  [F] SEIAI-0016-blackrock-investment-learning-group-and-angel-one-account-fraud.md
+  [F] SEIAI-0017-trai-mumbai-police-and-fake-cbi-court-digital-arrest-fraud.md
+  [F] SEIAI-0018-equity-hub-41-and-act-alpha-fake-investment-fraud.md
+  [F] SEIAI-0019-franklin-templeton-impersonation-and-sends-inv-investment-fraud.md
+  [F] SEIAI-0020-multi-agency-family-digital-arrest-fraud-with-account-credential-elicitation.md
+  [F] SEIAI-0021-daiwa-securities-whatsapp-and-telegram-investment-fraud.md
+  [F] SEIAI-0022-global-telegram-work-from-home-review-scam.md
+  [F] SEIAI-0023-cos-telegram-work-from-home-investment-task-fraud.md
+  [F] SEIAI-0024-bajaj-finance-hr-impersonation-and-review-task-fraud.md
+  [F] SEIAI-0025-facebook-to-telegram-hotel-rating-task-fraud.md
+  [F] SEIAI-0026-fake-army-major-marriage-and-financial-exploitation-case.md
+  [F] SEIAI-0027-facebook-to-whatsapp-romance-deception-and-sexual-extortion.md
+  [F] SEIAI-0028-matrimonial-relationship-with-alleged-army-officer-impersonation.md
+  [F] SEIAI-0029-olx-payment-and-upi-manipulation-fraud.md
+  [F] SEIAI-0030-microsoft-and-amazon-tech-support-remote-access-fraud-network.md
 [D] data
-  [F] README.md
   [F] cases.csv
   [F] controlled_vocabulary.md
   [F] data_dictionary.md
+  [F] README.md
 [D] docs
   [F] GITHUB_PUSH.md
-  [F] RELEASE_NOTES_v0.1.md
   [F] project_scope.md
+  [F] RELEASE_NOTES_v0.1.1.md
+  [F] RELEASE_NOTES_v0.1.md
   [F] research_questions.md
   [F] roadmap.md
+  [F] v0.1.1_release_audit.md
+  [F] v0.1.1_schema_stress_test.md
   [F] v0.1_case_index.md
   [F] v0.1_initial_audit.md
   [F] v0.1_release_audit.md
@@ -53,6 +66,7 @@
   [F] exclusion_criteria.md
   [F] inclusion_criteria.md
   [F] intercoder_reliability.md
+  [F] retrieval_protocol_v0.1.1.md
   [F] sampling_strategy.md
   [F] source_quality.md
   [F] versioning.md
@@ -64,5 +78,13 @@
   [F] case_record.schema.json
   [F] controlled_vocabulary.json
 [D] working
-  [F] Incident_Atlas_Coding_Workbook.xlsx
   [F] README.md
+[F] .gitignore
+[F] CHANGELOG.md
+[F] CONTRIBUTING.md
+[F] DATA_LICENSE.md
+[F] LICENSE
+[F] PACKAGE_MANIFEST.txt
+[F] PROJECT_TREE.txt
+[F] README.md
+[F] START_HERE.md

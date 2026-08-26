@@ -1,41 +1,52 @@
 # Start Here
 
-This file defines the v0.1 workflow.
+This file defines the current Atlas workflow.
 
 ## Before adding a case
 
 1. Add the candidate to `references/screening_log.csv`.
-2. Apply `methodology/inclusion_criteria.md`.
-3. Record the decision as `include`, `exclude`, `duplicate`, or `pending`.
-4. If included, assign the next case ID in the format `SEIAI-0001`.
-5. Create a case note from `cases/CASE_TEMPLATE.md`.
-6. Add every source to `references/sources.csv`.
-7. Code the case in the local coding workbook or directly in `data/cases.csv`.
-8. Run `python analysis/scripts/validate_dataset.py`.
-9. Review all attribution statements using `methodology/attribution_framework.md`.
-10. Mark the record `reviewed` only after a second pass against the source.
+2. Record the discovery query/source and enough information to reproduce the screening decision.
+3. Apply `methodology/inclusion_criteria.md` and `methodology/exclusion_criteria.md`.
+4. Record the decision as `include`, `exclude`, `duplicate`, or `pending`.
+5. If included, assign the next `SEIAI-####` case ID.
+6. Register every source in `references/sources.csv`.
+7. Create a case note from `cases/CASE_TEMPLATE.md`.
+8. Code the incident in `data/cases.csv` or the local workbook.
+9. Review source stage and claim status so allegations, defence claims, investigative assertions, and judicial findings are not collapsed.
+10. Review attribution using `methodology/attribution_framework.md`.
+11. Run `python analysis/scripts/validate_dataset.py`.
+12. Mark the record `reviewed` only after a second source-to-code pass.
 
-## v0.1 target
+## Current release
 
-Code 10 deliberately varied cases, ideally including several different social-engineering forms. The purpose is schema testing, not prevalence estimation.
+**v0.1.1 contains 30 reviewed incident records.**
 
-## Do not do yet
+- SEIAI-0001 to SEIAI-0010 form the original purposive methodology pilot.
+- SEIAI-0011 to SEIAI-0030 form the protocolized expanded validation set.
+- The expansion protocol is documented in `methodology/retrieval_protocol_v0.1.1.md`.
 
-- Do not make claims about national prevalence from the first 10 cases.
-- Do not automate case coding with an LLM.
-- Do not infer missing attack stages.
-- Do not collapse allegations, investigative claims, and judicial findings.
-- Do not treat bank, SIM, device, or IP association as automatic proof of human conduct.
-- Do not delete excluded candidates from the screening log.
+The combined 30-case dataset remains a methodology and schema-validation set. It is not a representative sample of Indian cybercrime.
 
-## After 10 cases
+## Do not infer
 
-Review the schema before pushing a public v0.1 dataset. Specifically assess:
+- national or state prevalence
+- average losses
+- comparative frequency of scam categories
+- demographic risk
+- conviction rates
+- missing attack stages
+- human identity from bank, SIM, device, IP, or platform association alone
 
-- fields that were almost always unavailable
-- categories that overlap
-- values that were difficult to code consistently
-- recurring evidence types not captured
-- recurring social-engineering mechanisms not captured
-- whether attribution strength can be applied consistently
-- whether the sampling strategy needs revision
+## Next stage
+
+Before collecting the larger v0.2 dataset, review:
+
+- fields that are persistently unavailable
+- actor-level information that cannot be represented cleanly in one incident row
+- whether source claims need a companion table
+- overlapping or overly broad categories
+- attribution-scale consistency
+- source-stage imbalance
+- retrieval bias toward fact-rich bail orders and recent High Court material
+
+Automated source discovery may be expanded later. Final factual coding and attribution decisions remain human-reviewed.
