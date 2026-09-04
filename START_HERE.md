@@ -15,7 +15,7 @@
 
 ## Current release
 
-**v0.1.4 contains 50 reviewed incident records and 148 reviewed actor-role records.**
+**v0.1.5 contains 75 reviewed incident records and 198 reviewed actor-role records.**
 
 The combined corpus remains a methodology/schema-validation set rather than a prevalence sample.
 
@@ -31,4 +31,4 @@ The combined corpus remains a methodology/schema-validation set rather than a pr
 
 ## Next stage
 
-Grow only where new cases improve source-stage, geographic, attack-category or evidentiary diversity. The actor schema should remain fixed unless repeated cases expose a genuine structural failure.
+The 51–75 corrective batch substantially improved source-stage balance, so the next priority is not simply case count. Seek second-source corroboration, expand outside Delhi/Haryana, target final/appellate material for `family_impersonation` and `tech_support_fraud`, and resolve the future of `accused_count` before a breaking schema revision. The actor schema should remain fixed unless repeated cases expose a genuine structural failure.

@@ -1,0 +1,27 @@
+Social Engineering Incident Atlas India v0.1.5 validation
+Date: 2026-09-04
+
+Incident validator
+Validated 75 populated case rows.
+Errors: 0
+Warnings: 0
+
+Actor validator
+Validated 198 actor-role rows.
+Errors: 0
+Warnings: 0
+
+Cross-table checks
+- 75 unique case IDs: PASS
+- all 75 incident records reviewed: PASS
+- 198 unique actor IDs: PASS
+- all actor case references valid: PASS
+- all primary source references valid: PASS
+- all actor source references valid: PASS
+- 75 included screening records map exactly to 75 case IDs: PASS
+- 75 narrative case notes present: PASS
+
+Privacy scan of newly generated researcher-authored case notes
+- email-address patterns: 0
+- Indian mobile-number patterns: 0
+- 12–18 digit raw identifier patterns: 0

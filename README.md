@@ -1,16 +1,16 @@
 # Social Engineering Incident Atlas India
 
-> **Current dataset release: v0.1.4.** The repository contains **50 reviewed incident records** and **148 reviewed actor-role attribution records**. The actor-role schema introduced in v0.1.2 remains stable and separates victim-facing, financial, technical and organisational conduct.
+> **Current dataset release: v0.1.5.** The repository contains **75 reviewed incident records** and **198 reviewed actor-role attribution records**. The actor-role schema introduced in v0.1.2 remains stable and separates victim-facing, financial, technical and organisational conduct.
 
 A structured research dataset and analytical framework for studying **social-engineering-enabled cybercrime, digital evidence, and attribution in India**.
 
-## 50-case expanded validation set
+## 75-case corrective validation set
 
-The first 10 incidents were purposively selected to test the schema. Later batches use documented candidate logging, inclusion/exclusion rules, duplicate handling and diversity-focused retrieval. The 41–50 batch deliberately increases category, geography, source-stage and evidentiary diversity.
+The first 10 incidents were purposively selected to test the schema. Later batches use documented candidate logging, inclusion/exclusion rules, duplicate handling and diversity-focused retrieval. Cases 51–75 are an audit-directed corrective batch selected to reduce bail-order dependence, widen temporal coverage, add stronger final/appellate adjudication, and stress-test the actor model under different source stages.
 
 This remains a **methodology and schema-validation dataset, not a representative sample of Indian cybercrime**. It must not be used to estimate national prevalence, state rankings, average losses, category frequencies or conviction rates.
 
-See [`docs/v0.1_case_index.md`](docs/v0.1_case_index.md) for the incident index, [`methodology/retrieval_protocol_v0.1.1.md`](methodology/retrieval_protocol_v0.1.1.md) for the protocolized expansion foundation and [`docs/v0.1.4_50_case_expansion_audit.md`](docs/v0.1.4_50_case_expansion_audit.md) for the current release audit.
+See [`docs/v0.1_case_index.md`](docs/v0.1_case_index.md) for the incident index, [`methodology/retrieval_protocol_v0.1.1.md`](methodology/retrieval_protocol_v0.1.1.md) for the protocolized expansion foundation, [`docs/v0.1.4_50_case_analytical_stability_audit.md`](docs/v0.1.4_50_case_analytical_stability_audit.md) for the audit that defined the corrective priorities, and [`docs/v0.1.5_75_case_expansion_audit.md`](docs/v0.1.5_75_case_expansion_audit.md) for the 75-case audit.
 
 ## Core research question
 
@@ -68,7 +68,7 @@ data/
 cases/
   SEIAI-0001-....md
   ...
-  SEIAI-0050-....md
+  SEIAI-0075-....md
 
 references/
   sources.csv
@@ -111,11 +111,16 @@ The public release should be tagged only after both validators return zero error
 ## Known limitations
 
 - The corpus is purposively sampled and retrieval is not prevalence-representative.
-- Judicial material is created for litigation, not for forensic-dataset completeness.
+- **37 of 75 primary sources are bail orders (49.3%).** This is substantially lower than 33/50 at v0.1.4, but source stage still affects what evidence and procedural discussion are visible in the public record.
+- **71 of 75 incidents currently have one registered source.** Source-stage quality improved in v0.1.5, but independent corroboration remains limited for most records.
+- **32 of 75 cases are from Delhi or Haryana**, and 23 of 75 incidents occurred in 2025. Their proportional concentration is lower than at v0.1.4, but geographic and temporal frequencies remain retrieval-driven.
+- Five of the eighteen primary attack categories currently occur in only one source stage, down from ten of seventeen at v0.1.4. Comparisons between attack categories can still be confounded by document type.
 - Bail and charge-stage records can contain detailed allegations without final guilt findings.
 - Public records often expose downstream financial/telecom evidence more clearly than provider-side metadata or full forensic provenance.
+- In the current actor corpus, financial-layer attribution is often more resolved than victim-facing attribution. This is a descriptive property of this corpus, not a national prevalence estimate, and may partly reflect source-stage selection.
 - `unknown` and `not_reported` are used deliberately instead of researcher inference.
 - `source_claims.csv` remains deferred because the actor-role layer currently solves the main attribution-compression problem without disproportionate annotation burden.
+- `accused_count` is retained for compatibility but is flagged for pre-v0.2 review because it remains populated in only one of the 75 current incident records.
 
 ## Privacy and source handling
 
@@ -131,15 +136,15 @@ The Atlas does not republish underlying judgments, screenshots, phone numbers, b
 
 Suggested citation:
 
-> Hamzah. (2026). *Social Engineering Incident Atlas India* (v0.1.4). GitHub repository.
+> Hamzah. (2026). *Social Engineering Incident Atlas India* (v0.1.5). GitHub repository.
 
 If using individual incident records, cite the original source(s) in `references/sources.csv` as well as the Atlas.
 
 ## Status
 
-**v0.1.4: 50 reviewed incidents, 148 reviewed actor-role records.**
+**v0.1.5: 75 reviewed incidents, 198 reviewed actor-role records.**
 
-The next stage should prioritize source/attack/geographic gaps and continued stability testing rather than rapid undifferentiated case growth.
+The next stage should prioritize second-source corroboration, cases outside Delhi and Haryana, final/appellate material for categories still confined to bail orders, and records with provider/forensic/authentication material. Before another breaking schema version, `accused_count` should be either systematically backfilled or deprecated.
 
 ## Author
 

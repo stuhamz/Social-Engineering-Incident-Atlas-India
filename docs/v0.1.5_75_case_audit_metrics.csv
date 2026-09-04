@@ -1,0 +1,21 @@
+metric,v0.1.4_50_case,v0.1.5_75_case,note
+incident_records,50,75,
+actor_role_records,148,198,
+registered_sources,57,83,one additional T1 source added for SEIAI-0066
+screening_candidates,69,96,75 include; 9 pending; 9 exclude; 3 duplicate
+primary_bail_orders,33,37,share falls from 66.0% to 49.3%
+primary_final_plus_appellate,13,33,share rises from 26.0% to 44.0%
+single_source_cases,47,71,single-source dependence remains essentially unchanged
+states_ut_labels,20,21,modest geographic expansion
+delhi_plus_haryana_cases,23,32,share falls from 46.0% to 42.7%
+incident_year_2025,21,23,share falls from 42.0% to 30.7%
+categories_in_one_source_stage,10,5,out of 17 categories at v0.1.4 and 18 at v0.1.5
+forensic_examination_yes,6,7,
+electronic_authentication_discussed_yes,8,14,
+chain_of_custody_discussed_yes,1,1,
+evidence_integrity_issue_yes,4,5,
+accused_count_populated,1,1,still flagged for pre-v0.2 schema review
+cases_with_victim_and_financial_layers,36,47,three-level conservative comparison
+financial_layer_stronger_cases,29,36,
+equal_layer_cases,7,11,
+victim_facing_stronger_cases,0,0,

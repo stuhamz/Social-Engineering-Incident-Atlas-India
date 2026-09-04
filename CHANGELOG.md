@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.1.5 - 2026-09-04
+
+- expanded the reviewed incident corpus from 50 to 75 cases
+- expanded actor-role coverage from 148 to 198 reviewed records
+- increased registered sources from 57 to 83 and screening candidates from 69 to 96
+- added 10 final-judgment and 10 appellate-judgment primary sources in the 25-case corrective batch
+- reduced primary bail-order concentration from 33/50 (66.0%) to 37/75 (49.3%)
+- increased final/appellate primary-source share from 13/50 (26.0%) to 33/75 (44.0%)
+- reduced categories confined to a single source stage from 10/17 to 5/18
+- added the first primary `vishing` record
+- expanded coverage of SIM-swap/account takeover, phishing, smishing, marketplace/customer-support manipulation, job/government impersonation and deepfake/social-media investment impersonation
+- retained the v0.1.2 actor schema without breaking changes
+- preserved explicit duplicate and exclusion decisions, including a rediscovered SEIAI-0037 source and a network-level call-centre record without a sufficiently clean focal incident
+- completed source-to-code, actor, procedural-posture and privacy audits for SEIAI-0051 through SEIAI-0075
+- both incident and actor validators return zero errors and zero warnings
+- documented that 71/75 cases still have exactly one registered source, so source corroboration remains a major limitation
+- confirmed the conservative financial-versus-victim-facing attribution pattern persists across 47 dual-layer cases: 36 financial stronger, 11 equal, 0 victim-facing stronger
+
+
 ## v0.1.4 - 2026-08-26
 
 - expanded the reviewed incident corpus from 40 to 50 cases
@@ -11,6 +30,8 @@
 - retained the v0.1.2 actor schema without breaking changes
 - completed second-pass incident, actor, procedural-posture and privacy audits for SEIAI-0041 through SEIAI-0050
 - validation completed with zero structural errors and zero warnings
+- completed a 50-case analytical stability audit covering source-stage concentration, single-source dependence, geographic/temporal concentration, actor-layer behavior and sparse fields
+- documented that 47/50 cases currently have one registered source and flagged `accused_count` for pre-v0.2 review
 
 ## v0.1.3 - 2026-08-26
 
