@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0063`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Delhi High Court
-- Case / proceeding: not normalized
+- Case / proceeding: BAIL APPLN. 903/2024; FIR No.0079/2024
 - Public status coded: `bail_or_interim`
 - Disposition: Bail-stage proceedings; trial/investigation allegations remained unadjudicated.
 
@@ -34,7 +34,7 @@ A Delhi High Court bail order describes a fake Shine.com call centre that used a
 ### Target
 
 - Target type: `job_seeker`
-- Sector/context: not normalized
+- Sector/context: employment / online recruitment
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **Fake Shine.com call-centre operators**: `victim_facing` / `social_engineering_operator`; strength `moderate`. Conduct assessed: Calling job seekers while impersonating Shine.com employees and directing them to the lookalike payment domain. Limitation: The operation is described in the status report, but individual victim calls are not mapped to each accused.
 - **Bail applicant with alleged call-centre/account role**: `organisational` / `organiser`; strength `limited`. Conduct assessed: Allegedly operating the illegal call centre and supplying accounts to receive cheated funds. Limitation: The applicant contested the co-accused disclosure basis; the bail order is not a final guilt finding.
 
+### v0.2.0 functional actor coding
+
+- **Fake Shine.com call-centre operators**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Bail applicant with alleged call-centre/account role**: identity `identified`; victim-facing function `no`; financial function `yes`. paper functional override: financial conduct
+
 ## Primary evidentiary gap
 
 Forensic examination of seized laptops/phones, domain registration/hosting records and wallet/account KYC tying the applicant to specific victim sessions.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.1.5 corrective expansion; source-to-code review completed 2026-09-04. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

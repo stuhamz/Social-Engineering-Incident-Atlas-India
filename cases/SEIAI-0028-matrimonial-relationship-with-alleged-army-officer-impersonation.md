@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0028`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,11 @@ The applicant characterized the matter as a civil/relationship dispute, said mon
 ### Limitations
 
 The public source contains a material conflict between the complaint’s INR 8.15 lakh figure and the police status report’s INR 4.15 lakh electronic transfer figure, while core deception/relationship issues were explicitly left for trial.
+
+### v0.2.0 functional actor coding
+
+- **Alleged Army-officer matrimonial persona actor**: identity `identified`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Relationship-linked money-request/recipient actor**: identity `identified`; victim-facing function `yes`; financial function `yes`. Atlas financial layer; paper functional override: victim-facing conduct
 
 ## Primary evidentiary gap
 

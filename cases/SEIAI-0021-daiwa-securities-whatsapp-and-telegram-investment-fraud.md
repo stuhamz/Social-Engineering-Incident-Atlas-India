@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0021`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,12 @@ Applicant argued the business account was legitimate and was merely used by frau
 ### Limitations
 
 The petition itself emphasized there was no allegation that the applicant induced the complainant; the public evidence places him in the financial trail rather than the victim-facing communications.
+
+### v0.2.0 functional actor coding
+
+- **Daiwa-branded phone/WhatsApp/Telegram operator(s)**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **m.dwa-ai.com / investment-interface operator(s)**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Applicant business-account receipt/cash-out actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

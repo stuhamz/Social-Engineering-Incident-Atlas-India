@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0029`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,11 @@ The bank argued customer negligence/authorization; the Commission found the comp
 ### Limitations
 
 The Commission did not identify or attribute the social-engineering interaction to a named offender; its decision concerned whether the disputed transactions were unauthorized and the bank’s customer-liability obligations.
+
+### v0.2.0 functional actor coding
+
+- **Unknown OLX/WhatsApp marketplace operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Unknown UPI transaction-beneficiary/controller actor(s)**: identity `unknown`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

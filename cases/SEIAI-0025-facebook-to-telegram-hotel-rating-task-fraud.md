@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0025`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,12 @@ The applicant disputed involvement and relied on the documentary nature of the t
 ### Limitations
 
 The applicant-specific evidence concerns account procurement/facilitation, not direct operation of the Facebook ad or Telegram task identities.
+
+### v0.2.0 functional actor coding
+
+- **Facebook/Telegram hotel-rating task operator(s)**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Bank-account/ATM/mobile procurement actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **Beneficiary-account network**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

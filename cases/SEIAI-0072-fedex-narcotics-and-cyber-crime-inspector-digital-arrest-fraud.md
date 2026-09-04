@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0072`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Kerala High Court
-- Case / proceeding: not normalized
+- Case / proceeding: WP(Crl.) No.1376/2024; Crime No.83/2024
 - Public status coded: `judgment`
 - Disposition: Kerala High Court directed the CBI to take over investigation of the cybercrime FIR.
 
@@ -34,7 +34,7 @@ The Kerala High Court recorded a digital-arrest style fraud in which a FedEx nar
 ### Target
 
 - Target type: `elderly_person`
-- Sector/context: not normalized
+- Sector/context: household / personal finance
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **FedEx and Mumbai Cyber Crime impersonating caller(s)**: `victim_facing` / `social_engineering_operator`; strength `unclear`. Conduct assessed: Using courier/narcotics and police-investigation pretexts to frighten the victim and direct bank transfers for supposed verification. Limitation: The final writ judgment transferred the investigation but did not identify the callers.
 - **Three beneficiary-account / downstream operator(s)**: `financial` / `bank_account_controller`; strength `limited`. Conduct assessed: Receiving the victim's INR 10.44 million across the three accounts supplied by the callers. Limitation: The transaction accounts are documented but the public judgment does not establish who controlled each account or their relationship to the callers.
 
+### v0.2.0 functional actor coding
+
+- **FedEx and Mumbai Cyber Crime impersonating caller(s)**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Three beneficiary-account / downstream operator(s)**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Telecom/platform records, beneficiary-account KYC, device/IP evidence and cross-state transaction tracing identifying the caller and financial controllers.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.2.0 full re-audit: attack end corrected to 24 July 2024, the last transfer date; 25 July was complaint/FIR timing. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0032`
-- Coding version: `0.1.3`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -102,7 +102,13 @@ The consumer proceeding reconstructs the impersonation and transaction sequence 
 
 The parties disputed customer negligence and bank responsibility; those liability questions do not resolve offender identity.
 
-### Primary evidentiary gap
+#### v0.2.0 functional actor coding
+
+- **KYC-update impersonation caller**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Internet-banking authentication/session operator**: identity `unknown`; victim-facing function `no`; financial function `yes`. paper functional override: financial conduct
+- **Recipient/payee account layer**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
+## Primary evidentiary gap
 
 Attacker-side telecom, device, login/IP and beneficiary-account-control evidence connecting the KYC caller to the internet-banking activity.
 
@@ -118,7 +124,7 @@ Consumer Protection Act context; FIR No.0125/2021 referenced in the order
 
 ## Coding decisions / research notes
 
-Included to add bank-impersonation coverage and a final consumer adjudication. Financial_loss_inr uses the two major transferred amounts expressly identified as INR 200,000 and INR 198,000 rather than treating the entire loan as confirmed victim loss. Second-pass source-to-code audit completed 2026-08-26.
+Included to add bank-impersonation coverage and a final consumer adjudication. Financial_loss_inr uses the two major transferred amounts expressly identified as INR 200,000 and INR 198,000 rather than treating the entire loan as confirmed victim loss. Second-pass source-to-code audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0005`
-- Coding version: `0.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-16
 - Status: **reviewed**
@@ -34,7 +34,7 @@ A Delhi senior citizen searching online for Yahoo support contacted a fraudulent
 ### Target
 
 - Target type: `elderly_person`
-- Sector/context: not reported
+- Sector/context: senior citizen / personal banking
 - Target selection known: `no`
 
 ### Reconnaissance
@@ -113,6 +113,12 @@ The public order strongly links the applicant to cash withdrawals, location data
 
 The applicant denied any role and argued that location coincidence was insufficient; original social-engineering and malware operators remain distinct from downstream cash-out actors.
 
+### v0.2.0 functional actor coding
+
+- **Fake Yahoo customer-support operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **APK and compromise-infrastructure operator(s)**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Cash-out and beneficiary actor linked by CCTV/location**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Direct forensic attribution of the fake customer-care number/APK infrastructure and proof linking that operator layer to the downstream financial network.
@@ -125,7 +131,7 @@ These are source-reported provisions and should not be treated as a fresh legal 
 
 ## Coding decisions / research notes
 
-One of the strongest cases in the pilot for combining human manipulation, malicious software installation and layered digital/physical attribution evidence.
+One of the strongest cases in the pilot for combining human manipulation, malicious software installation and layered digital/physical attribution evidence. Pre-publication source audit completed 2026-08-16; structured coding rechecked against the registered public source(s). v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0011`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,11 @@ The applicant claimed his email was hacked and suspicious logins originated from
 ### Limitations
 
 The order contains meaningful bank, subscriber, location and CDR links to the applicant but does not establish that he was the surveillance officer, CBI officer or fake judge who conducted the original manipulation.
+
+### v0.2.0 functional actor coding
+
+- **Layered surveillance/CBI/judge impersonation operator(s)**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **First-layer beneficiary-account and telecom-linked actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

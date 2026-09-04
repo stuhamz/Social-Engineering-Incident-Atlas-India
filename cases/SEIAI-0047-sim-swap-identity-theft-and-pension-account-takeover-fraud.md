@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0047`
-- Coding version: `0.1.4`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -109,13 +109,20 @@ The court itself called the initial police charge-sheet unsatisfactory and order
 
 The court separated customer/bank/telco responsibility from criminal attribution and did not treat possession of account information alone as proof of every downstream act.
 
+### v0.2.0 functional actor coding
+
+- **Information-elicitation caller(s)**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **SIM-swap identity-impersonation actor(s)**: identity `actor_cluster`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Arrested financial-routing actor cluster**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **Unidentified gift-card/dark-net facilitator**: identity `unknown`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Technically complete specialist investigation mapping the SIM-swap identity documents, subscriber process, internet/YONO sessions, gift-card routing and individual actors end to end.
 
 ## Coding decisions / research notes
 
-First primary `identity_theft_deception` record in the Atlas. A second source is registered for the later writ closure; closure of the civil/writ dispute did not terminate the criminal investigation. Second-pass source-to-code and privacy audit completed 2026-08-26.
+First primary `identity_theft_deception` record in the Atlas. A second source is registered for the later writ closure; closure of the civil/writ dispute did not terminate the criminal investigation. Second-pass source-to-code and privacy audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

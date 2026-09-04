@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0064`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: XLV Additional CJM, Bengaluru
-- Case / proceeding: not normalized
+- Case / proceeding: C.C. No.979/2024
 - Public status coded: `judgment`
 - Disposition: Final criminal acquittal on all charged counts.
 
@@ -34,7 +34,7 @@ A Bengaluru criminal trial examined allegations that a service-partner employee 
 ### Target
 
 - Target type: `individual`
-- Sector/context: not normalized
+- Sector/context: retail consumer / warranty support
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **Accused service-partner employee**: `hybrid` / `platform_account_operator`; strength `unclear`. Conduct assessed: Allegedly creating/using the misleading boAt-related email and UPI identifiers to demand replacement courier charges. Limitation: The final trial court acquitted the accused and held the prosecution had not proved control of the email/UPI identities beyond reasonable doubt.
 - **Unknown misleading-email / UPI operator**: `victim_facing` / `social_engineering_operator`; strength `unclear`. Conduct assessed: Sending replacement-charge demands while impersonating boAt/Imagine Marketing and directing customers to UPI payments. Limitation: The fraudulent communications are documented, but the human operator remained unresolved after the acquittal.
 
+### v0.2.0 functional actor coding
+
+- **Accused service-partner employee**: identity `identified`; victim-facing function `yes`; financial function `yes`. paper functional override: victim-facing conduct; paper functional override: financial conduct
+- **Unknown misleading-email / UPI operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+
 ## Primary evidentiary gap
 
 Properly authenticated provider records and direct device/account-control evidence linking the email and UPI identifiers to the accused.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.1.5 corrective expansion; source-to-code review completed 2026-09-04. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

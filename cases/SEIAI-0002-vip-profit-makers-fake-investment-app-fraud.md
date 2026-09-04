@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0002`
-- Coding version: `0.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-16
 - Status: **reviewed**
@@ -110,6 +110,13 @@ The bail order reproduces a detailed victim narrative but gives little detail ex
 
 The petitioner claimed that he had himself been duped by another person and was falsely implicated.
 
+### v0.2.0 functional actor coding
+
+- **Initial investment solicitor / WhatsApp-group operator(s)**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **ALFA NAVIGATOR app/infrastructure operator(s)**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Beneficiary-account controller cluster**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **Bail applicant with unspecified alleged scheme role**: identity `identified`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+
 ## Primary evidentiary gap
 
 Specific digital or financial evidence connecting the petitioner to operation of the WhatsApp identity, ALFA NAVIGATOR infrastructure, or beneficiary accounts.
@@ -122,7 +129,7 @@ These are source-reported provisions and should not be treated as a fresh legal 
 
 ## Coding decisions / research notes
 
-Useful example of social proof and legitimacy engineering in fake-investment fraud. The FIR excerpt lists nine transfers across seven distinct beneficiary account numbers. `known_account_count` is therefore coded as 7.
+Useful example of social proof and legitimacy engineering in fake-investment fraud. Known account count is seven distinct beneficiary accounts; the source lists nine transfers, with two account numbers reused. Pre-publication source audit completed 2026-08-16; structured coding rechecked against the registered public source(s). v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

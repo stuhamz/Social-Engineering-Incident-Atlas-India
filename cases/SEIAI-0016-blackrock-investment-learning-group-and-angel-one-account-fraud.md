@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0016`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,12 @@ The applicant claimed he was himself duped and that no WhatsApp chat connected h
 ### Limitations
 
 The source states the applicant did not directly communicate with the complainant and may have occupied a downstream financial role; original group/app operators remain separate.
+
+### v0.2.0 functional actor coding
+
+- **BlackRock-branded group/social-ad operator(s)**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Purported Angel One institutional-account operator(s)**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Applicant-linked proprietorship account actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

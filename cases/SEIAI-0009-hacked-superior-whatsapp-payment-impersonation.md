@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0009`
-- Coding version: `0.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-16
 - Status: **reviewed**
@@ -113,6 +113,11 @@ The court stated that the petitioner allegedly hacked the superior's WhatsApp ac
 
 The applicant claimed a friend had taken his account details for receiving funds from abroad and denied the offence, although he returned the cheated amount.
 
+### v0.2.0 functional actor coding
+
+- **Payment-account and mobile-linked actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **WhatsApp takeover and impersonation operator**: identity `partially_identified`; victim-facing function `yes`; financial function `no`. paper functional override: victim-facing conduct
+
 ## Primary evidentiary gap
 
 Forensic/platform evidence showing how the superior's WhatsApp account was taken over and directly linking the takeover session/device to the accused.
@@ -125,7 +130,7 @@ These are source-reported provisions and should not be treated as a fresh legal 
 
 ## Coding decisions / research notes
 
-Useful bridge between account takeover and social engineering: the technical compromise created the trusted identity, while the fraud itself depended on organisational authority and contextual trust.
+Useful bridge between account takeover and social engineering: the technical compromise created the trusted identity, while the fraud itself depended on organisational authority and contextual trust. Pre-publication source audit completed 2026-08-16; structured coding rechecked against the registered public source(s). v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

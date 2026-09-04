@@ -1,15 +1,17 @@
-Social Engineering Incident Atlas India v0.1.5
-Files: 142
-Cases: 75
-Actors: 198
-Sources: 83
+Social Engineering Incident Atlas India v0.2.0
+Files: 150
+Active cases: 74
+Actors: 196
+Active sources: 82
 Screening candidates: 96
+Retired stable IDs: 1 (SEIAI-0060, exact duplicate of SEIAI-0029)
 
 .gitignore
 CHANGELOG.md
 CONTRIBUTING.md
 DATA_LICENSE.md
 LICENSE
+PACKAGE_MANIFEST.txt
 PROJECT_TREE.txt
 README.md
 START_HERE.md
@@ -19,6 +21,7 @@ analysis/scripts/basic_summary.py
 analysis/scripts/new_case.py
 analysis/scripts/validate_actors.py
 analysis/scripts/validate_dataset.py
+analysis/scripts/validate_full_audit.py
 cases/CASE_TEMPLATE.md
 cases/README.md
 cases/SEIAI-0001-gwalior-ramakrishna-digital-arrest.md
@@ -80,7 +83,6 @@ cases/SEIAI-0056-army-serviceman-duplicate-sim-and-wallet-withdrawal-fraud.md
 cases/SEIAI-0057-kaytele-infracon-duplicate-sim-and-net-banking-fraud.md
 cases/SEIAI-0058-poona-auto-ancillaries-phishing-and-corporate-account-compromise.md
 cases/SEIAI-0059-fake-prestige-customer-care-link-and-upi-fraud.md
-cases/SEIAI-0060-olx-buyer-qr-and-upi-payment-manipulation-fraud.md
 cases/SEIAI-0061-rbl-reward-points-phishing-link-and-credit-card-fraud.md
 cases/SEIAI-0062-fake-cbi-officer-and-ncrb-recruitment-fraud.md
 cases/SEIAI-0063-fake-shine-com-call-centre-credential-capture-and-wallet-fraud.md
@@ -109,6 +111,7 @@ docs/RELEASE_NOTES_v0.1.3.md
 docs/RELEASE_NOTES_v0.1.4.md
 docs/RELEASE_NOTES_v0.1.5.md
 docs/RELEASE_NOTES_v0.1.md
+docs/RELEASE_NOTES_v0.2.0.md
 docs/project_scope.md
 docs/research_questions.md
 docs/roadmap.md
@@ -126,12 +129,19 @@ docs/v0.1_case_index.md
 docs/v0.1_initial_audit.md
 docs/v0.1_release_audit.md
 docs/v0.1_review_checklist.md
+docs/v0.2.0_actor_correction_log.csv
+docs/v0.2.0_case_audit_log.csv
+docs/v0.2.0_full_reaudit.md
+docs/v0.2.0_retired_case_ids.csv
+docs/v0.2.0_source_audit_log.csv
 methodology/actor_coding_protocol_v0.1.2.md
+methodology/actor_coding_protocol_v0.2.0.md
 methodology/attribution_framework.md
 methodology/coding_protocol.md
 methodology/deduplication_protocol.md
 methodology/evidence_framework.md
 methodology/exclusion_criteria.md
+methodology/human_identity_resolution_codebook_v0.2.0.md
 methodology/inclusion_criteria.md
 methodology/intercoder_reliability.md
 methodology/retrieval_protocol_v0.1.1.md
@@ -146,4 +156,3 @@ schemas/actor_record.schema.json
 schemas/case_record.schema.json
 schemas/controlled_vocabulary.json
 working/README.md
-PACKAGE_MANIFEST.txt

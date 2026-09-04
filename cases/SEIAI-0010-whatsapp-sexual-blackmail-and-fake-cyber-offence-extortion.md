@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0010`
-- Coding version: `0.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-16
 - Status: **reviewed**
@@ -34,7 +34,7 @@ A Haryana complainant received a sexual video call from an unknown woman, discon
 ### Target
 
 - Target type: `individual`
-- Sector/context: not reported
+- Sector/context: personal / private individual
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -111,6 +111,13 @@ The order states the petitioner's involvement was based on a co-accused disclosu
 
 The petitioner argued that he was implicated only through a co-accused disclosure statement and had no independently established role.
 
+### v0.2.0 functional actor coding
+
+- **Initial sexual-video caller**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **“Rahul” extortion persona/operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Bail applicant linked to extortion network**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **Beneficiary-account holder/controller cluster**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Direct device/account/platform evidence connecting the petitioner to the initial WhatsApp/video identities or extortion communications.
@@ -123,7 +130,7 @@ These are source-reported provisions and should not be treated as a fresh legal 
 
 ## Coding decisions / research notes
 
-Added `sextortion` as a controlled attack category during v0.1 because the existing taxonomy did not adequately capture this pattern.
+Added `sextortion` as a controlled attack category during v0.1 because the existing taxonomy did not adequately capture this pattern. Pre-publication source audit completed 2026-08-16; structured coding rechecked against the registered public source(s). v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

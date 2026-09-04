@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.2.0 - 2026-09-04
+
+- completed a full source-to-code re-audit of the 75-ID Atlas history, covering every incident record, every active actor row and registered source relationships
+- retired `SEIAI-0060` as an exact semantic duplicate of the earlier `SEIAI-0029` record; active IDs were not renumbered
+- corrected active corpus counts to 74 incidents, 196 actor-role records and 82 registered sources
+- preserved all 96 screening candidates and changed `CAND-0079` from include to duplicate of `SEIAI-0029`
+- separated the legacy descriptive `role_layer` taxonomy from non-exclusive `victim_facing_function` and `financial_function` coding
+- tightened human identity resolution so aliases, personas, numbered accused and endpoint associations do not automatically resolve a real-world human
+- corrected identity-resolution coding in `SEIAI-0019-A01`, `SEIAI-0048-A01`, `SEIAI-0065-A01` and `SEIAI-0071-A01`
+- corrected false or unsupported incident-date precision, including records where detection, FIR or judgment dates had been encoded as attack dates
+- harmonized the 51-75 expansion with the earlier schema by backfilling source-supported case numbers, target sectors, platform details, impersonated-identity detail and secondary categories
+- normalized four consumer/adjudicatory records that had been incorrectly stored with `source_type=other`
+- added full case-audit, actor-correction and retired-ID logs
+- added stricter cross-file validation for duplicate source URLs, retired IDs, source ownership, date ordering and actor-function coding
+- all three validators return zero errors and zero warnings
+
 ## v0.1.5 - 2026-09-04
 
 - expanded the reviewed incident corpus from 50 to 75 cases

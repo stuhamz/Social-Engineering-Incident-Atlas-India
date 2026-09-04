@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0049`
-- Coding version: `0.1.4`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -108,13 +108,20 @@ The bail order provides strong prima facie financial linkage to the applicant’
 
 A bank-account routing role can be narrower than operation of the victim-facing digital-arrest pretext.
 
+### v0.2.0 functional actor coding
+
+- **FedEx narcotics-pretext caller cluster**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Fake Mumbai Cyber Crime operator cluster**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Applicant bank-account control/routing role**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **Accused cash-withdrawal actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Telecom/device evidence identifying the original FedEx and police impersonators and linking those callers to the financial-routing network.
 
 ## Coding decisions / research notes
 
-Cross-border dimension reflects the Taiwan courier pretext and multi-state financial routing, not proof that the human operators were outside India. Second-pass source-to-code and privacy audit completed 2026-08-26.
+Cross-border dimension reflects the Taiwan courier pretext and multi-state financial routing, not proof that the human operators were outside India. Second-pass source-to-code and privacy audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0075`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Madhya Pradesh State Consumer Disputes Redressal Commission
-- Case / proceeding: not normalized
+- Case / proceeding: First Appeal No.1986/2017
 - Public status coded: `appeal`
 - Disposition: Madhya Pradesh State Consumer Commission allowed the bank's appeal and set aside the refund direction.
 
@@ -34,7 +34,7 @@ A Madhya Pradesh consumer appeal documents a classic vishing case in which a cal
 ### Target
 
 - Target type: `individual`
-- Sector/context: not normalized
+- Sector/context: retail banking
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **Bank-main-branch impersonating caller**: `victim_facing` / `social_engineering_operator`; strength `unclear`. Conduct assessed: Calling the complainant, invoking ATM blocking/Aadhaar linking and eliciting card details. Limitation: The consumer appeal does not identify the caller or subscriber.
 - **Online-purchase / payment operator(s)**: `financial` / `bank_account_controller`; strength `limited`. Conduct assessed: Using the compromised card information to conduct eight online purchases totalling INR 42,760. Limitation: Transaction records show use of the card credentials but not the identity of the person who conducted the purchases.
 
+### v0.2.0 functional actor coding
+
+- **Bank-main-branch impersonating caller**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Online-purchase / payment operator(s)**: identity `unknown`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Caller CDR/subscriber records, merchant/payment-gateway logs, device/IP evidence and transaction-authentication records.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.2.0 full re-audit: attack conduct occurred on 27 May 2016; 28 May was discovery, so end date corrected to 27 May. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

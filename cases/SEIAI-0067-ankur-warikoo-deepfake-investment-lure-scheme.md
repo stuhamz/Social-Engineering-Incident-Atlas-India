@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0067`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Delhi High Court
-- Case / proceeding: not normalized
+- Case / proceeding: CS(COMM) 514/2025
 - Public status coded: `bail_or_interim`
 - Disposition: Interim injunction/takedown and disclosure directions; suit remained pending.
 
@@ -34,7 +34,7 @@ The Delhi High Court granted interim relief against deepfake investment content 
 ### Target
 
 - Target type: `investor`
-- Sector/context: not normalized
+- Sector/context: retail investment
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **Deepfake publisher / social-media operator(s)**: `technical` / `platform_account_operator`; strength `unclear`. Conduct assessed: Publishing AI/deepfake videos using Warikoo's face and voice and directing viewers to investment groups. Limitation: John Doe operators were unidentified at the interim stage.
 - **WhatsApp investment-group / payment operator(s)**: `victim_facing` / `social_engineering_operator`; strength `unclear`. Conduct assessed: Moving viewers from fake endorsements into WhatsApp groups and suspicious investment apps/accounts where money was solicited. Limitation: The interim order describes reported investor losses but does not identify the group/payment controllers.
 
+### v0.2.0 functional actor coding
+
+- **Deepfake publisher / social-media operator(s)**: identity `unknown`; victim-facing function `yes`; financial function `no`. paper functional override: victim-facing conduct
+- **WhatsApp investment-group / payment operator(s)**: identity `unknown`; victim-facing function `yes`; financial function `yes`. Atlas victim_facing layer; paper functional override: financial conduct
+
 ## Primary evidentiary gap
 
 Platform disclosure, IP/login records, payment beneficiary KYC and device evidence identifying the deepfake publishers and investment-account operators.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.2.0 full re-audit: exact dates removed. Source describes deepfake material surfacing around August-September 2024 and continuing into 2025; judgment date is not coded as incident end. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

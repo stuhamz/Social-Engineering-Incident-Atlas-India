@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0070`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: State Consumer Disputes Redressal Commission, U.T. Chandigarh
-- Case / proceeding: not normalized
+- Case / proceeding: Appeal No.292/2025
 - Public status coded: `appeal`
 - Disposition: State consumer appeal dismissed; bank liability not established.
 
@@ -34,7 +34,7 @@ A Chandigarh consumer appeal examined an INR 49,997 internet-banking transaction
 ### Target
 
 - Target type: `business`
-- Sector/context: not normalized
+- Sector/context: business banking
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **Purported eKYC phishing-link operator**: `victim_facing` / `technical_infrastructure_operator`; strength `unclear`. Conduct assessed: Presenting a bank-branded/eKYC link believed genuine and inducing the complainant to enter the verification flow. Limitation: The commission expressly noted no material showing where the link originated or connecting it to the bank.
 - **IMPS recipient / banking-session operator**: `financial` / `bank_account_controller`; strength `unclear`. Conduct assessed: Executing or benefiting from the INR 49,997 IMPS transfer following the phishing event. Limitation: The public decision does not identify the beneficiary operator or banking-session controller.
 
+### v0.2.0 functional actor coding
+
+- **Purported eKYC phishing-link operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **IMPS recipient / banking-session operator**: identity `unknown`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Original URL/domain, browser history, DNS/hosting records and bank/IP session logs tying the phishing page to an operator.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.1.5 corrective expansion; source-to-code review completed 2026-09-04. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

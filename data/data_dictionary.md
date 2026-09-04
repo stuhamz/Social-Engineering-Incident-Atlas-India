@@ -82,3 +82,6 @@
 | `disposition` | Procedure | Short case disposition/procedural note. | optional |
 | `case_summary` | Narrative | Neutral structured case summary. | required |
 | `research_notes` | Narrative | Ambiguities, coding decisions, approximations. | optional |
+## v0.2.0 date-precision clarification
+
+Exact `incident_start_date` and `incident_end_date` values are populated only where the public source supports day-level precision. Where a source supports only a year, month, broad period or procedural date, exact incident dates are left blank rather than filled with synthetic boundary dates. `incident_year` may be `not_reported` when the reviewed source does not support a defensible focal incident year.

@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0059`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Punjab State Consumer Disputes Redressal Commission
-- Case / proceeding: not normalized
+- Case / proceeding: First Appeal No.116/2025
 - Public status coded: `appeal`
 - Disposition: State consumer appeal decided in favour of the bank; consumer liability dispute adjudicated, attacker identity not decided.
 
@@ -34,7 +34,7 @@ A Punjab consumer appeal records that the complainant found a fake Prestige cust
 ### Target
 
 - Target type: `individual`
-- Sector/context: not normalized
+- Sector/context: household / personal finance
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **Fake Prestige customer-care operator**: `victim_facing` / `victim_facing_operator`; strength `unclear`. Conduct assessed: Answering the customer-care call, impersonating Prestige support and directing the victim into the fraudulent link/application flow. Limitation: The consumer appeal reconstructs the call but does not identify the caller.
 - **UPI beneficiary / technical operator(s)**: `financial` / `bank_account_controller`; strength `unclear`. Conduct assessed: Receiving or facilitating the nine unauthorized UPI transfers after the victim followed the fake support instructions. Limitation: The source does not provide developed beneficiary KYC or device attribution.
 
+### v0.2.0 functional actor coding
+
+- **Fake Prestige customer-care operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **UPI beneficiary / technical operator(s)**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Search-ad ownership/website registration, call-detail records, device artefacts and beneficiary UPI KYC tying the support identity to the operator.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.1.5 corrective expansion; source-to-code review completed 2026-09-04. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

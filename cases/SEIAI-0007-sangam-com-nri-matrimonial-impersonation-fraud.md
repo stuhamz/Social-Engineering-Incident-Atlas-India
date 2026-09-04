@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0007`
-- Coding version: `0.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-16
 - Status: **reviewed**
@@ -119,6 +119,12 @@ The case remains at trial stage and the applicant denied direct inducement of th
 
 The defence argued that none of the beneficiary accounts were in the applicant's name and that residence/location with co-accused did not prove direct participation.
 
+### v0.2.0 functional actor coding
+
+- **Actor linked to fake matrimonial/profile operation**: identity `identified`; victim-facing function `uncertain`; financial function `uncertain`. paper boundary: focal victim-facing linkage incomplete; paper boundary: focal financial linkage incomplete
+- **Fake Customs caller**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Beneficiary-account and cash-out network**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Victim-specific end-to-end mapping of which seized device/account/user performed each interaction, beyond strong pattern and shared-account evidence.
@@ -131,7 +137,7 @@ These are source-reported provisions and should not be treated as a fresh legal 
 
 ## Coding decisions / research notes
 
-Known account count of 26 is the number of bank accounts the order says were used by the accused network, not the number used in the single complainant's transaction.
+Known account count of 26 is the number of bank accounts the order says were used by the accused network, not the number used in the single complainant's transaction. Pre-publication source audit completed 2026-08-16; structured coding rechecked against the registered public source(s). v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

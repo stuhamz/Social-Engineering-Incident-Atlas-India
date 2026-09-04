@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0039`
-- Coding version: `0.1.3`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -103,7 +103,12 @@ The final civil judgment established that the buyer followed fraudulent email in
 
 The civil parties disputed which side bore responsibility for the compromise; the court resolved payment liability between them rather than offender identity.
 
-### Primary evidentiary gap
+#### v0.2.0 functional actor coding
+
+- **Invoice-diversion email operator(s)**: identity `unknown`; victim-facing function `yes`; financial function `yes`. paper functional override: victim-facing conduct; paper functional override: financial conduct
+- **Hong Kong beneficiary-account controller**: identity `unknown`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
+## Primary evidentiary gap
 
 Provider/server logs and beneficiary-account KYC/control evidence sufficient to identify the unknown email operator and recipient controller.
 
@@ -118,7 +123,7 @@ Commercial civil recovery / electronic and expert evidence context
 
 ## Coding decisions / research notes
 
-Included as the first completed-payment BEC record and a final commercial judgment. financial_loss_inr is intentionally blank because the source amount is in USD and the Atlas does not researcher-convert foreign currency. Second-pass source-to-code audit completed 2026-08-26.
+Included as the first completed-payment BEC record and a final commercial judgment. financial_loss_inr is intentionally blank because the source amount is in USD and the Atlas does not researcher-convert foreign currency. Second-pass source-to-code audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

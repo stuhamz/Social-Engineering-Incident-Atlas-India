@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0048`
-- Coding version: `0.1.4`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -108,13 +108,19 @@ The High Court’s 2026 judgment quashed proceedings on the basis of compromise,
 
 Settlement/quashing does not establish innocence or guilt, and the existence of a charged petitioner does not by itself identify the original Facebook/WhatsApp operator.
 
+### v0.2.0 functional actor coding
+
+- **Facebook/WhatsApp relationship persona operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **False-suicide/police threat caller cluster**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Petitioners’ alleged scheme participation**: identity `identified`; victim-facing function `no`; financial function `uncertain`. paper boundary: focal financial linkage incomplete
+
 ## Primary evidentiary gap
 
 Platform, device, telecom and payment records mapping the social persona, threatening callers and financial recipients to individual actors.
 
 ## Coding decisions / research notes
 
-Included because it has a clear focal victim and attack sequence, unlike network-only records screened out during the same batch. Second-pass source-to-code and privacy audit completed 2026-08-26.
+Included because it has a clear focal victim and attack sequence, unlike network-only records screened out during the same batch. Second-pass source-to-code and privacy audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

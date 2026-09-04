@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0036`
-- Coding version: `0.1.3`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -103,7 +103,13 @@ The order is an anticipatory-bail decision. The prosecution alleges that the pet
 
 Documented/alleged receipt of funds can support a financial role more strongly than authorship of the online persona or every extortion communication.
 
-### Primary evidentiary gap
+#### v0.2.0 functional actor coding
+
+- **“Kim” Facebook relationship persona operator**: identity `partially_identified`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Sexual/reputational extortion communicator(s)**: identity `partially_identified`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Petitioner-linked direct financial recipient**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
+## Primary evidentiary gap
 
 Platform account records, device artefacts and message provenance tying the Facebook identity and coercive communications to the human operator across the multi-year period.
 
@@ -119,7 +125,7 @@ BNS 308(2); BNS 316(2); BNS 351(2); BNS 61(2)
 
 ## Coding decisions / research notes
 
-Included because it exposes a sharp difference between financial attribution and persona authorship within a long-duration relationship/sextortion scheme. Second-pass source-to-code audit completed 2026-08-26.
+Included because it exposes a sharp difference between financial attribution and persona authorship within a long-duration relationship/sextortion scheme. Second-pass source-to-code audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

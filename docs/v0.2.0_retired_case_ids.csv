@@ -1,0 +1,2 @@
+retired_case_id,retained_case_id,reason,retired_primary_source_id,retired_candidate_id,retirement_date,renumbering_policy
+SEIAI-0060,SEIAI-0029,"Exact semantic duplicate: same State Bank of India v. Rajesh Garg OLX/UPI incident, same primary source URL and same INR 64,000 loss.",SRC-SEIAI-0060-01,CAND-0079,2026-09-04,No active IDs renumbered. SEIAI-0061 through SEIAI-0075 retain their stable identifiers.

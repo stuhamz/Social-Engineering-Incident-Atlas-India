@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "SEIAI actor-role attribution record",
-  "description": "One record is one analytically distinct actor-role attribution assessment, not a finding of identity or guilt.",
+  "description": "One record is one analytically distinct actor-role attribution assessment, not a finding of identity or guilt. v0.2.0 retains the legacy role_layer taxonomy and adds non-exclusive victim-facing and financial function flags.",
   "type": "object",
   "required": [
     "actor_id",
@@ -11,6 +11,9 @@
     "actor_label",
     "identity_resolution",
     "role_layer",
+    "function_assignment_basis",
+    "financial_function",
+    "victim_facing_function",
     "role_primary",
     "conduct_assessed",
     "direct_victim_contact",
@@ -99,6 +102,25 @@
       "type": "string"
     },
     "source_ids": {
+      "type": "string"
+    },
+    "victim_facing_function": {
+      "enum": [
+        "yes",
+        "no",
+        "uncertain",
+        "not_assessed"
+      ]
+    },
+    "financial_function": {
+      "enum": [
+        "yes",
+        "no",
+        "uncertain",
+        "not_assessed"
+      ]
+    },
+    "function_assignment_basis": {
       "type": "string"
     }
   }

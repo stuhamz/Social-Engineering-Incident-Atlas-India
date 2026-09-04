@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0031`
-- Coding version: `0.1.3`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -104,7 +104,13 @@ Recovered phones/SIMs/ATM cards and a co-accused disclosure associate the petiti
 
 Possession of communication or payment artefacts can reflect a downstream or facilitation role rather than authorship of the original impersonation.
 
-### Primary evidentiary gap
+#### v0.2.0 functional actor coding
+
+- **Family-impersonation caller(s)**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Beneficiary and payment-routing network**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **Petitioner linked through recovered devices/payment artefacts**: identity `identified`; victim-facing function `no`; financial function `uncertain`. paper boundary: focal financial linkage incomplete
+
+## Primary evidentiary gap
 
 Telecom/platform and device artefacts tying the specific victim-facing numbers and WhatsApp accounts to identified human operators and to the receiving-account network.
 
@@ -120,7 +126,7 @@ IPC 406; IPC 420; IPC 467; IPC 468; IPC 471; IPC 120B
 
 ## Coding decisions / research notes
 
-Included to strengthen family-impersonation coverage and to preserve the distinction between victim-facing identity fraud and downstream device/payment association. Second-pass source-to-code audit completed 2026-08-26.
+Included to strengthen family-impersonation coverage and to preserve the distinction between victim-facing identity fraud and downstream device/payment association. Second-pass source-to-code audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

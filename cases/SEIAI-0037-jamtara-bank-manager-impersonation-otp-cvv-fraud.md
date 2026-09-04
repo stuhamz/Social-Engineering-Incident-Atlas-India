@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0037`
-- Coding version: `0.1.3`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -104,7 +104,13 @@ The appellate judgment establishes the appellant’s criminal participation beyo
 
 Not applicable to the conviction-level role assessment; victim-specific speaker attribution remains more granular than the appellate finding.
 
-### Primary evidentiary gap
+#### v0.2.0 functional actor coding
+
+- **Convicted bank-manager impersonation operator**: identity `identified`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Appellant phone/e-wallet/account operation role**: identity `identified`; victim-facing function `no`; financial function `yes`. paper functional override: financial conduct
+- **Co-accused/commission-payment network**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
+## Primary evidentiary gap
 
 Victim-by-victim mapping of individual call sessions and operators, beyond the conviction-level circumstantial and financial evidence establishing the group operation.
 
@@ -120,7 +126,7 @@ IPC 419; IPC 420; IPC 120B; IT Act 66D
 
 ## Coding decisions / research notes
 
-Included to add a final criminal appellate source, bank impersonation and stronger electronic-evidence authentication material. No single aggregate financial_loss_inr is coded because the source describes multiple victims and several account amounts rather than one focal victim total. Second-pass source-to-code audit completed 2026-08-26.
+Included to add a final criminal appellate source, bank impersonation and stronger electronic-evidence authentication material. No single aggregate financial_loss_inr is coded because the source describes multiple victims and several account amounts rather than one focal victim total. Second-pass source-to-code audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

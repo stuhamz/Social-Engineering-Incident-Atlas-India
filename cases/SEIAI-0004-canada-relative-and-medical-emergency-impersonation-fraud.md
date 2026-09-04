@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0004`
-- Coding version: `0.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-16
 - Status: **reviewed**
@@ -34,7 +34,7 @@ A Haryana victim was contacted on WhatsApp by a person impersonating a real rela
 ### Target
 
 - Target type: `individual`
-- Sector/context: not reported
+- Sector/context: household / family network
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -111,6 +111,13 @@ The order does not establish that the petitioner made the relative, bank-officia
 
 The petitioner may have been associated with the beneficiary account without being the social-engineering caller; knowledge and commission allegations remained prosecution claims.
 
+### v0.2.0 functional actor coding
+
+- **Fake Canada-relative caller**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Fake Axis Bank corroborator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Medical-emergency caller**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Beneficiary-account-linked downstream actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Direct linkage of the impersonating WhatsApp/phone numbers to the human operators and authenticated device/platform records showing coordination with the beneficiary account.
@@ -123,7 +130,7 @@ These are source-reported provisions and should not be treated as a fresh legal 
 
 ## Coding decisions / research notes
 
-This case is especially valuable for studying layered corroboration, emotional urgency, and family-knowledge verification as a defensive social-engineering countermeasure.
+This case is especially valuable for studying layered corroboration, emotional urgency, and family-knowledge verification as a defensive social-engineering countermeasure. Pre-publication source audit completed 2026-08-16; structured coding rechecked against the registered public source(s). v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

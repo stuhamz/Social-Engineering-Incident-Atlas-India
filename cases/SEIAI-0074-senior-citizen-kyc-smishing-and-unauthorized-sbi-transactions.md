@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0074`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Delhi State Consumer Disputes Redressal Commission
-- Case / proceeding: not normalized
+- Case / proceeding: First Appeal No.133/2024
 - Public status coded: `appeal`
 - Disposition: Delhi State Consumer Commission dismissed the bank's appeal and maintained consumer relief.
 
@@ -34,7 +34,7 @@ A Delhi consumer appeal records a KYC smishing incident in which a senior citize
 ### Target
 
 - Target type: `elderly_person`
-- Sector/context: not normalized
+- Sector/context: senior citizen / retail banking
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **KYC smishing/link operator**: `victim_facing` / `social_engineering_operator`; strength `unclear`. Conduct assessed: Sending the KYC SMS/link that induced the senior citizen to click a purported verification flow. Limitation: The consumer appeal does not identify the sender or link controller.
 - **ATM/transfer recipient operator(s)**: `financial` / `cashout_actor`; strength `limited`. Conduct assessed: Executing or benefiting from the INR 20,000 ATM withdrawal and INR 25,000 transfer. Limitation: The transaction/location evidence does not identify who conducted the ATM withdrawal or controlled the transfer recipient.
 
+### v0.2.0 functional actor coding
+
+- **KYC smishing/link operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **ATM/transfer recipient operator(s)**: identity `unknown`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Original URL/domain and SMS-origin records, ATM CCTV/card-authentication evidence and beneficiary-account KYC.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.1.5 corrective expansion; source-to-code review completed 2026-09-04. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

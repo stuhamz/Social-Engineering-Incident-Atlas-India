@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0030`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,13 @@ Applicant contested ED allegations and sought pre-arrest protection; procedural 
 ### Limitations
 
 The source is an anticipatory-bail/PMLA proceeding and describes allegations against a network; the Atlas does not treat those allegations as final findings of the applicant’s exact operational role.
+
+### v0.2.0 functional actor coding
+
+- **Microsoft/Amazon tech-support call-centre agents**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Pop-up/VoIP/remote-access infrastructure operator(s)**: identity `actor_cluster`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Applicant-linked organisational leadership/beneficiary actor**: identity `identified`; victim-facing function `no`; financial function `yes`. paper functional override: financial conduct
+- **International laundering/financial-routing actor network**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0040`
-- Coding version: `0.1.3`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -105,7 +105,12 @@ Provider/IP/subscriber and investigation material create substantial prima facie
 
 Subscriber/IP association should be corroborated with device/session evidence; the receiving account was reported under a similar but not identical name and should not be collapsed into the profile-operator identity without further proof.
 
-### Primary evidentiary gap
+#### v0.2.0 functional actor coding
+
+- **Fake SP Mandi Facebook profile operator**: identity `identified`; victim-facing function `yes`; financial function `no`. paper functional override: victim-facing conduct
+- **Donation receiving/withdrawal role**: identity `partially_identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
+## Primary evidentiary gap
 
 Full device/account-session attribution and beneficiary-account control evidence tying the profile creation, messages and withdrawal of donations to the same human operator.
 
@@ -120,7 +125,7 @@ BNS 319(2); BNS 318(4); BNS 238; IT Act 66C; IT Act 66D
 
 ## Coding decisions / research notes
 
-Included to add social-media impersonation and platform-provider attribution. financial_loss_inr records the specifically documented INR 10,501 from one donor, not an aggregate of all reported donations. Second-pass source-to-code audit completed 2026-08-26.
+Included to add social-media impersonation and platform-provider attribution. financial_loss_inr records the specifically documented INR 10,501 from one donor, not an aggregate of all reported donations. Second-pass source-to-code audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

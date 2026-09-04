@@ -57,3 +57,18 @@
 - automated source discovery, not automated factual coding
 - cross-state and temporal work only where sampling design supports it
 - CaseTrace educational case generation from suitable public records
+
+### v0.2.0
+- complete a full source-to-code re-audit of every ID from SEIAI-0001 through SEIAI-0075
+- retire the exact duplicate SEIAI-0060 while preserving stable later IDs
+- separate legacy role-layer taxonomy from overlapping victim-facing and financial functions
+- tighten human identity-resolution rules
+- remove unsupported date precision
+- harmonize the 51-75 expansion with the earlier coding standard
+- strengthen cross-file validators and preserve full correction logs
+- evaluate research viability only after the corrected corpus is frozen
+
+### Next
+- decide whether the corrected Atlas supports a defensible first paper
+- if not, resume audit-directed expansion instead of expanding for case count alone
+- prioritize second-source corroboration, underrepresented geographies, and richer provider/forensic records

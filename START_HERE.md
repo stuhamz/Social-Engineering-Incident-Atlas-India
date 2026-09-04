@@ -7,15 +7,15 @@
 3. Apply the inclusion/exclusion and duplicate rules.
 4. If included, assign the next `SEIAI-####` ID and register every source.
 5. Create the incident note and code `data/cases.csv`.
-6. Code distinct conduct/actor roles in `data/actors.csv`.
+6. Code distinct conduct/actor roles in `data/actors.csv`, including non-exclusive victim-facing and financial function flags.
 7. Preserve allegation, defence, investigation, prima facie observation and final finding as different claim statuses.
 8. Review attribution against the specific conduct being assessed.
-9. Run both validators and the privacy scan.
+9. Run `validate_dataset.py`, `validate_actors.py`, `validate_full_audit.py`, and the privacy scan.
 10. Mark records `reviewed` only after a second source-to-code pass.
 
 ## Current release
 
-**v0.1.5 contains 75 reviewed incident records and 198 reviewed actor-role records.**
+**v0.2.0 contains 74 active reviewed incident records and 196 reviewed actor-role records.** The 75-ID history is retained in the audit log, with `SEIAI-0060` retired as an exact duplicate of `SEIAI-0029`.
 
 The combined corpus remains a methodology/schema-validation set rather than a prevalence sample.
 
@@ -31,4 +31,4 @@ The combined corpus remains a methodology/schema-validation set rather than a pr
 
 ## Next stage
 
-The 51–75 corrective batch substantially improved source-stage balance, so the next priority is not simply case count. Seek second-source corroboration, expand outside Delhi/Haryana, target final/appellate material for `family_impersonation` and `tech_support_fraud`, and resolve the future of `accused_count` before a breaking schema revision. The actor schema should remain fixed unless repeated cases expose a genuine structural failure.
+The v0.2.0 full re-audit is the current methodological baseline. Before adding more cases, use the corrected corpus to decide which research questions survive. If expansion resumes, prioritize second-source corroboration, underrepresented geographies, final/appellate material for categories still dominated by interim records, and richer provider/forensic evidence. Stable IDs must never be recycled or renumbered.

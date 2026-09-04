@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0022`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,12 @@ A financial-facilitation role could be narrower than design or operation of the 
 ### Limitations
 
 The source connects the applicant to account/SIM facilitation but does not establish he operated the Telegram recruiter identity or Global task interface.
+
+### v0.2.0 functional actor coding
+
+- **“Chaya P” Telegram recruiter/operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **“Global” task-system operator(s)**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Account/SIM supply and routing actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

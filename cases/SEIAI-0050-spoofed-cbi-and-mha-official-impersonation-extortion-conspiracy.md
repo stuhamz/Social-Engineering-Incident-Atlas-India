@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0050`
-- Coding version: `0.1.4`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -108,13 +108,19 @@ The High Court was reviewing a discharge/revision question, not deciding guilt. 
 
 The petitioner argued that he was himself a victim/was excluded from the core conspiracy and that the prosecution material did not conclusively establish his involvement.
 
+### v0.2.0 functional actor coding
+
+- **Spoofed senior-government-official operator cluster**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Petitioner alleged coordinator/intermediary role**: identity `identified`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Extortion-by-impersonation network**: identity `actor_cluster`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+
 ## Primary evidentiary gap
 
 Trial-tested evidence connecting each spoofed call, government persona and extortion demand to specific human operators and establishing the petitioner’s knowledge/intent beyond the charge-stage threshold.
 
 ## Coding decisions / research notes
 
-No financial_loss_inr is coded because the reviewed order describes demands, including INR 100 crore, but does not establish a completed focal payment. Second-pass source-to-code and privacy audit completed 2026-08-26.
+No financial_loss_inr is coded because the reviewed order describes demands, including INR 100 crore, but does not establish a completed focal payment. Second-pass source-to-code and privacy audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

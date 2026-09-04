@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0043`
-- Coding version: `0.1.4`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -108,13 +108,19 @@ The final court found the prosecution failed to prove the accused sent the messa
 
 The unknown “court staff” persona may not have been operated by the accused persons charged; subscriber/CAF association did not resolve actual use of the critical number.
 
+### v0.2.0 functional actor coding
+
+- **Purported court-connected extortion operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Accused No.1 alleged SIM/message operator**: identity `identified`; victim-facing function `yes`; financial function `no`. paper functional override: victim-facing conduct
+- **Accused No.2 alleged evidence-destruction role**: identity `identified`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+
 ## Primary evidentiary gap
 
 Admissible, authenticated telecom/electronic records and reliable subscriber/device evidence connecting the critical communications to the accused human operators.
 
 ## Coding decisions / research notes
 
-Included specifically for evidentiary failure and final acquittal, not as a finding that no social-engineering attempt occurred. Second-pass source-to-code and privacy audit completed 2026-08-26.
+Included specifically for evidentiary failure and final acquittal, not as a finding that no social-engineering attempt occurred. Second-pass source-to-code and privacy audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

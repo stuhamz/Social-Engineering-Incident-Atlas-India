@@ -29,5 +29,11 @@
     "coordinator",
     "unknown_role",
     "other"
+  ],
+  "actor_function": [
+    "yes",
+    "no",
+    "uncertain",
+    "not_assessed"
   ]
 }

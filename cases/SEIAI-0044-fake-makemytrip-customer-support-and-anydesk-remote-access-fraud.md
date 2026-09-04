@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0044`
-- Coding version: `0.1.4`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -108,13 +108,19 @@ The consumer appeal addressed bank/customer liability and did not identify the h
 
 The adjudication focused on whether granting AnyDesk access made the customer liable; it did not resolve offender identity.
 
+### v0.2.0 functional actor coding
+
+- **Fake MakeMyTrip support caller**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **AnyDesk remote-access operator**: identity `unknown`; victim-facing function `no`; financial function `uncertain`. paper boundary: focal financial linkage incomplete
+- **Payment/beneficiary operator**: identity `unknown`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 AnyDesk/session, device, telecom, Paytm and beneficiary-account records tying the support persona and remote-control session to a human operator.
 
 ## Coding decisions / research notes
 
-No inference is made that the consumer’s decision to install AnyDesk identifies the fraud operator or technical path. Second-pass source-to-code and privacy audit completed 2026-08-26.
+No inference is made that the consumer’s decision to install AnyDesk identifies the fraud operator or technical path. Second-pass source-to-code and privacy audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0020`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,12 @@ Forwarding OTPs/account association may establish a financial facilitation role 
 ### Limitations
 
 The source itself notes no material showing the applicant made the WhatsApp calls, impersonated officers, sent forged documents or directly induced the complainant; his alleged role is downstream financial facilitation.
+
+### v0.2.0 functional actor coding
+
+- **Multi-agency WhatsApp impersonation operator(s)**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Amigo Marine account/OTP facilitation actor**: identity `identified`; victim-facing function `no`; financial function `yes`. paper functional override: financial conduct
+- **Downstream fund-siphoning actor cluster**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

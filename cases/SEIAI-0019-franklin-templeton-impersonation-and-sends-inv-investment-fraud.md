@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0019`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,12 @@ The account was jointly operated by NGO office bearers and the applicant dispute
 ### Limitations
 
 The source provides direct financial linkage to the applicant-associated account but does not establish that the applicant operated the Franklin Templeton identity, WhatsApp group or SENDS INV application.
+
+### v0.2.0 functional actor coding
+
+- **Franklin Templeton/A13 group impersonation operator(s)**: identity `partially_identified`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **SENDS INV application operator(s)**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **NGO-linked beneficiary-account actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

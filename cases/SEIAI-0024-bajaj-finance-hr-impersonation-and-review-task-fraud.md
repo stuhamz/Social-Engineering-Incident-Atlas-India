@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0024`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,12 @@ Account receipt can support a financial-role inference without establishing auth
 ### Limitations
 
 The applicant is linked to a payment account, but the source does not establish he was the Bajaj Finance recruiter or Telegram operator who induced the victim.
+
+### v0.2.0 functional actor coding
+
+- **Fake Bajaj Finance HR recruiter**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Telegram receptionist/tutor/task operator cluster**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Applicant-linked beneficiary-account actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

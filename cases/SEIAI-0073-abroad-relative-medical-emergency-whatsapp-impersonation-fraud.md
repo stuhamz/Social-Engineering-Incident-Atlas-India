@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0073`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Punjab and Haryana High Court
-- Case / proceeding: not normalized
+- Case / proceeding: CRM-M-26249-2026; FIR No.160/2025
 - Public status coded: `bail_or_interim`
 - Disposition: Regular bail granted after charge sheet and framing of charges; merits remained for trial.
 
@@ -34,7 +34,7 @@ A Punjab and Haryana High Court bail order records a WhatsApp family-impersonati
 ### Target
 
 - Target type: `individual`
-- Sector/context: not normalized
+- Sector/context: household / family network
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **Relative-impersonating WhatsApp caller**: `victim_facing` / `social_engineering_operator`; strength `unclear`. Conduct assessed: Impersonating the complainant's relative abroad and invoking a medical emergency to direct transfers. Limitation: The caller is not identified in the bail order.
 - **Bail applicant linked to beneficiary account**: `financial` / `bank_account_controller`; strength `limited`. Conduct assessed: Alleged connection to one account used to receive cheated funds. Limitation: The order explicitly leaves the extent of involvement for trial and records the defence that another person controlled the account/ATM.
 
+### v0.2.0 functional actor coding
+
+- **Relative-impersonating WhatsApp caller**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Bail applicant linked to beneficiary account**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Authenticated WhatsApp/telecom records identifying the caller and device/account evidence establishing who controlled the beneficiary account during the transfers.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.2.0 full re-audit: exact fraud date was not established independently of FIR/procedural timing; day-level dates removed. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

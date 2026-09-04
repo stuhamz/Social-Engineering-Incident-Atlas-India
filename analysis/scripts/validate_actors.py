@@ -20,6 +20,9 @@ for i,r in enumerate(actors,start=2):
     if r.get('record_status','').strip() not in V['record_status']: errors.append(f'{aid}: invalid record_status')
     if r.get('identity_resolution','').strip() not in AV['identity_resolution']: errors.append(f'{aid}: invalid identity_resolution')
     if r.get('role_layer','').strip() not in AV['role_layer']: errors.append(f'{aid}: invalid role_layer')
+    for f in ('victim_facing_function','financial_function'):
+        if r.get(f,'').strip() not in AV['actor_function']: errors.append(f'{aid}: invalid {f}')
+    if not r.get('function_assignment_basis','').strip(): errors.append(f'{aid}: function_assignment_basis is blank')
     if r.get('role_primary','').strip() not in AV['role_primary']: errors.append(f'{aid}: invalid role_primary')
     rs=r.get('role_secondary','').strip()
     if rs and rs not in AV['role_primary']: errors.append(f'{aid}: invalid role_secondary')

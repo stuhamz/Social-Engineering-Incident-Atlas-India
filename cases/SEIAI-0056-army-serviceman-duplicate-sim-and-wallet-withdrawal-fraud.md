@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0056`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: National Consumer Disputes Redressal Commission
-- Case / proceeding: not normalized
+- Case / proceeding: Revision Petition No.573/2019
 - Public status coded: `appeal`
 - Disposition: NCDRC revision concerning telecom deficiency and consumer compensation.
 
@@ -34,7 +34,7 @@ NCDRC reviewed a SIM-replacement fraud affecting an Army serviceman. It recorded
 ### Target
 
 - Target type: `individual`
-- Sector/context: not normalized
+- Sector/context: defence personnel / personal banking
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **Duplicate-SIM / telecom-impersonation operator(s)**: `technical` / `social_engineering_operator`; strength `limited`. Conduct assessed: Obtaining or causing issuance/blocking/replacement of the registered SIM through false identity or false service representation and using the resulting number control. Limitation: The adjudicatory record strongly documents the SIM-control mechanism but does not fully identify the human requester/operator.
 - **Online-banking / beneficiary-network operator(s)**: `financial` / `bank_account_controller`; strength `limited`. Conduct assessed: Using diverted authentication or compromised banking access to add beneficiaries, transfer funds and/or withdraw the proceeds. Limitation: Financial activity is documented, but the adjudicatory record does not necessarily establish that the beneficiary/cash-out actors also performed the SIM impersonation.
 
+### v0.2.0 functional actor coding
+
+- **Duplicate-SIM / telecom-impersonation operator(s)**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Online-banking / beneficiary-network operator(s)**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Original duplicate-SIM application/KYC, service-centre CCTV and wallet/provider account records identifying the operator.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.1.5 corrective expansion; source-to-code review completed 2026-09-04. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

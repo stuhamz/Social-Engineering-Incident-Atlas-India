@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0061`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Madhya Pradesh High Court
-- Case / proceeding: not normalized
+- Case / proceeding: M.Cr.C. No.46412/2023
 - Public status coded: `judgment`
 - Disposition: FIR and consequential proceedings quashed following settlement between the parties; allegations not adjudicated on merits.
 
@@ -34,7 +34,7 @@ The Madhya Pradesh High Court's quashing order reproduces a phishing/vishing seq
 ### Target
 
 - Target type: `individual`
-- Sector/context: not normalized
+- Sector/context: retail banking / credit card
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **RBL reward-points caller / phishing-link operator**: `victim_facing` / `social_engineering_operator`; strength `unclear`. Conduct assessed: Calling the victim with a reward-points pretext and sending the phishing link used to collect card information. Limitation: The compromise/quashing order gives no direct technical attribution of the caller or link.
 - **Credit-card transaction recipient/operator**: `financial` / `bank_account_controller`; strength `unclear`. Conduct assessed: Executing or benefiting from the INR 24,311 card transaction after the phishing flow. Limitation: The public order does not identify the merchant/account operator.
 
+### v0.2.0 functional actor coding
+
+- **RBL reward-points caller / phishing-link operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Credit-card transaction recipient/operator**: identity `unknown`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Original URL/domain records, call records, device/browser artefacts and card-transaction authentication logs.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.1.5 corrective expansion; source-to-code review completed 2026-09-04. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0071`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Delhi High Court
-- Case / proceeding: not normalized
+- Case / proceeding: BAIL APPLN. 2071/2025
 - Public status coded: `bail_or_interim`
 - Disposition: Regular bail granted; underlying cheating allegations remained for trial.
 
@@ -34,7 +34,7 @@ A Delhi High Court bail order describes a long-running deception using the perso
 ### Target
 
 - Target type: `individual`
-- Sector/context: not normalized
+- Sector/context: employment / retail investment
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **Shaurya persona operator**: `victim_facing` / `social_engineering_operator`; strength `unclear`. Conduct assessed: Using the Shaurya identity across WhatsApp to induce repeated payments under job, tender, investment and emergency pretexts. Limitation: The prosecution attributed the WhatsApp identity to the applicant through a phone-possession theory, but the applicant disputed the chats and the matter remained at bail stage.
 - **Bail applicant with alleged cash/payment collection role**: `financial` / `cashout_actor`; strength `limited`. Conduct assessed: Allegedly receiving cash/payments connected with the Shaurya deception and using a phone said to have been supplied by another person. Limitation: Payment/phone association does not itself prove authorship of every Shaurya communication.
 
+### v0.2.0 functional actor coding
+
+- **Shaurya persona operator**: identity `partially_identified`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Bail applicant with alleged cash/payment collection role**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Device extraction, account/session records and voice/device attribution tying the Shaurya WhatsApp identity and payment collections to identified operators.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.2.0 full re-audit: old 2016-2017 range was unsupported. Public bail material does not establish a reliable focal incident year, so incident_year is now not_reported and exact dates are blank. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

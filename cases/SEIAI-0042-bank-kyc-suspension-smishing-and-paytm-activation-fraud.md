@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0042`
-- Coding version: `0.1.4`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -108,13 +108,19 @@ The consumer appeal reconstructs the manipulation but does not identify the huma
 
 The underlying consumer dispute concerned whether the customer’s disclosure of KYC information constituted negligence; it did not adjudicate offender identity.
 
+### v0.2.0 functional actor coding
+
+- **KYC-suspension SMS/call operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Paytm/transaction-session operator**: identity `unknown`; victim-facing function `no`; financial function `yes`. paper functional override: financial conduct
+- **Unauthorized-transfer beneficiary layer**: identity `unknown`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Telecom, Paytm/UPI, device-session and beneficiary-account records sufficient to explain the unauthorized transactions and identify the human operator.
 
 ## Coding decisions / research notes
 
-Financial-loss field records the approximately unrecovered amount after the source-reported INR 15,000 credit, while the gross fraudulent debit of INR 49,242.35 is preserved in narrative. Second-pass source-to-code and privacy audit completed 2026-08-26.
+Financial-loss field records the approximately unrecovered amount after the source-reported INR 15,000 credit, while the gross fraudulent debit of INR 49,242.35 is preserved in narrative. Second-pass source-to-code and privacy audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

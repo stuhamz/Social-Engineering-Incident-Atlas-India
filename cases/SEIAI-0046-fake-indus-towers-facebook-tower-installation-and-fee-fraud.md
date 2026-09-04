@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0046`
-- Coding version: `0.1.4`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -108,13 +108,19 @@ The High Court described sufficient prima facie material connecting the petition
 
 Individual account/phone associations may represent narrower roles than operation of the entire multi-person executive-impersonation workflow.
 
+### v0.2.0 functional actor coding
+
+- **Fake Indus Towers executive-persona cluster**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Petitioner-linked legal-advisor/account role**: identity `identified`; victim-facing function `yes`; financial function `yes`. paper functional override: victim-facing conduct; paper functional override: financial conduct
+- **Beneficiary-account network**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Final trial findings plus platform/device records mapping the Facebook page, each executive persona and each payment account to specific human operators.
 
 ## Coding decisions / research notes
 
-Raw phone/account identifiers contained in the judicial source are intentionally omitted from the public Atlas data. Second-pass source-to-code and privacy audit completed 2026-08-26.
+Raw phone/account identifiers contained in the judicial source are intentionally omitted from the public Atlas data. Second-pass source-to-code and privacy audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

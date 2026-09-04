@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0066`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -22,7 +22,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Delhi High Court
-- Case / proceeding: not normalized
+- Case / proceeding: CS(COMM) 475/2024
 - Public status coded: `judgment`
 - Disposition: Suit disposed with permanent/blocking directions against infringing WhatsApp/phone identities.
 
@@ -35,7 +35,7 @@ The Delhi High Court's final order records a scheme in which defendants used Wha
 ### Target
 
 - Target type: `investor`
-- Sector/context: not normalized
+- Sector/context: retail investment
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -120,13 +120,18 @@ No separate alternative explanation is established in the structured record.
 - **ChrysCapital WhatsApp impersonation operator cluster**: `victim_facing` / `social_engineering_operator`; strength `moderate`. Conduct assessed: Using senior-personnel names/photos and WhatsApp groups to solicit investments under the ChrysCapital identity. Limitation: The final civil record identifies accounts/phone defendants and their conduct but does not criminally resolve every natural-person operator.
 - **Fraudulent investment website / payment operator(s)**: `technical` / `technical_infrastructure_operator`; strength `limited`. Conduct assessed: Operating the fake investment registration/website/payment layer used to convert impersonation into financial transfers. Limitation: The judgment describes the website/forms and money solicitation but provides limited beneficiary-account attribution.
 
+### v0.2.0 functional actor coding
+
+- **ChrysCapital WhatsApp impersonation operator cluster**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Fraudulent investment website / payment operator(s)**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. paper functional override: financial conduct
+
 ## Primary evidentiary gap
 
 Beneficiary-account records and device/IP/provider logs mapping each victim-facing WhatsApp identity to its human operator and money flow.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.2.0 full re-audit: exact day-level dates removed. Source establishes activity beginning in April 2024 but does not establish 1 April as the incident start or the judgment date as the incident end. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

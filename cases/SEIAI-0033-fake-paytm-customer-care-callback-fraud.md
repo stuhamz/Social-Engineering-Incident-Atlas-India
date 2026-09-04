@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0033`
-- Coding version: `0.1.3`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -102,7 +102,12 @@ Direct receipt of the cheated amount in the petitioner’s business account does
 
 The petitioner asserted that the money reached his account without his knowledge and later returned it.
 
-### Primary evidentiary gap
+#### v0.2.0 functional actor coding
+
+- **Fake Paytm support caller**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Proprietorship account recipient**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
+## Primary evidentiary gap
 
 Telecom/device evidence identifying the fake support caller and technical evidence explaining the alleged mobile compromise and connecting that operator to the receiving account.
 
@@ -117,7 +122,7 @@ IPC 420
 
 ## Coding decisions / research notes
 
-Included as a compact customer-support case with a clear financial association versus caller-attribution gap. The source reports a much larger volume of credits to the petitioner account, but the Atlas codes only the focal INR 50,000 incident. Second-pass source-to-code audit completed 2026-08-26.
+Included as a compact customer-support case with a clear financial association versus caller-attribution gap. The source reports a much larger volume of credits to the petitioner account, but the Atlas codes only the focal INR 50,000 incident. Second-pass source-to-code audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0017`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,12 @@ Association with a device/account or login does not by itself establish who spok
 ### Limitations
 
 The bail source supports downstream device/account association but does not directly establish that the applicant was a victim-facing caller.
+
+### v0.2.0 functional actor coding
+
+- **TRAI/police/fake-CBI-Court impersonation operator(s)**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Applicant-linked device/account actor**: identity `identified`; victim-facing function `no`; financial function `yes`. paper functional override: financial conduct
+- **Second-layer beneficiary-account cluster**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

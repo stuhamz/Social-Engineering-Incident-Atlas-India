@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0062`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Delhi District Court, Rouse Avenue
-- Case / proceeding: not normalized
+- Case / proceeding: CBI/261/2019; FIR No.221/2019/E0004
 - Public status coded: `judgment`
 - Disposition: Accused convicted for impersonation/cheating and IT Act personation offences; judgment also addressed forged documents.
 
@@ -34,7 +34,7 @@ A Delhi trial court convicted Nitesh Chugh for impersonating a CBI officer and r
 ### Target
 
 - Target type: `job_seeker`
-- Sector/context: not normalized
+- Sector/context: employment / recruitment
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **Convicted CBI/NCRB impersonation operator**: `hybrid` / `social_engineering_operator`; strength `strong`. Conduct assessed: Impersonating a CBI officer, soliciting NCRB recruitment payments, circulating fake ID/offer letters and conducting communications with victims. Limitation: The final conviction strongly resolves the charged conduct; the limitation is mainly that aggregate conduct across every referred victim is broader than the focal normalized loss.
 - **Accused-controlled recruitment email/phone/bank infrastructure**: `technical` / `technical_infrastructure_operator`; strength `strong`. Conduct assessed: Operating email/phone identities and banking channels used to send recruitment material and receive payments. Limitation: The final judgment links the infrastructure to the convicted accused through witness, bank, email access and phone evidence.
 
+### v0.2.0 functional actor coding
+
+- **Convicted CBI/NCRB impersonation operator**: identity `identified`; victim-facing function `yes`; financial function `no`. paper functional override: victim-facing conduct
+- **Accused-controlled recruitment email/phone/bank infrastructure**: identity `identified`; victim-facing function `no`; financial function `yes`. paper functional override: financial conduct
+
 ## Primary evidentiary gap
 
 No material gap for attribution of the convicted conduct in the focal prosecution; broader victim totals would require complete victim-by-victim payment records.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.2.0 full re-audit: judgment states the offence period only as 2016-2017. Exact day/month dates removed to avoid false precision; incident_year retains the first reported year. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

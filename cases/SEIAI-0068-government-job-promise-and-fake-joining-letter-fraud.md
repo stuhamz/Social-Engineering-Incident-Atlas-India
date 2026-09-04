@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0068`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Punjab and Haryana High Court
-- Case / proceeding: not normalized
+- Case / proceeding: CRM-M-8466-2026; FIR No.293/2025
 - Public status coded: `bail_or_interim`
 - Disposition: Anticipatory-bail proceedings; merits not finally adjudicated.
 
@@ -34,7 +34,7 @@ A Punjab and Haryana High Court anticipatory-bail order describes an alleged gov
 ### Target
 
 - Target type: `job_seeker`
-- Sector/context: not normalized
+- Sector/context: employment / government recruitment
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **Bail applicant alleged government-job intermediary**: `victim_facing` / `social_engineering_operator`; strength `moderate`. Conduct assessed: Promising a government job, collecting staged payments and sending a fake joining letter to the complainant. Limitation: The source is anticipatory-bail stage and the applicant claimed he was himself deceived by an upstream job-fraud operator.
 - **Upstream job-fraud operator described by applicant**: `organisational` / `organiser`; strength `limited`. Conduct assessed: Allegedly posing as a well-connected recruitment facilitator and supplying the fake joining-letter pathway used by the applicant. Limitation: This role is based on the applicant's defence narrative and was not finally adjudicated.
 
+### v0.2.0 functional actor coding
+
+- **Bail applicant alleged government-job intermediary**: identity `identified`; victim-facing function `yes`; financial function `yes`. Atlas victim_facing layer; paper functional override: financial conduct
+- **Upstream job-fraud operator described by applicant**: identity `partially_identified`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+
 ## Primary evidentiary gap
 
 Authenticated WhatsApp/email records, payment-account records and forensic linkage establishing who created the fake joining letter and controlled the payment destinations.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.2.0 full re-audit: exact conduct date is not stated in the public order; day-level dates removed rather than substituting FIR/proceeding dates. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

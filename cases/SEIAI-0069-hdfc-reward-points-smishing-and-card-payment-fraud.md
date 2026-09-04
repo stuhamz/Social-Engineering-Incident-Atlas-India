@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0069`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: State Consumer Disputes Redressal Commission, Chandigarh
-- Case / proceeding: not normalized
+- Case / proceeding: First Appeal No.SC/4/FA/239/2025
 - Public status coded: `appeal`
 - Disposition: State consumer appellate decision concerning liability for the disputed card transactions.
 
@@ -34,7 +34,7 @@ A Chandigarh consumer appeal examined a reward-points smishing/phishing incident
 ### Target
 
 - Target type: `individual`
-- Sector/context: not normalized
+- Sector/context: retail banking / credit card
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **Reward-points SMS/link operator**: `victim_facing` / `social_engineering_operator`; strength `unclear`. Conduct assessed: Sending/operating the reward-points phishing message or link that led to fraudulent card transactions. Limitation: The consumer appeal does not identify the external sender/link controller.
 - **Merchant/payment recipient(s)**: `financial` / `bank_account_controller`; strength `limited`. Conduct assessed: Receiving or facilitating the two successful fraudulent card payments totalling INR 248,000. Limitation: Merchant/recipient records establish transaction destinations but not necessarily participation in the phishing deception.
 
+### v0.2.0 functional actor coding
+
+- **Reward-points SMS/link operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Merchant/payment recipient(s)**: identity `unknown`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Original SMS/link/domain artefacts, merchant/payment-gateway records, device/browser telemetry and IP logs identifying the external operator.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.1.5 corrective expansion; source-to-code review completed 2026-09-04. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

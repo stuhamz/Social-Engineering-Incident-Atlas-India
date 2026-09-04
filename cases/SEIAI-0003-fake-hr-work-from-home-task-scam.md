@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0003`
-- Coding version: `0.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-16
 - Status: **reviewed**
@@ -115,6 +115,13 @@ The complainant did not directly identify the applicant as the inducer. His alle
 
 The applicant argued that his cryptocurrency-related activity was legitimate and that he neither received cheated money nor knew the complainant.
 
+### v0.2.0 functional actor coding
+
+- **Fake HR caller**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Account-supply and circulation actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **CCTV-identified cash-withdrawal actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **Calling-infrastructure operator(s)**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+
 ## Primary evidentiary gap
 
 Direct linkage between the original HR impersonation account/calling infrastructure and identified human operators, plus full cryptocurrency transaction records tying mule-account circulation to fraudulent proceeds.
@@ -127,7 +134,7 @@ These are source-reported provisions and should not be treated as a fresh legal 
 
 ## Coding decisions / research notes
 
-The source reports the calling infrastructure as waho.pro on a U.S.-based server, supporting a cross-border infrastructure dimension even though the victim and investigated network were in India.
+The source reports the calling infrastructure as waho.pro on a U.S.-based server, supporting a cross-border infrastructure dimension even though the victim and investigated network were in India. Pre-publication source audit completed 2026-08-16; structured coding rechecked against the registered public source(s). v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

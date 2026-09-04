@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0041`
-- Coding version: `0.1.4`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -108,13 +108,19 @@ The attack itself is well reconstructed, but the imposter remains unidentified. 
 
 The employee may have been a manipulated organisational insider rather than a colluding participant; the High Court found negligence or lack of diligence insufficient to establish criminal complicity at that stage.
 
+### v0.2.0 functional actor coding
+
+- **Managing-Director impersonation operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Destination-account controller cluster**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **Finance employee alleged insider/facilitator role**: identity `identified`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+
 ## Primary evidentiary gap
 
 Platform/device records identifying the imposter and end-to-end evidence linking the impersonating WhatsApp account to the controllers of the receiving accounts.
 
 ## Coding decisions / research notes
 
-First Atlas case centered on executive-authority impersonation inside a live corporate payment workflow. Gross diverted amount is coded; later recovery of INR 13.1 million is preserved in narrative rather than silently netted. Second-pass source-to-code and privacy audit completed 2026-08-26.
+First Atlas case centered on executive-authority impersonation inside a live corporate payment workflow. Gross diverted amount is coded; later recovery of INR 13.1 million is preserved in narrative rather than silently netted. Second-pass source-to-code and privacy audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

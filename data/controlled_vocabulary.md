@@ -214,3 +214,14 @@ Use these exact lowercase values where a controlled field is specified.
 - `suspected`
 - `unknown`
 - `not_reported`
+
+## Actor functional flags added in v0.2.0
+
+`victim_facing_function` and `financial_function` use:
+
+- `yes`
+- `no`
+- `uncertain`
+- `not_assessed`
+
+These flags are non-exclusive. An actor may be `yes` on both functions.

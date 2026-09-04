@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0023`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,12 @@ The petitioner was not named in the FIR and asserted false implication; the sour
 ### Limitations
 
 The public bail order contains a rich victim narrative but little detail describing the evidentiary basis for the petitioner’s role.
+
+### v0.2.0 functional actor coding
+
+- **COS Telegram recruitment/task operator(s)**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **COS investment/task interface operator(s)**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Bail applicant with insufficiently specified role**: identity `identified`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
 
 ## Primary evidentiary gap
 

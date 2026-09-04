@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0057`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Telecom Disputes Settlement & Appellate Tribunal
-- Case / proceeding: not normalized
+- Case / proceeding: Cyber Appeal No.8/2021
 - Public status coded: `appeal`
 - Disposition: TDSAT appellate judgment concerning telecom liability after SIM replacement fraud.
 
@@ -34,7 +34,7 @@ TDSAT reviewed a 2017 Rajasthan SIM-swap fraud in which a duplicate SIM was issu
 ### Target
 
 - Target type: `business`
-- Sector/context: not normalized
+- Sector/context: infrastructure business / business banking
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **Duplicate-SIM / telecom-impersonation operator(s)**: `technical` / `social_engineering_operator`; strength `moderate`. Conduct assessed: Obtaining or causing issuance/blocking/replacement of the registered SIM through false identity or false service representation and using the resulting number control. Limitation: The adjudicatory record strongly documents the SIM-control mechanism but does not fully identify the human requester/operator.
 - **Online-banking / beneficiary-network operator(s)**: `financial` / `bank_account_controller`; strength `moderate`. Conduct assessed: Using diverted authentication or compromised banking access to add beneficiaries, transfer funds and/or withdraw the proceeds. Limitation: Financial activity is documented, but the adjudicatory record does not necessarily establish that the beneficiary/cash-out actors also performed the SIM impersonation.
 
+### v0.2.0 functional actor coding
+
+- **Duplicate-SIM / telecom-impersonation operator(s)**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Online-banking / beneficiary-network operator(s)**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Final criminal trial findings and device/login records connecting the duplicate SIM to the unauthorized bank sessions.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.2.0 full re-audit: attack end corrected to 29 May 2017, the last source-described fraudulent transaction date; 1 June was discovery/reporting, not attack conduct. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

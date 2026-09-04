@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0035`
-- Coding version: `0.1.3`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -105,7 +105,14 @@ The order provides strong prima facie digital/financial linkage for particular a
 
 A SIM/device/account association can establish a network role without proving authorship of each communication; the applicants contested the prosecution case.
 
-### Primary evidentiary gap
+#### v0.2.0 functional actor coding
+
+- **Initial sexual-video lure operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Fake police/YouTube extortion caller cluster**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Soukin-linked SIM/device and receiving-account role**: identity `identified`; victim-facing function `no`; financial function `yes`. paper functional override: financial conduct
+- **Talim-linked contact-device and beneficiary role**: identity `identified`; victim-facing function `yes`; financial function `yes`. paper functional override: victim-facing conduct; paper functional override: financial conduct
+
+## Primary evidentiary gap
 
 Victim-specific end-to-end mapping of the initial video lure, subsequent extortion personas, devices/SIMs and beneficiary accounts to identified operators.
 
@@ -122,7 +129,7 @@ IPC 419; IPC 420; IPC 388; IPC 170
 
 ## Coding decisions / research notes
 
-Included for unusually rich telecom/device evidence in a sextortion case. Attribution remains role-specific and bail-stage allegations are not treated as final guilt findings. Second-pass source-to-code audit completed 2026-08-26.
+Included for unusually rich telecom/device evidence in a sextortion case. Attribution remains role-specific and bail-stage allegations are not treated as final guilt findings. Second-pass source-to-code audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

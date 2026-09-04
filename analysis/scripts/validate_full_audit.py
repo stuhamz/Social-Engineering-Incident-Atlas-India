@@ -1,0 +1,98 @@
+from pathlib import Path
+import csv, re, sys
+from datetime import date
+
+ROOT=Path(__file__).resolve().parents[2]
+
+def read(path):
+    with path.open(newline='',encoding='utf-8') as f:
+        return list(csv.DictReader(f))
+
+cases=read(ROOT/'data'/'cases.csv')
+actors=read(ROOT/'data'/'actors.csv')
+sources=read(ROOT/'references'/'sources.csv')
+screen=read(ROOT/'references'/'screening_log.csv')
+errors=[]; warnings=[]
+case_ids={r['case_id'].strip() for r in cases}
+source_by_id={r['source_id'].strip():r for r in sources}
+retired={'SEIAI-0060'}
+
+# Stable active-corpus checks
+if len(cases)!=74: errors.append(f'expected 74 active incident rows after duplicate retirement, found {len(cases)}')
+if len(actors)!=196: errors.append(f'expected 196 active actor rows after duplicate retirement, found {len(actors)}')
+if len(sources)!=82: errors.append(f'expected 82 active source rows after duplicate retirement, found {len(sources)}')
+for cid in retired:
+    if cid in case_ids: errors.append(f'retired case {cid} remains active')
+    if any(r.get('case_id','').strip()==cid for r in actors): errors.append(f'retired case {cid} still has active actor rows')
+    if any(r.get('case_id','').strip()==cid for r in sources): errors.append(f'retired case {cid} still has active source rows')
+
+# Primary URL semantic duplicate detection across active cases
+url_to_cases={}
+for r in sources:
+    u=r.get('url','').strip().rstrip('/')
+    if u:
+        url_to_cases.setdefault(u,set()).add(r.get('case_id','').strip())
+for u,cids in url_to_cases.items():
+    if len(cids)>1:
+        errors.append(f'active source URL reused across cases {sorted(cids)}: {u}')
+
+# Source ownership and case/source agreement
+for c in cases:
+    cid=c['case_id'].strip(); psid=c.get('primary_source_id','').strip()
+    src=source_by_id.get(psid)
+    if not src:
+        errors.append(f'{cid}: primary source missing')
+    elif src.get('case_id','').strip()!=cid:
+        errors.append(f'{cid}: primary source {psid} belongs to {src.get("case_id")}')
+    # Case number should now be normalized whenever the registered primary source has one.
+    if src and src.get('case_number','').strip() and not c.get('case_number','').strip():
+        errors.append(f'{cid}: case_number blank although primary source registry has one')
+    # Date logic
+    s=c.get('incident_start_date','').strip(); e=c.get('incident_end_date','').strip(); y=c.get('incident_year','').strip()
+    def parse(x):
+        try: return date.fromisoformat(x)
+        except Exception: return None
+    sd=parse(s) if s else None; ed=parse(e) if e else None
+    if s and not sd: errors.append(f'{cid}: invalid incident_start_date {s!r}')
+    if e and not ed: errors.append(f'{cid}: invalid incident_end_date {e!r}')
+    if sd and ed and sd>ed: errors.append(f'{cid}: incident_start_date after incident_end_date')
+    if y!='not_reported':
+        if not re.fullmatch(r'\d{4}',y): errors.append(f'{cid}: incident_year must be YYYY or not_reported')
+        elif sd and not (sd.year<=int(y)<= (ed.year if ed else sd.year)):
+            # Multi-year incidents can legitimately use a year between start and end; otherwise mismatch is suspicious.
+            warnings.append(f'{cid}: incident_year {y} lies outside encoded exact date range {s} to {e}')
+    # No synthetic year-boundary precision without explicit audit note
+    rn=c.get('research_notes','')
+    if s.endswith('-01-01') or e.endswith('-12-31'):
+        if 'source' not in rn.lower() and 'exact' not in rn.lower():
+            warnings.append(f'{cid}: year-boundary exact date should be source-supported or removed')
+    if not c.get('target_sector','').strip(): warnings.append(f'{cid}: target_sector blank')
+    if not c.get('impersonated_identity_detail','').strip(): warnings.append(f'{cid}: impersonated_identity_detail blank')
+
+# Actor source ownership and function fields
+allowed_fun={'yes','no','uncertain','not_assessed'}
+for a in actors:
+    aid=a['actor_id'].strip(); cid=a['case_id'].strip()
+    if cid not in case_ids: errors.append(f'{aid}: parent case is not active')
+    for f in ('victim_facing_function','financial_function'):
+        if a.get(f,'').strip() not in allowed_fun: errors.append(f'{aid}: invalid {f}')
+    if not a.get('function_assignment_basis','').strip(): errors.append(f'{aid}: blank function_assignment_basis')
+    for sid in [x.strip() for x in a.get('source_ids','').split(';') if x.strip()]:
+        src=source_by_id.get(sid)
+        if not src: errors.append(f'{aid}: source {sid} missing')
+        elif src.get('case_id','').strip()!=cid: errors.append(f'{aid}: source {sid} belongs to different case {src.get("case_id")}')
+
+# Screening history for retired duplicate must remain transparent
+r=[x for x in screen if x.get('candidate_id')=='CAND-0079']
+if not r: errors.append('CAND-0079 missing from screening history')
+else:
+    x=r[0]
+    if x.get('decision')!='duplicate' or x.get('duplicate_of_case_id')!='SEIAI-0029':
+        errors.append('CAND-0079 not correctly marked duplicate of SEIAI-0029')
+
+print(f'Full audit validator: {len(cases)} cases, {len(actors)} actors, {len(sources)} sources, {len(screen)} screening candidates')
+print(f'Errors: {len(errors)}')
+for x in errors: print('ERROR:',x)
+print(f'Warnings: {len(warnings)}')
+for x in warnings: print('WARNING:',x)
+sys.exit(1 if errors else 0)

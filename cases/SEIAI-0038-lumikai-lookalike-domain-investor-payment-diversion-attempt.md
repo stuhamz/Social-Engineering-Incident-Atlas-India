@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0038`
-- Coding version: `0.1.3`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -102,7 +102,12 @@ The court found a prima facie case sufficient for interim relief and ordered dom
 
 The infrastructure and communications support an attempted impersonation scheme, but registrant/provider data still had to be disclosed and human attribution remained unresolved.
 
-### Primary evidentiary gap
+#### v0.2.0 functional actor coding
+
+- **Lookalike-domain and spoofed-email operator**: identity `unknown`; victim-facing function `yes`; financial function `yes`. paper functional override: victim-facing conduct; paper functional override: financial conduct
+- **Deceptively named Wells Fargo beneficiary-account controller**: identity `unknown`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
+## Primary evidentiary gap
 
 Verified registrar/provider, email-header, login/IP and beneficiary-account-control records identifying the human operator behind the lookalike domain.
 
@@ -117,7 +122,7 @@ Commercial/trademark passing-off and interim-injunction context
 
 ## Coding decisions / research notes
 
-Included as the Atlas’s first attempted BEC record. Financial loss is intentionally blank because the order does not establish that the target transferred funds. Cross-border dimension is coded suspected rather than yes because foreign banking infrastructure is described but the operator/target geography is not fully resolved. Second-pass source-to-code audit completed 2026-08-26.
+Included as the Atlas’s first attempted BEC record. Financial loss is intentionally blank because the order does not establish that the target transferred funds. Cross-border dimension is coded suspected rather than yes because foreign banking infrastructure is described but the operator/target geography is not fully resolved. Second-pass source-to-code audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

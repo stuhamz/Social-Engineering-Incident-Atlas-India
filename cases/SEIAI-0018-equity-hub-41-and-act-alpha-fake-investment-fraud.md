@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0018`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,12 @@ Petitioners argued the accounts were opened at another person’s instigation an
 ### Limitations
 
 The High Court noted the specific allegation was mainly permitting use of accounts; there was no material showing personal withdrawal or direct pecuniary benefit by the petitioners.
+
+### v0.2.0 functional actor coding
+
+- **Equity Hub 41 / ACT ALPHA victim-facing operator(s)**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **ACT ALPHA investment-platform operator(s)**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Petitioner-linked account-use actor cluster**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

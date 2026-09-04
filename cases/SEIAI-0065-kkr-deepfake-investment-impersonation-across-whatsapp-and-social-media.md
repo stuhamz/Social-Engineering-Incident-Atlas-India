@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0065`
-- Coding version: `0.1.5`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-09-04
 - Status: **reviewed**
@@ -21,7 +21,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 ## Procedural posture
 
 - Court / authority: Delhi High Court
-- Case / proceeding: not normalized
+- Case / proceeding: CS(COMM) 92/2024
 - Public status coded: `judgment`
 - Disposition: Final civil decree and permanent injunction; platforms directed to remove/block impersonating accounts and groups.
 
@@ -34,7 +34,7 @@ The Delhi High Court passed a final decree against impersonating defendants who 
 ### Target
 
 - Target type: `investor`
-- Sector/context: not normalized
+- Sector/context: retail investment
 - Target selection known: `not_reported`
 
 ### Reconnaissance
@@ -119,13 +119,18 @@ No separate alternative explanation is established in the structured record.
 - **KKR/individual impersonating social-media group operator(s)**: `victim_facing` / `platform_account_operator`; strength `moderate`. Conduct assessed: Operating WhatsApp/Telegram/social-media identities that used the plaintiff's name/image and represented investment advice as genuine. Limitation: The final civil decree resolved impersonation against the relevant defendant, but it does not forensically attribute every related account/group to a natural person.
 - **Deepfake content producer/distributor**: `technical` / `technical_infrastructure_operator`; strength `unclear`. Conduct assessed: Creating or circulating a deepfake video falsely depicting the plaintiff giving investment advice. Limitation: The source proves circulation of the fabricated content but does not identify who generated the deepfake.
 
+### v0.2.0 functional actor coding
+
+- **KKR/individual impersonating social-media group operator(s)**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Deepfake content producer/distributor**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+
 ## Primary evidentiary gap
 
 Provider registration, IP/login and device records establishing the human controller of each fraudulent account/group.
 
 ## Coding decisions / research notes
 
-v0.1.5 corrective expansion; source-to-code review completed 2026-09-04.
+v0.2.0 full re-audit: exact incident dates removed. Source establishes that impersonation was discovered in December 2023 and continued into 2024; incident_year corrected to 2023. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

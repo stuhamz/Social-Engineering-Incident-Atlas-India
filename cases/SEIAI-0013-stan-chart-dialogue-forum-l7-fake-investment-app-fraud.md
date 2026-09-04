@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0013`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,12 @@ Applicant-specific role and technical control of the group/application are not e
 ### Limitations
 
 The source is a notice-stage interim bail order and provides the victim narrative but little applicant-specific evidentiary analysis.
+
+### v0.2.0 functional actor coding
+
+- **Stan Chart Dialogue Forum L7 group operator(s)**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **SCHNW application operator(s)**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Bail applicant with undeveloped alleged role**: identity `identified`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
 
 ## Primary evidentiary gap
 

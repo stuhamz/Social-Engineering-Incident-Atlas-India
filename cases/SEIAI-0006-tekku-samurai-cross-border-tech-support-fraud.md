@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0006`
-- Coding version: `0.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-16
 - Status: **reviewed**
@@ -114,6 +114,12 @@ The order concerns bail and does not finally adjudicate guilt. It does not estab
 
 The applicant argued he was merely an owner and that financial transfers from Bidder Media were legitimate commercial transactions unrelated to victim fraud.
 
+### v0.2.0 functional actor coding
+
+- **Victim-facing call-centre agents**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Call-centre ownership/management actor**: identity `identified`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Malicious pop-up and remote-access infrastructure operator(s)**: identity `actor_cluster`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+
 ## Primary evidentiary gap
 
 Victim-specific linkage between particular call-centre agents/sessions and each fraudulent loss, plus complete foreign payment and remote-access logs.
@@ -126,7 +132,7 @@ These are source-reported provisions and should not be treated as a fresh legal 
 
 ## Coding decisions / research notes
 
-Cross-border case included because the investigated operation and evidence were materially situated in India even though the named victims were in Japan.
+Cross-border case included because the investigated operation and evidence were materially situated in India even though the named victims were in Japan. Pre-publication source audit completed 2026-08-16; structured coding rechecked against the registered public source(s). v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

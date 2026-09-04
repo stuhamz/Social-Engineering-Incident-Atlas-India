@@ -1,0 +1,6 @@
+actor_id,case_id,field,old_value,new_value,reason,audit_date
+SEIAI-0019-A01,SEIAI-0019,identity_resolution,unknown,partially_identified,Named applicant is actor-specifically linked in the source to adding/impersonating the complainant within the fraudulent WhatsApp group; partial identity does not imply guilt.,2026-09-04
+SEIAI-0071-A01,SEIAI-0071,identity_resolution,unknown,partially_identified,"Prosecution material actor-specifically links the named applicant to the “Shaurya” persona, but the link remains contested and non-final.",2026-09-04
+SEIAI-0048-A01,SEIAI-0048,identity_resolution,partially_identified,unknown,Public record describes the Facebook/WhatsApp persona but does not map that persona to a specific real-world human; persona naming is not human resolution.,2026-09-04
+SEIAI-0065-A01,SEIAI-0065,identity_resolution,partially_identified,unknown,"“Anurag Thakur” is an asserted impersonating name/defendant label, not independently established real-world identity; coded unknown under the tightened identity rule.",2026-09-04
+SEIAI-0037-A02,SEIAI-0037,financial_function,not separately represented in v0.1.5,yes,Final appellate judgment links the appellant to phone/e-wallet/account operation and handling fraud-linked funds. Functional coding is independent of the legacy role_layer taxonomy.,2026-09-04

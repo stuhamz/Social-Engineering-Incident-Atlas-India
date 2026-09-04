@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0014`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,12 @@ Applicants disputed whether they were victims, peripheral account holders or act
 ### Limitations
 
 The public order develops evidence concerning account infrastructure and communications among downstream actors but does not establish that the applicants made the Airtel/Mumbai Police/CBI calls.
+
+### v0.2.0 functional actor coding
+
+- **Airtel/Mumbai Police/CBI impersonation operator(s)**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Beneficiary-company account controller actor(s)**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **Account/SIM procurement and coordination actor(s)**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

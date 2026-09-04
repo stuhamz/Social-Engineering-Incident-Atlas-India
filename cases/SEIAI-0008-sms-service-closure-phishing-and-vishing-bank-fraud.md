@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0008`
-- Coding version: `0.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-16
 - Status: **reviewed**
@@ -112,6 +112,12 @@ The litigation established the victim interacted with a suspicious link and that
 
 The victim maintained he never shared OTPs and that malware or compromise transmitted credentials; the bank argued that clicking the suspicious link constituted customer negligence and enabled credential misuse.
 
+### v0.2.0 functional actor coding
+
+- **SMS/call social-engineering operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Credential/transaction compromise operator**: identity `unknown`; victim-facing function `no`; financial function `no`. no paper-specific evidence assigning either primary function
+- **Transaction beneficiary actor(s)**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Technical forensic examination of the device/link and attacker infrastructure sufficient to determine how credentials and OTPs were obtained and to identify the operator.
@@ -124,7 +130,7 @@ These are source-reported provisions and should not be treated as a fresh legal 
 
 ## Coding decisions / research notes
 
-This is a civil/banking-liability case rather than a criminal prosecution, included because the underlying social-engineering incident and evidentiary uncertainty are richly documented.
+This is a civil/banking-liability case rather than a criminal prosecution, included because the underlying social-engineering incident and evidentiary uncertainty are richly documented. Pre-publication source audit completed 2026-08-16; structured coding rechecked against the registered public source(s). v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

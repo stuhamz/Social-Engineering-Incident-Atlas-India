@@ -34,3 +34,5 @@ Material changes must be documented in `CHANGELOG.md` and, where appropriate, re
 Published Git tags should remain immutable. Corrections after a published tag should be released under a new version rather than moving an existing tag.
 
 The reviewed Excel workbook is distributed as a GitHub release asset rather than committed to the repository. CSVs and research documentation remain versioned in Git.
+
+- `0.2.0`: full 75-ID source-to-code re-audit; retires exact duplicate SEIAI-0060 without renumbering later IDs, adds non-exclusive actor-function flags, tightens human identity resolution, corrects date precision and harmonizes the 51-75 expansion with the existing schema. This is a substantive schema/methodology release.

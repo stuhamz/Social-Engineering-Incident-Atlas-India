@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0015`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,12 @@ One beneficiary account holder alleged a bank relationship manager used his acco
 ### Limitations
 
 The source provides a developed financial/account-facilitation case but does not directly identify the applicant as the RBI, police or ED impersonator.
+
+### v0.2.0 functional actor coding
+
+- **Fake RBI caller**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Mumbai Police/ED video-call impersonation operator(s)**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Beneficiary-account manipulation/facilitation actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 

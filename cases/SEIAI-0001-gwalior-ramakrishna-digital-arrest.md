@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0001`
-- Coding version: `0.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-16
 - Status: **reviewed**
@@ -131,6 +131,15 @@ There is meaningful multi-source evidence linking identified people to parts of 
 - bank-account ownership or receipt of funds is not equivalent to caller identity
 - CDR linkage shows communication patterns, not content or intent
 - several assertions remain prosecution allegations or prima facie bail-stage assessments
+
+### v0.2.0 functional actor coding
+
+- **Original Nashik Police impersonation operator(s)**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Downstream beneficiary-account network**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **Cash-out and withdrawal actors**: identity `actor_cluster`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **Bank-cashier facilitation actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **Account-procurement actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+- **Account-rental/provision actor**: identity `identified`; victim-facing function `no`; financial function `yes`. Atlas financial layer
 
 ## Primary evidentiary gap
 Direct attribution of the original WhatsApp impersonation account through provider records, authenticated account metadata, device artefacts, telecom correlation, and a clear chain tying the account to a human operator.

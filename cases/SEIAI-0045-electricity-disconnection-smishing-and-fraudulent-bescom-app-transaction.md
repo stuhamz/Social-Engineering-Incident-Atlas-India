@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0045`
-- Coding version: `0.1.4`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -108,13 +108,19 @@ The consumer proceeding determined customer/bank liability, not attacker identit
 
 The bank argued customer credential sharing/negligence; the Commission accepted that the two large transactions were not initiated by the complainant and no OTP for them was received.
 
+### v0.2.0 functional actor coding
+
+- **Electricity-disconnection smishing/call operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Fraudulent application/session operator**: identity `unknown`; victim-facing function `no`; financial function `yes`. paper functional override: financial conduct
+- **Transaction beneficiary layer**: identity `unknown`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
 ## Primary evidentiary gap
 
 Application provenance, device artefacts, telecom/session logs and beneficiary-account records identifying the fraud operator and explaining the unauthorized debit mechanism.
 
 ## Coding decisions / research notes
 
-Financial loss codes the unreversed INR 199,000, while the initially reversed INR 25,000 debit remains documented in narrative. Second-pass source-to-code and privacy audit completed 2026-08-26.
+Financial loss codes the unreversed INR 199,000, while the initially reversed INR 25,000 debit remains documented in narrative. Second-pass source-to-code and privacy audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

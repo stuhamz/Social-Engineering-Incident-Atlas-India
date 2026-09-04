@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0034`
-- Coding version: `0.1.3`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -101,7 +101,12 @@ The appellate consumer decision addresses bank/customer liability and does not i
 
 The bank argued customer negligence, while the complainant maintained that he did not approve the OTPs.
 
-### Primary evidentiary gap
+#### v0.2.0 functional actor coding
+
+- **Fake Amazon support operator**: identity `unknown`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Unknown transaction/beneficiary operator**: identity `unknown`; victim-facing function `no`; financial function `yes`. Atlas financial layer
+
+## Primary evidentiary gap
 
 Attacker-side telecom, device, beneficiary-account and authentication/session evidence sufficient to determine the compromise mechanism and operator.
 
@@ -116,7 +121,7 @@ Consumer Protection Act / RBI customer-liability context
 
 ## Coding decisions / research notes
 
-Included to broaden both source stage and geography. The case is coded for incident reconstruction, not as a finding that a particular technical compromise theory was proven. Second-pass source-to-code audit completed 2026-08-26.
+Included to broaden both source stage and geography. The case is coded for incident reconstruction, not as a finding that a particular technical compromise theory was proven. Second-pass source-to-code audit completed 2026-08-26. v0.2.0 full-corpus source-to-code re-audit completed 2026-09-04.
 
 ## Manual review checklist
 

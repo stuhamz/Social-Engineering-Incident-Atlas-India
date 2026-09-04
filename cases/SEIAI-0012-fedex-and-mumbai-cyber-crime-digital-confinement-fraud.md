@@ -3,7 +3,7 @@
 ## Record status
 
 - Case ID: `SEIAI-0012`
-- Coding version: `0.1.1`
+- Coding version: `0.2.0`
 - Coder: Hamzah
 - Date coded: 2026-08-26
 - Status: **reviewed**
@@ -98,6 +98,11 @@ The applicant disputed evidentiary weight of co-accused disclosure and argued th
 ### Limitations
 
 The source materially links the applicant to financial-account operation, a recovered SIM/device and chats, but does not show that he conducted the original victim-facing impersonation.
+
+### v0.2.0 functional actor coding
+
+- **FedEx and Mumbai Cyber Crime impersonation operator(s)**: identity `actor_cluster`; victim-facing function `yes`; financial function `no`. Atlas victim_facing layer
+- **Financial-arm account/device actor**: identity `identified`; victim-facing function `no`; financial function `yes`. paper functional override: financial conduct
 
 ## Primary evidentiary gap
 
