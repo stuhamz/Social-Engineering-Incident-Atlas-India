@@ -157,4 +157,4 @@ The next collection stage should be decided only after evaluating what the corre
 
 **Hamzah**  
 MSc Digital Forensics and Information Security  
-National Forensic Sciences University, Bhopal Campus
+National Forensic Sciences University, Delhi Campus
