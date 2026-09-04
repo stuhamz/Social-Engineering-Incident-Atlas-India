@@ -1,36 +1,22 @@
-# GitHub Update Guide for v0.2.0
+# GitHub Hotfix Guide for v0.2.1
 
-This package replaces the public v0.1.5 working tree with the fully re-audited v0.2.0 Atlas.
+v0.2.1 fixes one repository-tree inconsistency in the already-published v0.2.0 release. The structured data do not change.
 
-## What v0.2.0 contains
+## Required deletion
 
-- 74 active reviewed incident records
-- 196 active reviewed actor-role records
-- 82 active registered sources
-- 96 screening candidates retained as audit history
-- 74 active case narratives
-- one retired stable ID: `SEIAI-0060`, duplicate of `SEIAI-0029`
-- non-exclusive victim-facing and financial actor-function coding
-- full case, source, actor-correction and retired-ID audit logs
-- three validators, all passing with zero errors and zero warnings
-
-## Replace the local working tree
-
-Do **not** delete the `.git` directory in your existing local clone.
-
-1. Make sure your current repository has no uncommitted work you need to preserve:
+In the existing local clone, remove the stale retired narrative explicitly:
 
 ```powershell
-git status
+git rm cases/SEIAI-0060-olx-buyer-qr-and-upi-payment-manipulation-fraud.md
 ```
 
-2. Extract the v0.2.0 GitHub-ready ZIP to a separate folder.
+This explicit `git rm` matters because copying replacement files over an existing clone does not delete tracked files that are absent from the replacement package.
 
-3. In your existing local clone, delete the repository files and folders **except `.git`**.
+## Apply the v0.2.1 package
 
-4. Copy everything from inside the extracted v0.2.0 folder into the existing local clone.
+Copy the contents of the v0.2.1 GitHub-ready folder over the existing clone. Do **not** delete `.git`.
 
-5. Run all validators:
+Then run:
 
 ```powershell
 python analysis/scripts/validate_dataset.py
@@ -38,41 +24,37 @@ python analysis/scripts/validate_actors.py
 python analysis/scripts/validate_full_audit.py
 ```
 
-All three should report zero errors and zero warnings.
+Expected full-audit summary:
 
-## Review and commit
+```text
+Full audit validator: 74 cases, 74 narratives, 196 actors, 82 sources, 96 screening candidates
+Errors: 0
+Warnings: 0
+```
+
+Then review and commit:
 
 ```powershell
 git status
 git add -A
 git status
-git commit -m "Full Atlas re-audit and v0.2.0 release"
+git commit -m "Hotfix Atlas repository integrity for v0.2.1"
 git push origin main
 ```
 
-If your default branch is not `main`, replace `main` with the branch shown by:
+Create a new tag rather than moving the published v0.2.0 tag:
 
 ```powershell
-git branch --show-current
+git tag -a v0.2.1 -m "Social Engineering Incident Atlas India v0.2.1 repository-integrity hotfix"
+git push origin v0.2.1
 ```
 
-## Tag the release
+Suggested GitHub release title:
 
-```powershell
-git tag -a v0.2.0 -m "Social Engineering Incident Atlas India v0.2.0 full re-audit"
-git push origin v0.2.0
-```
-
-## GitHub release
-
-Create a release from tag `v0.2.0`.
-
-Suggested title:
-
-`Social Engineering Incident Atlas India v0.2.0`
+`Social Engineering Incident Atlas India v0.2.1`
 
 Suggested release summary:
 
-> Full source-to-code re-audit of the Social Engineering Incident Atlas India. The release contains 74 active reviewed incidents and 196 actor-role records. SEIAI-0060 is retired as an exact duplicate of SEIAI-0029 without renumbering later IDs. v0.2.0 adds non-exclusive victim-facing and financial actor-function coding, tightens human identity-resolution rules, removes unsupported incident-date precision, harmonizes the Cases 51-75 corrective batch, and adds stricter cross-file validation. All three validators return zero errors and zero warnings. The corpus remains purposively sampled and retrieval-driven and should not be used for national prevalence estimates.
+> Repository-integrity hotfix over the unchanged v0.2.0 coded dataset. Removes the retired SEIAI-0060 duplicate narrative that remained in the Git tree after the v0.2.0 working-tree replacement, and strengthens the full-audit validator to enforce a one-to-one match between active case IDs and public case narratives. Structured incident, actor, source and screening data are unchanged.
 
-Attach the reviewed v0.2.0 Excel workbook as the research release asset. GitHub automatically provides source ZIP/tar archives for the tag, so the repository-ready ZIP does not need to be uploaded as a release asset.
+No new workbook is required. The v0.2.0 workbook remains the authoritative workbook for these unchanged data.

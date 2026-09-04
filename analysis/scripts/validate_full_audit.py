@@ -17,7 +17,29 @@ case_ids={r['case_id'].strip() for r in cases}
 source_by_id={r['source_id'].strip():r for r in sources}
 retired={'SEIAI-0060'}
 
+# Narrative-file integrity. Every active case must have exactly one SEIAI-#### narrative,
+# and retired/non-active IDs must not survive as orphan public case notes.
+case_note_paths=sorted((ROOT/'cases').glob('SEIAI-*.md'))
+narrative_ids=[]
+for path in case_note_paths:
+    m=re.match(r'^(SEIAI-\d{4})-', path.name)
+    if not m:
+        errors.append(f'unparseable case narrative filename: {path.name}')
+    else:
+        narrative_ids.append(m.group(1))
+
+
 # Stable active-corpus checks
+if len(case_note_paths)!=74: errors.append(f'expected 74 active case narratives, found {len(case_note_paths)}')
+from collections import Counter
+_narr_counts=Counter(narrative_ids)
+for cid,n in sorted(_narr_counts.items()):
+    if n!=1: errors.append(f'{cid}: expected exactly one case narrative, found {n}')
+for cid in sorted(case_ids-set(narrative_ids)):
+    errors.append(f'{cid}: active case has no narrative file')
+for cid in sorted(set(narrative_ids)-case_ids):
+    errors.append(f'{cid}: orphan/non-active narrative file remains in cases/')
+
 if len(cases)!=74: errors.append(f'expected 74 active incident rows after duplicate retirement, found {len(cases)}')
 if len(actors)!=196: errors.append(f'expected 196 active actor rows after duplicate retirement, found {len(actors)}')
 if len(sources)!=82: errors.append(f'expected 82 active source rows after duplicate retirement, found {len(sources)}')
@@ -90,7 +112,7 @@ else:
     if x.get('decision')!='duplicate' or x.get('duplicate_of_case_id')!='SEIAI-0029':
         errors.append('CAND-0079 not correctly marked duplicate of SEIAI-0029')
 
-print(f'Full audit validator: {len(cases)} cases, {len(actors)} actors, {len(sources)} sources, {len(screen)} screening candidates')
+print(f'Full audit validator: {len(cases)} cases, {len(case_note_paths)} narratives, {len(actors)} actors, {len(sources)} sources, {len(screen)} screening candidates')
 print(f'Errors: {len(errors)}')
 for x in errors: print('ERROR:',x)
 print(f'Warnings: {len(warnings)}')

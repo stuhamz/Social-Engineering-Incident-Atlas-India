@@ -1,10 +1,14 @@
 # Social Engineering Incident Atlas India
 
-> **Current dataset release: v0.2.0.** The repository contains **74 active reviewed incident records**, **196 reviewed actor-role attribution records**, **82 active registered sources**, and **96 screening candidates**. v0.2.0 is a full source-to-code re-audit of the complete 75-ID history. One exact semantic duplicate, `SEIAI-0060`, was retired in favour of the earlier stable record `SEIAI-0029`; later IDs were not renumbered.
+> **Current dataset release: v0.2.1.** The repository contains **74 active reviewed incident records**, **196 reviewed actor-role attribution records**, **82 active registered sources**, and **96 screening candidates**. v0.2.0 is a full source-to-code re-audit of the complete 75-ID history. One exact semantic duplicate, `SEIAI-0060`, was retired in favour of the earlier stable record `SEIAI-0029`; later IDs were not renumbered.
 
 A structured research dataset and analytical framework for studying **social-engineering-enabled cybercrime, digital evidence, and attribution in India**.
 
-## v0.2.0 full-corpus re-audit
+## v0.2.1 repository-integrity hotfix
+
+v0.2.1 is a repository-integrity hotfix over the unchanged v0.2.0 coded dataset. It removes the retired `SEIAI-0060` narrative from the public case directory and strengthens `validate_full_audit.py` so active case IDs and narrative files must match one-to-one. No incident, actor, source, screening, or coding values changed from v0.2.0.
+
+### v0.2.0 substantive re-audit baseline
 
 The first 10 incidents were purposively selected to test the schema. Later batches use documented candidate logging, inclusion/exclusion rules, duplicate handling and diversity-focused retrieval. Cases 51-75 were originally an audit-directed corrective batch selected to reduce bail-order dependence, widen temporal coverage, add stronger final/appellate adjudication, and stress-test the actor model. The v0.2.0 release then rechecked every incident from `SEIAI-0001` through `SEIAI-0075`, every active actor row, every registered source relationship, and the screening history under tightened identity and actor-function rules.
 
@@ -147,9 +151,9 @@ If using individual incident records, cite the original source(s) in `references
 
 ## Status
 
-**v0.2.0: 74 active reviewed incidents, 196 reviewed actor-role records, 82 active registered sources, 96 screening candidates.**
+**v0.2.1: 74 active reviewed incidents, 196 reviewed actor-role records, 82 active registered sources, 96 screening candidates.**
 
-The release preserves the full 75-ID audit history. `SEIAI-0060` is retired as an exact duplicate of `SEIAI-0029`; `SEIAI-0061` through `SEIAI-0075` keep their stable identifiers.
+The v0.2.1 release preserves the full 75-ID audit history and leaves all structured v0.2.0 coding unchanged. `SEIAI-0060` is retired as an exact duplicate of `SEIAI-0029`; `SEIAI-0061` through `SEIAI-0075` keep their stable identifiers.
 
 The next collection stage should be decided only after evaluating what the corrected corpus can and cannot support as research. Horizontal expansion should remain audit-directed rather than count-driven.
 

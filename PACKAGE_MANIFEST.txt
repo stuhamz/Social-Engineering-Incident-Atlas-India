@@ -1,10 +1,11 @@
-Social Engineering Incident Atlas India v0.2.0
-Files: 150
+Social Engineering Incident Atlas India v0.2.1
+Files: 151
 Active cases: 74
 Actors: 196
 Active sources: 82
 Screening candidates: 96
 Retired stable IDs: 1 (SEIAI-0060, exact duplicate of SEIAI-0029)
+Hotfix scope: repository integrity only; structured v0.2.0 coding unchanged
 
 .gitignore
 CHANGELOG.md
@@ -112,6 +113,7 @@ docs/RELEASE_NOTES_v0.1.4.md
 docs/RELEASE_NOTES_v0.1.5.md
 docs/RELEASE_NOTES_v0.1.md
 docs/RELEASE_NOTES_v0.2.0.md
+docs/RELEASE_NOTES_v0.2.1.md
 docs/project_scope.md
 docs/research_questions.md
 docs/roadmap.md

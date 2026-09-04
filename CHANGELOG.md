@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.2.1 - 2026-09-04
+
+- repository-integrity hotfix over the unchanged v0.2.0 coded dataset
+- removes the retired `SEIAI-0060` duplicate narrative from `cases/`; active narratives now match the 74 active case rows one-to-one
+- strengthens `validate_full_audit.py` to fail on missing active narratives, duplicate narrative IDs, retired IDs, or any orphan/non-active `SEIAI-####` narrative
+- no incident, actor, source, screening, or coding values changed from v0.2.0
+- published as a new tag rather than moving the already-published v0.2.0 tag
+
 ## v0.2.0 - 2026-09-04
 
 - completed a full source-to-code re-audit of the 75-ID Atlas history, covering every incident record, every active actor row and registered source relationships

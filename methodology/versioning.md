@@ -12,6 +12,8 @@ Current version history:
 - `0.1.3`: diversity-focused expansion to 40 reviewed incidents using the stable incident and actor schemas
 - `0.1.4`: expansion to 50 reviewed incidents followed by the first analytical-stability audit
 - `0.1.5`: audit-directed corrective expansion to 75 reviewed incidents, with stronger final/appellate source-stage coverage and no breaking schema change
+- `0.2.0`: full 75-ID source-to-code re-audit; retires exact duplicate SEIAI-0060, repairs actor functions and identity resolution, date precision and batch harmonization
+- `0.2.1`: repository-integrity hotfix; removes the retired duplicate narrative from the public case directory and adds narrative-to-case validation, with no structured data recoding
 
 Historical rows retain the coding version under which they were last substantively coded. The current repository release version therefore does not require rewriting every earlier row's coding-version value.
 
@@ -35,4 +37,3 @@ Published Git tags should remain immutable. Corrections after a published tag sh
 
 The reviewed Excel workbook is distributed as a GitHub release asset rather than committed to the repository. CSVs and research documentation remain versioned in Git.
 
-- `0.2.0`: full 75-ID source-to-code re-audit; retires exact duplicate SEIAI-0060 without renumbering later IDs, adds non-exclusive actor-function flags, tightens human identity resolution, corrects date precision and harmonizes the 51-75 expansion with the existing schema. This is a substantive schema/methodology release.
