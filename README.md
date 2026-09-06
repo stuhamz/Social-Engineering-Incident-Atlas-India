@@ -4,6 +4,15 @@
 
 A structured research dataset and analytical framework for studying **social-engineering-enabled cybercrime, digital evidence, and attribution in India**.
 
+## Public Atlas interface
+
+The research repository now has a browser-based exploration layer for people who do not work directly with CSVs or GitHub.
+
+**Explore the public Atlas:** https://stuhamz.github.io/Social-Engineering-Incident-Atlas-India/
+
+The interface provides case search and filtering, actor-role exploration, evidence views, source navigation and interactive corpus charts. It is a read-only layer generated from the authoritative research CSVs. The same sampling and attribution limitations documented in this repository apply to every visualization.
+
+
 ## v0.2.1 repository-integrity hotfix
 
 v0.2.1 is a repository-integrity hotfix over the unchanged v0.2.0 coded dataset. It removes the retired `SEIAI-0060` narrative from the public case directory and strengthens `validate_full_audit.py` so active case IDs and narrative files must match one-to-one. No incident, actor, source, screening, or coding values changed from v0.2.0.
