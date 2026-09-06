@@ -1,50 +1,41 @@
 # Public Atlas Interface
 
-The `atlas/` directory is a read-only public exploration layer for the Social Engineering Incident Atlas India.
+The public interface is a read-only exploration layer over the Social Engineering Incident Atlas India research repository.
 
-## Design rule
+## Source of truth
 
-The website is **not a second dataset**. The authoritative research files remain:
+The website does not maintain a second manually edited dataset. `analysis/scripts/build_public_atlas.py` derives `atlas/data/atlas.json` from:
 
 - `data/cases.csv`
 - `data/actors.csv`
 - `references/sources.csv`
 
-`analysis/scripts/build_public_atlas.py` derives `atlas/data/atlas.json` from those files. Do not hand-edit `atlas/data/atlas.json`.
+The authoritative CSVs, codebooks, source registry, case narratives and validators remain the research layer.
 
-## What the interface includes
+## Interface v0.2
 
-- overview metrics and interactive charts
-- case explorer with combined filters
-- individual case reconstruction views
+The interface includes:
+
+- corpus summary and navigation charts
+- schematic India corpus-coverage map with state/UT markers
+- case explorer with basic and advanced filters
+- shareable permanent case routes such as `#case/SEIAI-0043`
+- case-level procedural-posture warnings
+- copy-link and copy-citation actions
+- filtered CSV export
+- comparison of two to four cases with shareable `#compare/...` routes
 - actor-role explorer
 - evidence explorer
-- public source registry
-- permanent sampling and attribution warnings
-- responsive mobile layout
-
-## Rebuild locally
-
-From the repository root:
-
-```bash
-python analysis/scripts/build_public_atlas.py
-```
-
-Then serve the repository locally, for example:
-
-```bash
-python -m http.server 8000
-```
-
-Open `http://localhost:8000/atlas/`.
-
-## GitHub Pages
-
-The included workflow `.github/workflows/deploy-atlas.yml` rebuilds the public JSON and deploys the `atlas/` directory to GitHub Pages.
-
-In GitHub, open **Settings → Pages** and set the source to **GitHub Actions** if it is not already enabled.
+- attack-type × evidence matrix
+- source registry
+- a dedicated Method page explaining sampling, source hierarchy, identity resolution and attribution
 
 ## Interpretation boundary
 
-The corpus is purposively sampled and retrieval-driven. Interface counts describe the reviewed Atlas corpus and must not be interpreted as prevalence estimates for Indian cybercrime. Actor-level records assess source-supported conduct and identity resolution, not guilt.
+The Atlas is purposively sampled and retrieval-driven. Corpus counts must not be read as national prevalence, state rankings, average-loss estimates, conviction rates or demographic risk estimates.
+
+Map markers show the state or UT coded for reviewed incidents. Marker placement uses approximate state centroids for interface navigation. They are not incident coordinates.
+
+## Deployment
+
+The existing GitHub Pages workflow rebuilds `atlas/data/atlas.json` before deploying the `atlas/` directory. When research CSVs change, the public interface is therefore regenerated from the same authoritative data.

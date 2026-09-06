@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A public exploration interface for the Social Engineering Incident Atlas India.">
+  <meta name="description" content="A public research interface for the Social Engineering Incident Atlas India.">
   <meta name="theme-color" content="#102c2a">
   <title>Social Engineering Incident Atlas India</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23102c2a%22/><path d=%22M21 69V31h16c12 0 20 6 20 18s-8 20-21 20H21zm11-9h5c6 0 9-4 9-11 0-6-3-9-9-9h-5v20zm33 9V31h11v38H65z%22 fill=%22%23f4efe4%22/></svg>">
@@ -22,6 +22,7 @@
         <button data-view="actors" class="nav-link">Actors</button>
         <button data-view="evidence" class="nav-link">Evidence</button>
         <button data-view="sources" class="nav-link">Sources</button>
+        <button data-view="method" class="nav-link">Method</button>
       </nav>
       <a class="github-link" href="https://github.com/stuhamz/Social-Engineering-Incident-Atlas-India" target="_blank" rel="noreferrer">Research repository ↗</a>
       <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open navigation">Menu</button>
@@ -42,72 +43,68 @@
           <aside class="hero-note">
             <span class="note-index">01</span>
             <p><strong>Read the corpus carefully.</strong> This Atlas is purposively sampled and retrieval-driven. Counts describe the reviewed corpus, not cybercrime prevalence in India.</p>
-            <button class="inline-link" id="methodologyToggle">Why this matters</button>
+            <button class="inline-link" data-view="method">Read the method</button>
           </aside>
         </div>
 
         <div class="metric-strip" id="metricStrip" aria-label="Atlas summary metrics"></div>
 
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">CORPUS AT A GLANCE</p>
-            <h2>Explore the shape of the Atlas</h2>
+        <section class="coverage-section">
+          <div class="section-head">
+            <div><p class="eyebrow">CORPUS GEOGRAPHIC COVERAGE</p><h2>Where do reviewed records come from?</h2></div>
+            <p class="section-intro">Markers represent the state or UT coded for Atlas incidents. They are corpus markers, not incident coordinates or prevalence estimates.</p>
           </div>
-          <p class="section-intro">Every chart is a navigation surface. Select a bar to jump into the matching cases.</p>
+          <div class="coverage-grid">
+            <article class="map-panel">
+              <div id="indiaMap" class="india-map" aria-label="Interactive corpus coverage map of India">
+                <img src="./assets/india-outline.svg" alt="Schematic outline of India and neighbouring borders" class="india-outline">
+                <div id="mapPins" class="map-pins"></div>
+              </div>
+              <div class="map-legend"><span><i></i> Reviewed corpus marker</span><small>Marker area increases with the number of reviewed cases in that state or UT.</small></div>
+            </article>
+            <aside class="map-inspector" id="mapInspector">
+              <p class="eyebrow">SELECT A MARKER</p>
+              <h3>Explore a state or UT</h3>
+              <p>Choose a marker to see its corpus count and represented attack categories, then jump directly to matching cases.</p>
+            </aside>
+          </div>
+        </section>
+
+        <div class="section-head section-space">
+          <div><p class="eyebrow">CORPUS AT A GLANCE</p><h2>Explore the shape of the Atlas</h2></div>
+          <p class="section-intro">Every chart is a navigation surface. Select a bar or category to inspect the matching records.</p>
         </div>
 
         <div class="dashboard-grid">
           <article class="panel panel-wide">
-            <div class="panel-head">
-              <div><span class="panel-kicker">Attack categories</span><h3>What kinds of incidents are represented?</h3></div>
-              <button class="panel-link" data-view="cases">All cases →</button>
-            </div>
+            <div class="panel-head"><div><span class="panel-kicker">Attack categories</span><h3>What kinds of incidents are represented?</h3></div><button class="panel-link" data-view="cases">All cases →</button></div>
             <div id="attackChart" class="bar-chart"></div>
           </article>
-
           <article class="panel">
-            <div class="panel-head">
-              <div><span class="panel-kicker">Geography</span><h3>Reviewed cases by state / UT</h3></div>
-            </div>
+            <div class="panel-head"><div><span class="panel-kicker">Geography</span><h3>Reviewed cases by state / UT</h3></div></div>
             <div id="stateChart" class="rank-list"></div>
           </article>
-
           <article class="panel">
-            <div class="panel-head">
-              <div><span class="panel-kicker">Record stage</span><h3>What kind of public record are we reading?</h3></div>
-            </div>
+            <div class="panel-head"><div><span class="panel-kicker">Record stage</span><h3>What kind of public record are we reading?</h3></div></div>
             <div id="stageChart" class="donut-block"></div>
           </article>
-
           <article class="panel panel-wide">
-            <div class="panel-head">
-              <div><span class="panel-kicker">Evidence visibility</span><h3>Which traces appear in public records?</h3></div>
-              <button class="panel-link" data-view="evidence">Evidence explorer →</button>
-            </div>
+            <div class="panel-head"><div><span class="panel-kicker">Evidence visibility</span><h3>Which traces appear in public records?</h3></div><button class="panel-link" data-view="evidence">Evidence explorer →</button></div>
             <div id="evidenceOverviewChart" class="evidence-bars"></div>
           </article>
-
           <article class="panel">
-            <div class="panel-head">
-              <div><span class="panel-kicker">Human resolution</span><h3>Which operational functions resolve to humans?</h3></div>
-            </div>
+            <div class="panel-head"><div><span class="panel-kicker">Human resolution</span><h3>Which operational functions resolve to humans?</h3></div></div>
             <div id="resolutionChart" class="resolution-grid"></div>
           </article>
-
           <article class="panel">
-            <div class="panel-head">
-              <div><span class="panel-kicker">Time</span><h3>Incident years represented</h3></div>
-            </div>
+            <div class="panel-head"><div><span class="panel-kicker">Time</span><h3>Incident years represented</h3></div></div>
             <div id="yearChart" class="spark-chart"></div>
           </article>
         </div>
 
         <section class="principle-band">
           <div class="principle-number">02</div>
-          <div>
-            <p class="eyebrow">CORE RESEARCH PRINCIPLE</p>
-            <h2>Reconstruct broadly.<br>Attribute conservatively.</h2>
-          </div>
+          <div><p class="eyebrow">CORE RESEARCH PRINCIPLE</p><h2>Reconstruct broadly.<br>Attribute conservatively.</h2></div>
           <p>The Atlas separates what happened from who the available evidence can connect to particular conduct. A bank account, SIM, device, IP address or online persona is not automatically a resolved human identity.</p>
         </section>
       </section>
@@ -115,7 +112,7 @@
       <section id="cases" class="view" data-view-panel="cases">
         <div class="page-heading">
           <div><p class="eyebrow">CASE EXPLORER</p><h1>Browse the incidents</h1></div>
-          <p>Search the corpus and combine filters. Results update immediately.</p>
+          <p>Search the corpus, combine filters, select cases for comparison, and export exactly the records you are viewing.</p>
         </div>
         <div class="explorer-shell">
           <aside class="filters" id="caseFilters">
@@ -123,21 +120,41 @@
             <label class="search-field"><span>Search</span><input id="caseSearch" type="search" placeholder="Case, platform, pretext, evidence…"></label>
             <div class="filter-group"><label>State / UT</label><select id="filterState"><option value="">All states</option></select></div>
             <div class="filter-group"><label>Attack type</label><select id="filterAttack"><option value="">All attack types</option></select></div>
+            <div class="filter-group"><label>Year range</label><div class="range-pair"><select id="filterYearFrom"><option value="">From</option></select><select id="filterYearTo"><option value="">To</option></select></div></div>
             <div class="filter-group"><label>Source stage</label><select id="filterStage"><option value="">All source stages</option></select></div>
             <div class="filter-group"><label>Primary contact</label><select id="filterChannel"><option value="">All channels</option></select></div>
             <div class="filter-group"><label>Impersonation</label><select id="filterImpersonation"><option value="">All identities</option></select></div>
+            <details class="advanced-filters">
+              <summary>More filters</summary>
+              <div class="filter-group"><label>Target type</label><select id="filterTarget"><option value="">All target types</option></select></div>
+              <div class="filter-group"><label>Payment method</label><select id="filterPayment"><option value="">All payment methods</option></select></div>
+              <div class="filter-group"><label>Psychological mechanism</label><select id="filterMechanism"><option value="">Any mechanism</option></select></div>
+              <div class="filter-group"><label>Cross-border dimension</label><select id="filterCrossBorder"><option value="">Any value</option></select></div>
+              <div class="filter-group"><label>Incident attribution strength</label><select id="filterStrength"><option value="">Any strength</option></select></div>
+              <div class="filter-group"><label>Credential compromise</label><select id="filterCredential"><option value="">Any</option><option value="yes">Yes</option><option value="no">No</option></select></div>
+              <div class="filter-group"><label>Device compromise</label><select id="filterDeviceCompromise"><option value="">Any</option><option value="yes">Yes</option><option value="no">No</option></select></div>
+            </details>
             <div class="filter-group"><label>Human resolution</label><select id="filterResolution"><option value="">Any resolution</option><option value="financial_only">Financial only</option><option value="victim_facing_only">Victim-facing only</option><option value="both">Both functions</option><option value="neither">Neither function</option></select></div>
             <div class="filter-group"><label>Evidence contains</label><select id="filterEvidence"><option value="">Any evidence type</option></select></div>
           </aside>
           <div class="results-area">
             <div class="results-toolbar">
               <div><strong id="caseResultCount">0</strong><span> reviewed incidents</span></div>
-              <select id="caseSort" aria-label="Sort cases"><option value="id">Case ID</option><option value="year-desc">Newest incident year</option><option value="loss-desc">Highest reported loss</option></select>
+              <div class="toolbar-actions"><button id="downloadFiltered" class="quiet-button">Download filtered CSV</button><select id="caseSort" aria-label="Sort cases"><option value="id">Case ID</option><option value="year-desc">Newest incident year</option><option value="loss-desc">Highest reported loss</option></select></div>
             </div>
             <div class="active-filters" id="activeCaseFilters"></div>
             <div class="case-grid" id="caseGrid"></div>
           </div>
         </div>
+      </section>
+
+      <section id="compare" class="view" data-view-panel="compare">
+        <div class="page-heading">
+          <div><p class="eyebrow">CASE COMPARISON</p><h1>Compare reconstructions</h1></div>
+          <p>Place up to four reviewed incidents side by side. The comparison preserves missingness rather than filling gaps.</p>
+        </div>
+        <div class="compare-actions"><button class="quiet-button" id="copyCompareLink">Copy comparison link</button><button class="quiet-button" id="clearComparison">Clear comparison</button></div>
+        <div id="compareTableWrap" class="compare-wrap"></div>
       </section>
 
       <section id="actors" class="view" data-view-panel="actors">
@@ -158,16 +175,19 @@
       <section id="evidence" class="view" data-view-panel="evidence">
         <div class="page-heading">
           <div><p class="eyebrow">EVIDENCE EXPLORER</p><h1>What survives into the record?</h1></div>
-          <p>Explore the traces discussed in reviewed records, then inspect the cases behind each count.</p>
+          <p>Explore traces discussed in reviewed records, then ask how evidence visibility changes across attack types.</p>
         </div>
         <div class="evidence-layout">
           <div class="evidence-catalog" id="evidenceCatalog"></div>
           <aside class="evidence-inspector" id="evidenceInspector">
-            <p class="eyebrow">SELECT AN EVIDENCE TYPE</p>
-            <h2>Evidence is not attribution.</h2>
+            <p class="eyebrow">SELECT AN EVIDENCE TYPE</p><h2>Evidence is not attribution.</h2>
             <p>A trace may establish an account, device, transaction, contact or platform event without establishing who physically acted, who spoke to the victim, or what a person knew.</p>
           </aside>
         </div>
+        <section class="matrix-section">
+          <div class="section-head"><div><p class="eyebrow">EVIDENCE MATRIX</p><h2>Attack type × evidence visibility</h2></div><p class="section-intro">Each cell is the number of reviewed cases in that attack category where the evidence flag appears. Select a cell to inspect those cases.</p></div>
+          <div id="evidenceMatrix" class="matrix-scroll"></div>
+        </section>
       </section>
 
       <section id="sources" class="view" data-view-panel="sources">
@@ -182,6 +202,33 @@
         </div>
         <div class="source-list" id="sourceList"></div>
       </section>
+
+      <section id="method" class="view" data-view-panel="method">
+        <div class="page-heading method-heading">
+          <div><p class="eyebrow">METHOD / INTERPRETATION</p><h1>How to read the Atlas</h1></div>
+          <p>The interface is a public exploration layer over a versioned research dataset. The research repository remains the source of truth.</p>
+        </div>
+        <div class="method-grid">
+          <article class="method-card method-lead"><span>01</span><h2>What counts as a case?</h2><p>The Atlas reconstructs publicly documented, India-connected incidents in which social engineering materially enabled cybercrime or digitally mediated fraud. Inclusion and exclusion are governed by the repository methodology, not by whether an incident is famous or easy to find.</p></article>
+          <article class="method-card"><span>02</span><h2>Sampling boundary</h2><p>The corpus is purposively sampled and retrieval-driven. Public-record availability, searchability, procedural stage and deliberate diversity retrieval affect what enters the Atlas. Counts are not national prevalence, state rankings, average-loss estimates or demographic risk estimates.</p></article>
+          <article class="method-card"><span>03</span><h2>Source hierarchy</h2><p><strong>T1</strong> covers judicial and formal adjudicatory material. <strong>T2</strong> covers official institutional material. <strong>T3</strong> covers credible journalism with substantive case detail. Procedural posture is preserved because a bail order, consumer appeal and final criminal judgment answer different questions.</p></article>
+          <article class="method-card"><span>04</span><h2>Incident and actor layers</h2><p><code>cases.csv</code> asks what happened. <code>actors.csv</code> asks what a source can connect to a particular actor-role and conduct. One actor row is not necessarily one person, and it is not a finding of guilt.</p></article>
+          <article class="method-card"><span>05</span><h2>Human identity resolution</h2><p>Identified and partially identified actor records resolve to a real-world human under the Atlas codebook. A persona, alias, bank account, SIM, device, IP address or broad conspiracy allegation does not by itself resolve a human identity.</p></article>
+          <article class="method-card"><span>06</span><h2>Attribution scale</h2><dl class="method-scale"><dt>Strong</dt><dd>Multiple independent streams or an adjudicated finding support the relevant conduct.</dd><dt>Moderate</dt><dd>Meaningful linkage exists but a material inferential step or plausible alternative remains.</dd><dt>Limited</dt><dd>Association is established but the relevant conduct is not substantially established.</dd><dt>Unclear</dt><dd>The public material is too incomplete or ambiguous.</dd><dt>Not assessed</dt><dd>There is insufficient material to evaluate the conduct.</dd></dl></article>
+          <article class="method-card method-lead"><span>07</span><h2>Reconstruct broadly. Attribute conservatively.</h2><p>The Atlas deliberately distinguishes endpoints from humans and association from conduct. A receiving account can be highly relevant evidence without proving that its holder operated the victim-facing deception. Every case page therefore exposes both what the record supports and the primary evidentiary gap.</p></article>
+          <article class="method-card"><span>08</span><h2>Reproducibility</h2><p>The public JSON is generated from the authoritative CSVs. It is not edited separately. The repository contains data dictionaries, controlled vocabularies, codebooks, screening history, source registry, case narratives and validators.</p></article>
+        </div>
+        <section class="method-actions">
+          <div><p class="eyebrow">USE THE RESEARCH LAYER</p><h2>Inspect, download, reproduce.</h2><p id="methodVersion"></p></div>
+          <div class="method-links">
+            <a href="https://raw.githubusercontent.com/stuhamz/Social-Engineering-Incident-Atlas-India/main/data/cases.csv">Download cases.csv</a>
+            <a href="https://raw.githubusercontent.com/stuhamz/Social-Engineering-Incident-Atlas-India/main/data/actors.csv">Download actors.csv</a>
+            <a href="https://raw.githubusercontent.com/stuhamz/Social-Engineering-Incident-Atlas-India/main/references/sources.csv">Download sources.csv</a>
+            <a href="https://github.com/stuhamz/Social-Engineering-Incident-Atlas-India/tree/main/methodology" target="_blank" rel="noreferrer">Full methodology ↗</a>
+            <button id="copyDatasetCitation">Copy dataset citation</button>
+          </div>
+        </section>
+      </section>
     </main>
 
     <footer>
@@ -190,20 +237,18 @@
     </footer>
   </div>
 
+  <div class="compare-tray" id="compareTray" aria-live="polite">
+    <div><strong id="compareTrayCount">0</strong><span> selected for comparison</span></div>
+    <div id="compareTrayItems" class="compare-tray-items"></div>
+    <div class="compare-tray-actions"><button id="compareTrayClear">Clear</button><button id="compareTrayOpen" class="primary-action">Compare</button></div>
+  </div>
+
   <dialog id="caseDialog" class="case-dialog">
     <button class="dialog-close" id="dialogClose" aria-label="Close case">×</button>
     <div id="caseDialogContent"></div>
   </dialog>
 
-  <dialog id="methodologyDialog" class="methodology-dialog">
-    <button class="dialog-close" id="methodologyClose" aria-label="Close methodology note">×</button>
-    <p class="eyebrow">INTERPRETATION BOUNDARY</p>
-    <h2>Corpus counts are not prevalence estimates.</h2>
-    <p>The Atlas is assembled through documented, purposive public-record retrieval. Court stage, source availability and searchability influence what enters the corpus and what becomes visible inside each record.</p>
-    <p>Use this interface to explore the reviewed material, compare evidence and inspect coding. Do not interpret state, category or source-stage counts as a representative estimate of Indian cybercrime.</p>
-    <a href="https://github.com/stuhamz/Social-Engineering-Incident-Atlas-India/tree/main/methodology" target="_blank" rel="noreferrer">Read the full methodology ↗</a>
-  </dialog>
-
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <div class="loading-screen" id="loadingScreen"><div class="loading-mark">SE</div><p>Building the Atlas view…</p></div>
   <script src="./app.js" defer></script>
 </body>
