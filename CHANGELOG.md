@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.2.2 - 2026-09-06
+
+- expanded the corrected active corpus from 74 to 84 reviewed incidents in Wave 1A
+- added 24 actor-role attribution records and 11 T1 sources
+- added five newly represented jurisdictions: Andhra Pradesh, Bihar, Jammu and Kashmir, Puducherry, and Andaman and Nicobar Islands
+- extended temporal coverage back to 2008 and added evidence-rich phishing, hacked-email, vishing, government-impersonation and digital-arrest records
+- promoted the previously deferred `CAND-0031` in place rather than duplicating its screening history
+- logged rediscovered Dynamic Brands and Hare Ram Singh incidents as duplicates of `SEIAI-0039` and `SEIAI-0008`
+- made the full-audit validator corpus-size dynamic for safe future expansion
+- added `cases/**` to the GitHub Pages deployment trigger
+- retained the v0.2.0 incident/actor schema and kept `SEIAI-0060` retired
+
 ## v0.2.1 - 2026-09-04
 
 - repository-integrity hotfix over the unchanged v0.2.0 coded dataset

@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "atlas/**"
+      - "cases/**"
       - "data/cases.csv"
       - "data/actors.csv"
       - "references/sources.csv"

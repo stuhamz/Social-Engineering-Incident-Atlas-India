@@ -1,0 +1,37 @@
+Social Engineering Incident Atlas India
+Public Atlas UI v0.2 patch
+
+This patch changes only the public exploration interface and its derived-data builder.
+It does not alter the authoritative research CSVs.
+
+Files included:
+analysis/scripts/build_public_atlas.py
+atlas/index.html
+atlas/styles.css
+atlas/app.js
+atlas/data/atlas.json
+atlas/assets/india-outline.svg
+atlas/assets/MAP_DATA_NOTICE.md
+docs/atlas_interface.md
+docs/atlas_ui_v0.2.md
+ATLAS_UI_INSTALL_v0.2.md
+ATLAS_UI_PATCH_MANIFEST_v0.2.txt
+
+Validated against:
+74 active reviewed incidents
+196 actor-role records
+82 sources
+21 represented states/UTs
+18 primary attack categories in the evidence matrix
+SEIAI-0060 absent from active cases
+
+Key v0.2 functions:
+- schematic India corpus coverage map
+- permanent #case/SEIAI-XXXX routes
+- copy link / citation / source actions
+- explicit procedural-posture warnings
+- advanced filters
+- filtered CSV export
+- 2-4 case comparison with shareable routes
+- attack-category x evidence matrix
+- dedicated Method page

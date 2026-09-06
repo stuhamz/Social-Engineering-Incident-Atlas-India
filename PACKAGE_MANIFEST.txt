@@ -1,13 +1,18 @@
-Social Engineering Incident Atlas India v0.2.1
-Files: 151
-Active cases: 74
-Actors: 196
-Active sources: 82
-Screening candidates: 96
+Social Engineering Incident Atlas India v0.2.2
+Files: 179
+Active cases: 84
+Actors: 220
+Active sources: 93
+Screening candidates: 107
 Retired stable IDs: 1 (SEIAI-0060, exact duplicate of SEIAI-0029)
-Hotfix scope: repository integrity only; structured v0.2.0 coding unchanged
+Release scope: Wave 1A audit-directed corrective expansion; v0.2.0 schema retained
 
+.github/workflows/deploy-atlas.yml
 .gitignore
+ATLAS_UI_INSTALL.md
+ATLAS_UI_INSTALL_v0.2.md
+ATLAS_UI_PATCH_MANIFEST.txt
+ATLAS_UI_PATCH_MANIFEST_v0.2.txt
 CHANGELOG.md
 CONTRIBUTING.md
 DATA_LICENSE.md
@@ -19,10 +24,18 @@ START_HERE.md
 analysis/notebooks/.gitkeep
 analysis/output/.gitkeep
 analysis/scripts/basic_summary.py
+analysis/scripts/build_public_atlas.py
 analysis/scripts/new_case.py
+analysis/scripts/update_readme_for_atlas.py
 analysis/scripts/validate_actors.py
 analysis/scripts/validate_dataset.py
 analysis/scripts/validate_full_audit.py
+atlas/app.js
+atlas/assets/MAP_DATA_NOTICE.md
+atlas/assets/india-outline.svg
+atlas/data/atlas.json
+atlas/index.html
+atlas/styles.css
 cases/CASE_TEMPLATE.md
 cases/README.md
 cases/SEIAI-0001-gwalior-ramakrishna-digital-arrest.md
@@ -99,6 +112,16 @@ cases/SEIAI-0072-fedex-narcotics-and-cyber-crime-inspector-digital-arrest-fraud.
 cases/SEIAI-0073-abroad-relative-medical-emergency-whatsapp-impersonation-fraud.md
 cases/SEIAI-0074-senior-citizen-kyc-smishing-and-unauthorized-sbi-transactions.md
 cases/SEIAI-0075-bank-branch-vishing-and-aadhaar-linking-atm-card-fraud.md
+cases/SEIAI-0076-hdfc-software-upgrade-phishing-and-missing-device-forensics-report.md
+cases/SEIAI-0077-hacked-email-impersonation-and-nre-transfer-fraud.md
+cases/SEIAI-0078-fake-louis-philippe-refund-support-and-malicious-app-fraud.md
+cases/SEIAI-0079-sbi-debit-card-verification-vishing-against-senior-citizens.md
+cases/SEIAI-0080-christina-george-facebook-customs-and-embassy-advance-fee-fraud.md
+cases/SEIAI-0081-pmo-principal-secretary-impersonation-for-government-facilities.md
+cases/SEIAI-0082-alliance-solution-high-return-investment-and-fake-office-fraud.md
+cases/SEIAI-0083-port-blair-digital-arrest-and-mastermind-attribution-gap.md
+cases/SEIAI-0084-terrorism-pretext-police-and-ats-digital-arrest-fraud.md
+cases/SEIAI-0085-trg-financial-academy-fake-axis-bank-securities-investment-fraud.md
 data/README.md
 data/actor_data_dictionary.md
 data/actors.csv
@@ -114,6 +137,10 @@ docs/RELEASE_NOTES_v0.1.5.md
 docs/RELEASE_NOTES_v0.1.md
 docs/RELEASE_NOTES_v0.2.0.md
 docs/RELEASE_NOTES_v0.2.1.md
+docs/RELEASE_NOTES_v0.2.2.md
+docs/atlas_interface.md
+docs/atlas_ui_data_audit_v0.1.md
+docs/atlas_ui_v0.2.md
 docs/project_scope.md
 docs/research_questions.md
 docs/roadmap.md
@@ -136,6 +163,7 @@ docs/v0.2.0_case_audit_log.csv
 docs/v0.2.0_full_reaudit.md
 docs/v0.2.0_retired_case_ids.csv
 docs/v0.2.0_source_audit_log.csv
+docs/v0.2.2_wave1a_expansion_audit.md
 methodology/actor_coding_protocol_v0.1.2.md
 methodology/actor_coding_protocol_v0.2.0.md
 methodology/attribution_framework.md

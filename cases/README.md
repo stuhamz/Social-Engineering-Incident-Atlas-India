@@ -1,6 +1,6 @@
 # Case Notes
 
-This directory contains **74 active reviewed narrative case reconstructions**, one for each active incident in `data/cases.csv`. The stable ID history runs through `SEIAI-0075`; `SEIAI-0060` is retired as an exact duplicate of `SEIAI-0029` and is therefore not present as an active narrative.
+This directory contains **84 active reviewed narrative case reconstructions**, one for each active incident in `data/cases.csv`. The stable ID history runs through `SEIAI-0085`; `SEIAI-0060` is retired as an exact duplicate of `SEIAI-0029` and is therefore not present as an active narrative.
 
 Naming convention:
 

@@ -1,6 +1,6 @@
 # Social Engineering Incident Atlas India
 
-> **Current dataset release: v0.2.1.** The repository contains **74 active reviewed incident records**, **196 reviewed actor-role attribution records**, **82 active registered sources**, and **96 screening candidates**. v0.2.0 is a full source-to-code re-audit of the complete 75-ID history. One exact semantic duplicate, `SEIAI-0060`, was retired in favour of the earlier stable record `SEIAI-0029`; later IDs were not renumbered.
+> **Current dataset release: v0.2.2.** The repository contains **84 active reviewed incident records**, **220 reviewed actor-role attribution records**, **93 active registered sources**, and **107 screening candidates**. v0.2.0 is a full source-to-code re-audit of the complete 75-ID history. One exact semantic duplicate, `SEIAI-0060`, was retired in favour of the earlier stable record `SEIAI-0029`; later IDs were not renumbered.
 
 A structured research dataset and analytical framework for studying **social-engineering-enabled cybercrime, digital evidence, and attribution in India**.
 
@@ -12,6 +12,10 @@ The research repository now has a browser-based exploration layer for people who
 
 The interface provides case search and filtering, actor-role exploration, evidence views, source navigation and interactive corpus charts. It is a read-only layer generated from the authoritative research CSVs. The same sampling and attribution limitations documented in this repository apply to every visualization.
 
+
+## v0.2.2 Wave 1A corrective expansion
+
+v0.2.2 expands the corrected corpus from 74 to 84 active reviewed incidents without changing the v0.2.0 incident or actor schema. The batch is audit-directed rather than prevalence-oriented: it adds temporal depth, five newly represented jurisdictions, stronger appellate/procedural material, and evidence-rich cases involving phishing infrastructure, email compromise, telecom records, device-forensics gaps and attribution limits. `SEIAI-0060` remains retired and no stable ID is recycled.
 
 ## v0.2.1 repository-integrity hotfix
 
@@ -83,7 +87,7 @@ data/
 cases/
   SEIAI-0001-....md
   ...
-  SEIAI-0075-....md
+  SEIAI-0085-....md
 
 references/
   sources.csv
@@ -128,9 +132,9 @@ The public release should be tagged only after both validators return zero error
 ## Known limitations
 
 - The corpus is purposively sampled and retrieval is not prevalence-representative.
-- **37 of 74 active primary sources are bail orders (50.0%).** Source stage materially affects what evidence, allegations and procedural findings become visible.
-- **70 of 74 active incidents have one registered source.** Independent source corroboration remains limited for most records.
-- **32 of 74 active cases are from Delhi or Haryana**, and 23 of 74 incidents are coded to 2025. Geographic and temporal frequencies remain retrieval-driven.
+- **42 of 84 active primary sources are bail orders (50.0%).** Source stage materially affects what evidence, allegations and procedural findings become visible.
+- **79 of 84 active incidents have one registered source.** Independent source corroboration remains limited for most records.
+- **34 of 84 active cases are from Delhi or Haryana**, and 24 of 84 incidents are coded to 2025. Geographic and temporal frequencies remain retrieval-driven.
 - Eighteen primary attack categories are represented, but category composition remains partly confounded with source type and retrieval strategy.
 - Bail, anticipatory-bail, charge-stage and interim records can contain detailed allegations without final guilt findings.
 - Final consumer, telecom and civil liability records may richly document payment or institutional evidence without resolving criminal human operators.
@@ -154,13 +158,13 @@ The Atlas does not republish underlying judgments, screenshots, phone numbers, b
 
 Suggested citation:
 
-> Hamzah. (2026). *Social Engineering Incident Atlas India* (v0.2.0). GitHub repository.
+> Hamzah. (2026). *Social Engineering Incident Atlas India* (v0.2.2). GitHub repository.
 
 If using individual incident records, cite the original source(s) in `references/sources.csv` as well as the Atlas.
 
 ## Status
 
-**v0.2.1: 74 active reviewed incidents, 196 reviewed actor-role records, 82 active registered sources, 96 screening candidates.**
+**v0.2.2: 84 active reviewed incidents, 220 reviewed actor-role records, 93 active registered sources, 107 screening candidates.**
 
 The v0.2.1 release preserves the full 75-ID audit history and leaves all structured v0.2.0 coding unchanged. `SEIAI-0060` is retired as an exact duplicate of `SEIAI-0029`; `SEIAI-0061` through `SEIAI-0075` keep their stable identifiers.
 

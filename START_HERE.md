@@ -15,7 +15,7 @@
 
 ## Current release
 
-**v0.2.1 contains 74 active reviewed incident records and 196 reviewed actor-role records.** The 75-ID history is retained in the audit log, with `SEIAI-0060` retired as an exact duplicate of `SEIAI-0029`.
+**v0.2.2 contains 84 active reviewed incident records and 220 reviewed actor-role records.** The stable ID history now runs through `SEIAI-0085`, with `SEIAI-0060` still retired as an exact duplicate of `SEIAI-0029`.
 
 The combined corpus remains a methodology/schema-validation set rather than a prevalence sample.
 
@@ -31,4 +31,4 @@ The combined corpus remains a methodology/schema-validation set rather than a pr
 
 ## Next stage
 
-The v0.2.0 full re-audit remains the substantive methodological baseline; v0.2.1 is a repository-integrity hotfix that changes no structured coding. Before adding more cases, use the corrected corpus to decide which research questions survive. If expansion resumes, prioritize second-source corroboration, underrepresented geographies, final/appellate material for categories still dominated by interim records, and richer provider/forensic evidence. Stable IDs must never be recycled or renumbered.
+Continue Wave 1 toward 100 active incidents using the v0.2.2 corrective-expansion priorities: underrepresented geographies, temporal depth, final/appellate material, second-source corroboration and richer provider/forensic evidence. Audit the corpus again at 100 before beginning the next expansion wave. Stable IDs must never be recycled or renumbered.

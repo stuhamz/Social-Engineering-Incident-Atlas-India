@@ -1,0 +1,10 @@
+.github/workflows/deploy-atlas.yml
+ATLAS_UI_INSTALL.md
+analysis/scripts/build_public_atlas.py
+analysis/scripts/update_readme_for_atlas.py
+atlas/app.js
+atlas/data/atlas.json
+atlas/index.html
+atlas/styles.css
+docs/atlas_interface.md
+docs/atlas_ui_data_audit_v0.1.md

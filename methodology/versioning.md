@@ -14,6 +14,7 @@ Current version history:
 - `0.1.5`: audit-directed corrective expansion to 75 reviewed incidents, with stronger final/appellate source-stage coverage and no breaking schema change
 - `0.2.0`: full 75-ID source-to-code re-audit; retires exact duplicate SEIAI-0060, repairs actor functions and identity resolution, date precision and batch harmonization
 - `0.2.1`: repository-integrity hotfix; removes the retired duplicate narrative from the public case directory and adds narrative-to-case validation, with no structured data recoding
+- `0.2.2`: Wave 1A audit-directed corrective expansion from 74 to 84 active incidents; adds no breaking schema changes and makes the full-audit validator corpus-size dynamic
 
 Historical rows retain the coding version under which they were last substantively coded. The current repository release version therefore does not require rewriting every earlier row's coding-version value.
 
