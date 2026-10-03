@@ -106,3 +106,31 @@ CAND-0104,2026-09-06,Wave 1A geographic-and-attribution-diversity judicial retri
 CAND-0105,2026-09-06,Wave 1A geographic-diversity judicial retrieval,Ahsan Khan TRG Financial Academy Axis Bank Securities Andhra Pradesh,"Ahsan Khan v. State of Andhra Pradesh, 16 July 2025",https://indiankanoon.org/doc/91349355/,2024,Andhra Pradesh,investment_fraud,include,,,SEIAI-0085,Hamzah,Adds Andhra Pradesh and a fake branded investment-app scheme with strong bank-endpoint evidence but no victim-facing human resolution.
 CAND-0106,2026-09-06,Wave 1A deduplication check,Dynamic Brands Plus Max invoice diversion BEC,Dynamic Brands Pvt. Ltd. v. Plus Max Group of Companies & Ors.,https://indiankanoon.org/doc/43387872/,2020,Delhi,business_email_compromise,duplicate,duplicate_incident,SEIAI-0039,,Hamzah,Rediscovered during Wave 1A retrieval; same focal invoice-diversion incident already coded as SEIAI-0039.
 CAND-0107,2026-09-06,Wave 1A deduplication check,Hare Ram Singh SBI SMS-service closure phishing vishing,State Bank of India v. Hare Ram Singh & Anr.,https://indiankanoon.org/doc/112752061/,2021,Uttar Pradesh,phishing,duplicate,duplicate_incident,SEIAI-0008,,Hamzah,Rediscovered during Wave 1A retrieval; same focal incident already represented under SEIAI-0008.
+TEMP-R001,,,,,,,,,exclude,,,,Hamzah,outside_project_scope: civil share/property dispute; no reconstructable cyber-enabled human-manipulation incident.
+TEMP-R002,,,,,,,,,exclude,,,,Hamzah,outside_project_scope: Satyam corporate-accounting/PMLA litigation does not provide a focal social-engineering incident for the Atlas.
+TEMP-R003,,,,,,,,,exclude,,,,Hamzah,"not_cybercrime: statutory provision page, not an incident record."
+TEMP-R004,,,,,,,,,exclude,,,,Hamzah,"not_cybercrime: statutory provision page, not an incident record."
+TEMP-R005,,,,,,,,,include,,,SEIAI-0086,Hamzah,"Clear focal Hugo Loan incident with SMS/app lure, malicious permission-based data harvesting, image-based threats, victim payments, bank/CDR trail, and role-specific attribution limits."
+TEMP-R006,,,,,,,,,exclude,,,,Hamzah,"not_cybercrime: constitutional provision page, not an incident record."
+TEMP-R007,,,,,,,,,exclude,,,,Hamzah,"not_cybercrime: statutory text, not an incident record."
+TEMP-R008,,,,,,,,,exclude,,,,Hamzah,outside_project_scope: platform/regulatory blocking litigation; no focal victim social-engineering episode with an induced consequential action.
+TEMP-R009,,,,,,,,,exclude,,,,Hamzah,outside_project_scope: civil/property fraud litigation without a meaningful cyber or digital social-engineering component.
+TEMP-R010,,,,,,,,,exclude,,,,Hamzah,outside_project_scope: limitation/procedural criminal-law decision unrelated to a focal cyber social-engineering incident.
+TEMP-R011,,,,,,,,,exclude,,,,Hamzah,insufficient_case_detail: account-freeze/NCRP writ describes complaint-linked funds but not a reconstructable focal victim deception and induced action.
+TEMP-R012,,,,,,,,,exclude,,,,Hamzah,"no_meaningful_social_engineering: fake Instagram accounts and edited/obscene material are alleged, but the source does not document manipulation causing a target action within the Atlas definition."
+TEMP-R013,,,,,,,,,exclude,,,,Hamzah,"purely_technical_compromise: unauthorized UPI debits are documented, but the complainant denied sharing OTP/password or installing an app and the source gives no human-manipulation vector."
+TEMP-R014,,,,,,,,,exclude,,,,Hamzah,"not_cybercrime: statutory provision page, not an incident record."
+TEMP-R015,,,,,,,,,exclude,,,,Hamzah,outside_project_scope: civil/property dispute without a meaningful cyber-enabled social-engineering incident.
+TEMP-R016,,,,,,,,,exclude,,,,Hamzah,"source_quality_insufficient: Indian Kanoon search/home page, not a source record for a specific incident."
+TEMP-R017,,,,,,,,,include,,,SEIAI-0087,Hamzah,"Clear focal LOXAM investment-app deception with brand legitimacy borrowing, INR 116,000 focal loss and a documented payment trail; aggregate network figures are kept separate from focal loss and Bhupesh Arora attribution is treated cautiously."
+TEMP-R018,,,,,,,,,exclude,,,,Hamzah,"source_quality_insufficient: browse/index page, not a source for a specific incident."
+TEMP-R019,,,,,,,,,exclude,,,,Hamzah,"source_quality_insufficient: requested document is unavailable/not found, so no checkable incident source is present."
+TEMP-R020,,,,,,,,,exclude,,,,Hamzah,"source_quality_insufficient: commercial LifeLock marketing/advertising page, not an incident source."
+TEMP-R021,,,,,,,,,exclude,,,,Hamzah,"source_quality_insufficient: commercial LifeLock marketing/advertising page, not an incident source."
+TEMP-R022,,,,,,,,,exclude,,,,Hamzah,"source_quality_insufficient: commercial LifeLock marketing/advertising page, not an incident source."
+TEMP-R023,,,,,,,,,exclude,,,,Hamzah,outside_project_scope: property/benami/fabricated-document litigation without a focal cyber social-engineering incident.
+TEMP-R024,,,,,,,,,exclude,,,,Hamzah,"outside_project_scope: Meghalaya PIL concerning public infrastructure/roads, unrelated to cyber social engineering."
+TEMP-R025,,,,,,,,,exclude,,,,Hamzah,"outside_project_scope: Meghalaya PIL concerning public infrastructure/roads, unrelated to cyber social engineering."
+TEMP-R026,,,,,,,,,include,,,SEIAI-0088,Hamzah,"Clear focal WhatsApp digital-arrest fraud against a retired senior citizen, INR 8.5 million transferred, with bail-stage actor allegations coded conservatively and no unsupported device/platform attribution."
+TEMP-R027,,,,,,,,,exclude,,,,Hamzah,"source_quality_insufficient: commercial LifeLock marketing/advertising page, not an incident source."
+TEMP-R028,,,,,,,,,exclude,,,,Hamzah,"source_quality_insufficient: advanced-search interface, not a source for a specific incident."
