@@ -134,3 +134,56 @@ TEMP-R025,,,,,,,,,exclude,,,,Hamzah,"outside_project_scope: Meghalaya PIL concer
 TEMP-R026,,,,,,,,,include,,,SEIAI-0088,Hamzah,"Clear focal WhatsApp digital-arrest fraud against a retired senior citizen, INR 8.5 million transferred, with bail-stage actor allegations coded conservatively and no unsupported device/platform attribution."
 TEMP-R027,,,,,,,,,exclude,,,,Hamzah,"source_quality_insufficient: commercial LifeLock marketing/advertising page, not an incident source."
 TEMP-R028,,,,,,,,,exclude,,,,Hamzah,"source_quality_insufficient: advanced-search interface, not a source for a specific incident."
+TEMP-R001,,,,,,,,,include,,,SEIAI-0089,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R002,,,,,,,,,include,,,SEIAI-0090,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R003,,,,,,,,,duplicate,duplicate_incident,SEIAI-0015,,Hamzah,Same focal digital-arrest incident already represented as SEIAI-0015.
+TEMP-R004,,,,,,,,,include,,,SEIAI-0091,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R005,,,,,,,,,include,,,SEIAI-0092,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R006,,,,,,,,,include,,,SEIAI-0093,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R007,,,,,,,,,include,,,SEIAI-0094,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R008,,,,,,,,,include,,,SEIAI-0095,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R009,,,,,,,,,exclude,insufficient_case_detail,,,Hamzah,Primarily a mule-account/NCRP matter without a sufficiently reconstructable focal victim-facing social-engineering sequence.
+TEMP-R010,,,,,,,,,duplicate,duplicate_incident,,,Hamzah,Same PNP Polytex SIM-swap judgment and focal incident as TEMP-R005 in this review batch.
+TEMP-R011,,,,,,,,,exclude,outside_project_scope,,,Hamzah,Administrative/suo motu discussion of digital-arrest risks rather than a clean new focal incident for Atlas coding.
+TEMP-R012,,,,,,,,,exclude,no_meaningful_social_engineering,,,Hamzah,Banking dispute in which the petitioners were not established as victims of a social-engineering-enabled cyber-fraud interaction.
+TEMP-R013,,,,,,,,,include,,,SEIAI-0096,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R014,,,,,,,,,include,,,SEIAI-0097,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R015,,,,,,,,,exclude,insufficient_case_detail,,,Hamzah,"Unauthorized debit dispute without a supported victim-facing deception, pretext or social-engineering vector."
+TEMP-R016,,,,,,,,,include,,,SEIAI-0098,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R017,,,,,,,,,duplicate,duplicate_incident,SEIAI-0001,,Hamzah,Same Ramakrishna Mission Gwalior digital-arrest incident already represented as SEIAI-0001.
+TEMP-R018,,,,,,,,,duplicate,duplicate_incident,,,Hamzah,Same Supreme Court digital-arrest order and focal senior-citizen incident as TEMP-R016 in this review batch.
+TEMP-R019,,,,,,,,,include,,,SEIAI-0099,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R020,,,,,,,,,include,,,SEIAI-0100,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R021,,,,,,,,,include,,,SEIAI-0101,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R022,,,,,,,,,include,,,SEIAI-0102,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R023,,,,,,,,,include,,,SEIAI-0103,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R024,,,,,,,,,exclude,purely_technical_compromise,,,Hamzah,"Unauthorized transactions and fake-account/web infrastructure are described, but no supported human manipulation or deceptive interaction with the victim is reconstructed."
+TEMP-R025,,,,,,,,,exclude,insufficient_case_detail,,,Hamzah,Applicant facilitation/commission allegations are described without enough detail to reconstruct the focal victim-facing incident conservatively.
+TEMP-R026,,,,,,,,,include,,,SEIAI-0104,Hamzah,Strong focal social-engineering incident with sufficient source detail for conservative Atlas coding.
+TEMP-R027,,,,,,,,,exclude,insufficient_case_detail,,,Hamzah,Money-flow allegations are present but the source does not supply a usable deception/contact/pretext sequence for the focal victim.
+TEMP-R028,,,,,,,,,duplicate,duplicate_incident,SEIAI-0078,,Hamzah,Same Louis Philippe refund-support / malicious-app focal incident already represented as SEIAI-0078.
+TEMP-R029,,,,,,,,,exclude,outside_project_scope,,,Hamzah,PMMVY portal false-beneficiary/internal credential misuse matter rather than a qualifying focal social-engineering incident.
+TEMP-R030,,,,,,,,,exclude,insufficient_case_detail,,,Hamzah,"Mentions a 76-year-old widow and digital arrest but omits sufficient pretext, channel, amount and incident detail for robust coding."
+TEMP-R031,,,,,,,,,exclude,outside_project_scope,,,Hamzah,Unrelated HDFC/share/civil litigation.
+TEMP-R032,,,,,,,,,exclude,outside_project_scope,,,Hamzah,Corporate accounting/enforcement fraud without a qualifying focal social-engineering interaction.
+TEMP-R033,,,,,,,,,exclude,not_cybercrime,,,Hamzah,Loan-against-property advertising/fraud matter without a qualifying cyber-enabled social-engineering incident.
+TEMP-R034,,,,,,,,,exclude,not_cybercrime,,,Hamzah,Land-compensation cheque/forged-signature dispute rather than a qualifying cyber-enabled social-engineering incident.
+TEMP-R035,,,,,,,,,exclude,outside_project_scope,,,Hamzah,Corporate financial wrongdoing without a qualifying focal victim-facing cyber-social-engineering incident.
+TEMP-R036,,,,,,,,,exclude,outside_project_scope,,,Hamzah,"General NCRP/SOP and account-freezing procedure discussion, not a focal incident."
+TEMP-R037,,,,,,,,,exclude,outside_project_scope,,,Hamzah,General Supreme Court digital-arrest proceedings without a distinct new focal incident suitable for coding.
+TEMP-R038,,,,,,,,,exclude,outside_project_scope,,,Hamzah,General digital-arrest proceedings/policy discussion without a distinct new focal incident suitable for coding.
+TEMP-R039,,,,,,,,,exclude,insufficient_case_detail,,,Hamzah,Account-freeze matter based on suspicious incoming funds with no reconstructable victim-facing scam sequence.
+TEMP-R040,,,,,,,,,exclude,not_cybercrime,,,Hamzah,Traffic/violent-offence bail matter unrelated to Atlas scope.
+TEMP-R041,,,,,,,,,exclude,outside_project_scope,,,Hamzah,"Fake social-media accounts and sexualized/defamatory content are described, but not a qualifying induced-action social-engineering cybercrime incident."
+TEMP-R042,,,,,,,,,exclude,outside_project_scope,,,Hamzah,Cryptocurrency exchange/account-defreeze dispute without a focal social-engineering victim interaction.
+TEMP-R043,,,,,,,,,exclude,not_cybercrime,,,Hamzah,Physical assault matter unrelated to Atlas scope.
+TEMP-R044,,,,,,,,,exclude,outside_project_scope,,,Hamzah,SFIO/corporate-fraud matter without a qualifying focal cyber-social-engineering incident.
+TEMP-R045,,,,,,,,,exclude,insufficient_case_detail,,,Hamzah,Broad Telegram/platform-regulation and scam discussion without a clean focal incident unit.
+TEMP-R046,,,,,,,,,exclude,not_cybercrime,,,Hamzah,Violent-crime/bail matter unrelated to Atlas scope.
+TEMP-R047,,,,,,,,,exclude,not_cybercrime,,,Hamzah,Sexual-assault appeal unrelated to Atlas cyber-social-engineering scope.
+TEMP-R048,,,,,,,,,exclude,not_cybercrime,,,Hamzah,Assault/firearm matter unrelated to Atlas scope.
+TEMP-R049,,,,,,,,,exclude,not_cybercrime,,,Hamzah,Dowry/marital criminal case unrelated to Atlas cyber-social-engineering scope.
+TEMP-R050,,,,,,,,,exclude,not_cybercrime,,,Hamzah,NDPS/methamphetamine bail matter unrelated to Atlas scope.
+TEMP-R051,,,,,,,,,exclude,not_cybercrime,,,Hamzah,"Statutory Code of Criminal Procedure material, not an incident."
+TEMP-R052,,,,,,,,,exclude,not_cybercrime,,,Hamzah,Bribery/voice-spectrography case unrelated to Atlas social-engineering scope.
+TEMP-R053,,,,,,,,,exclude,not_cybercrime,,,Hamzah,Theft/burglary compromise matter unrelated to Atlas scope.
