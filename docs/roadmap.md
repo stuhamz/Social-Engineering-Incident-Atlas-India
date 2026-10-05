@@ -1,74 +1,41 @@
 # Roadmap
 
-## Completed
+## Current baseline: v0.3.0
 
-### v0.1.0
-- establish the incident-level schema
-- code and audit 10 deliberately diverse methodology-pilot cases
-- test controlled vocabularies and attribution rules
+The Atlas contains 233 active reviewed incidents, 513 actor-role records, 243 registered sources, 319 screening candidates, a public exploration interface, and validator-backed cross-file checks.
 
-### v0.1.1
-- define and execute a versioned retrieval protocol
-- expand to 30 reviewed incidents
-- preserve excluded, duplicate and deferred candidates in the screening log
-- run second-pass source, coding, procedural-posture and privacy audit
-- stress-test the schema before larger collection
+## Next expansion stage
 
-### v0.1.2
-- introduce `actors.csv`
-- migrate all 30 cases into conduct-specific actor-role attribution records
-- keep `source_claims.csv` deferred
-- validate the actor schema
+Continue expansion in bounded, reviewable batches.
 
-### v0.1.3 to v0.1.4
-- expand to 50 reviewed incidents
-- increase category and procedural-stage diversity
-- complete the first 50-case analytical stability audit
-- identify bail-order concentration, single-source dependence and geographic/time bias
-- identify the financial-versus-victim-facing attribution pattern
+Priorities:
 
-### v0.1.5
-- expand to 75 reviewed incidents through an audit-directed corrective batch
-- reduce bail-order primary-source share below half of the corpus
-- raise final/appellate primary-source share to 44%
-- widen temporal coverage
-- add first primary `vishing` record
-- confirm actor schema stability at 198 reviewed actor-role records
+- underrepresented states and Union Territories
+- earlier incident years where credible public material exists
+- attack categories with thin coverage
+- stronger T1 judicial or official sources where available
+- cases that add new evidence or attribution patterns rather than only increasing count
 
-## Before the next large expansion
+Every batch should:
 
-- prioritize second-source corroboration
-- target cases outside Delhi and Haryana
-- find final/appellate material for categories still confined to bail orders
-- decide whether `accused_count` should be backfilled or deprecated
-- introduce a limited independent double-coding exercise
-- prepare a descriptive data-quality and actor-layer analysis
+1. log candidates in `references/screening_log.csv`
+2. check incident-level duplicates
+3. register sources
+4. add the incident row
+5. add actor-function records
+6. create one narrative per active incident
+7. run all validators
+8. rebuild the public Atlas
+9. document the release-level change
 
-## Toward approximately 100 cases
+## Quality priorities
 
-- expand only after the above quality work
-- preserve audit-directed retrieval rather than count-driven collection
-- develop reproducible descriptive analysis
-- build evidence/attribution visualisations
-- define a paper-ready research question around association versus conduct-specific attribution
+- preserve stable IDs
+- preserve exact source provenance
+- avoid invented date precision
+- keep allegations and adjudicated findings separate
+- distinguish endpoint association from conduct attribution
+- prefer explicit unknown values over researcher inference
+- add corroborating sources where they materially improve a record
 
-## Later
-
-- automated source discovery, not automated factual coding
-- cross-state and temporal work only where sampling design supports it
-- CaseTrace educational case generation from suitable public records
-
-### v0.2.0
-- complete a full source-to-code re-audit of every ID from SEIAI-0001 through SEIAI-0075
-- retire the exact duplicate SEIAI-0060 while preserving stable later IDs
-- separate legacy role-layer taxonomy from overlapping victim-facing and financial functions
-- tighten human identity-resolution rules
-- remove unsupported date precision
-- harmonize the 51-75 expansion with the earlier coding standard
-- strengthen cross-file validators and preserve full correction logs
-- evaluate research viability only after the corrected corpus is frozen
-
-### Next
-- decide whether the corrected Atlas supports a defensible first paper
-- if not, resume audit-directed expansion instead of expanding for case count alone
-- prioritize second-source corroboration, underrepresented geographies, and richer provider/forensic records
+Future analysis should continue to treat procedural stage, source availability, and purposive collection as part of the study design rather than as population sampling.

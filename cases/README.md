@@ -1,11 +1,17 @@
 # Case Notes
 
-This directory contains **84 active reviewed narrative case reconstructions**, one for each active incident in `data/cases.csv`. The stable ID history runs through `SEIAI-0085`; `SEIAI-0060` is retired as an exact duplicate of `SEIAI-0029` and is therefore not present as an active narrative.
+This directory contains one narrative reconstruction for each active incident in `data/cases.csv`.
+
+Current v0.3.0 corpus:
+
+- **233 active reviewed incidents**
+- stable active IDs through `SEIAI-0234`
+- `SEIAI-0060` is retired as a duplicate of `SEIAI-0029`
 
 Naming convention:
 
 `SEIAI-0001-short-slug.md`
 
-The files are research notes and narrative reconstruction aids. The structured dataset remains `data/cases.csv`, and the consolidated incident index is `docs/v0.1_case_index.md`.
+The narrative files are reconstruction aids. The structured sources of truth are `data/cases.csv`, `data/actors.csv`, and `references/sources.csv`.
 
-Every note distinguishes procedural posture from guilt, records missing information rather than inferring it, and links attribution claims to the conduct actually assessed.
+Every case note should preserve procedural posture, avoid unsupported precision, and distinguish association with an artefact from attribution of conduct.

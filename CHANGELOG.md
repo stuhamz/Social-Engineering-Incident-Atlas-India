@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.3.0 - 2026-10-05
+
+- consolidated the current corpus at 233 active reviewed incidents, 513 actor-role records, 243 registered sources, and 319 screening candidates
+- preserved stable active IDs through `SEIAI-0234` and kept `SEIAI-0060` retired as a duplicate of `SEIAI-0029`
+- retained the existing incident schema and v0.2 actor-function / identity-resolution model
+- refreshed current README, sampling, retrieval, quality-control, roadmap, and directory documentation to match the authoritative CSVs
+- added a compact `corpus_snapshot.py` release check
+- updated public Atlas metadata to v0.3.0
+- removed obsolete current-methodology guidance that no longer describes the maintained workflow
+- historical audit and release files remain available as the project record
+
 ## v0.2.2 - 2026-09-06
 
 - expanded the corrected active corpus from 74 to 84 reviewed incidents in Wave 1A

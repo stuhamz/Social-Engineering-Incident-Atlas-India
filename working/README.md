@@ -1,13 +1,14 @@
 # Working Directory
 
-This directory is for local working aids.
+This directory is reserved for local working aids that are not authoritative research data.
 
-The Excel coding workbook is intentionally ignored by Git through `.gitignore`.
-
-The authoritative publishable tables are:
+The publishable source-of-truth tables are:
 
 - `data/cases.csv`
+- `data/actors.csv`
 - `references/sources.csv`
 - `references/screening_log.csv`
 
-Before a release, export/copy reviewed rows from the workbook into those CSV files and run the validator.
+Local workbooks, temporary exports, discovery notes, and scratch files should not be committed unless they are intentionally part of the public methodology.
+
+Before a release, synchronize reviewed changes into the authoritative CSVs and run all validators.

@@ -1,42 +1,41 @@
 # Sampling Strategy
 
-## v0.1.0: 10-case methodology pilot
+## Overview
 
-The first 10 cases use **purposive diversity sampling** solely to test the coding framework across different attack categories, channels, evidentiary patterns, and procedural stages.
+The Atlas uses **purposive, source-driven sampling**.
 
-## v0.1.1: 30-case expanded validation set
+The goal is to build a diverse, auditable corpus for studying social-engineering mechanisms, evidence, actor functions, and attribution. The project is not designed to estimate the population frequency of cybercrime in India.
 
-Cases 11-30 are collected under the versioned retrieval protocol in [`retrieval_protocol_v0.1.1.md`](retrieval_protocol_v0.1.1.md).
+## Development history
 
-The expansion introduces:
+### Initial methodology pilot
 
-- documented query families
-- a defined search date/window
-- explicit candidate logging
-- incident-level duplicate resolution
-- a category-diversity constraint
-- a 20-new-case stopping rule
-- preservation of eligible-but-deferred cases as `pending`
+The first 10 incidents were selected deliberately to stress-test the schema across different attack categories, channels, evidentiary patterns, and procedural stages.
 
-This remains a **protocolized purposive validation set**, not a representative sample.
+### Protocolized expansion
+
+The next stages introduced explicit candidate logging, inclusion and exclusion criteria, incident-level duplicate resolution, source hierarchy, stable IDs, actor-level attribution records, and validator-backed release checks.
+
+### Corrective and targeted expansion
+
+Later collection batches were used to widen geographic coverage, temporal coverage, attack-category coverage, procedural-stage diversity, and evidence/attribution patterns.
+
+Selection priorities were adjusted when earlier corpus audits revealed concentration or gaps.
+
+## Current corpus
+
+The v0.3.0 release contains 233 active reviewed incidents.
+
+Every active incident has at least one registered public source, at least one actor-role record, one narrative reconstruction, a screening-history path, and validator-backed cross-file consistency.
 
 ## Candidate logging
 
-Every substantively inspected candidate must be entered in `references/screening_log.csv`, including excluded, duplicate and deferred/pending cases.
+Every substantively screened candidate should be recorded in `references/screening_log.csv` as include, exclude, duplicate, or pending.
 
-This prevents invisible cherry-picking and creates an auditable record of how the dataset was assembled.
+Candidate logging preserves the collection trail and reduces invisible case selection.
 
-## Prohibited inference from v0.1.x
+## Interpretation
 
-The 10-case pilot and 30-case expanded validation set must not be used to estimate:
+Because collection is purposive and source availability is uneven, the Atlas must not be used to estimate national or state prevalence, category frequency in the population, average financial loss, demographic risk, arrest rates, bail rates, charge-sheet rates, conviction rates, or the population frequency of any evidence or attribution type.
 
-- national or state prevalence
-- average financial loss
-- comparative frequency of attack categories
-- demographic risk
-- arrest, bail, charge-sheet or conviction rates
-- the population frequency of any evidence or attribution type
-
-## Toward v0.2
-
-Before a larger empirical release, the project should evaluate the 30-case schema audit and decide whether actor-level, source-claim, transaction-level or provider-evidence companion tables are necessary. A later sampling strategy should further reduce dependence on relevance-ranked manual search results.
+Comparisons within the reviewed corpus should be framed as corpus-level findings.

@@ -2,30 +2,31 @@
 
 ## Core question
 
-What does social-engineering-enabled cybercrime look like in India when publicly documented incidents are systematically reconstructed and compared?
+What does social-engineering-enabled cybercrime look like in India when publicly documented incidents are reconstructed under a common source, evidence, and attribution framework?
 
-## Descriptive questions
+## Incident-level questions
 
-1. Which attack categories appear in the dataset?
-2. Which communication channels are documented?
-3. Which roles or institutions are impersonated?
-4. Which social-engineering mechanisms are reported?
-5. What actions are targets persuaded to perform?
-6. What evidence types appear in subsequent investigations?
+1. What attack structures and impersonation patterns appear in the reviewed corpus?
+2. Which communication channels and target actions are documented?
+3. Which psychological mechanisms are described?
+4. What financial consequences are reported?
+5. How does procedural posture affect the detail visible in public records?
 
-## Forensic questions
+## Evidence questions
 
-7. Which evidence types most often support links between suspects and communications, devices, accounts, or money flows?
-8. Where do public records reveal attribution gaps?
-9. How often does reported attribution rely primarily on indirect identifiers such as SIM registration or bank-account ownership?
-10. Which attack stages leave the strongest publicly documented digital traces?
+6. Which evidence types connect people, accounts, devices, communications, or transactions?
+7. Where do public records reveal attribution gaps?
+8. When does endpoint association remain weaker than conduct attribution?
+9. Which propositions are supported by bank, telecom, device, platform, or message records?
+10. Where do public records remain silent about provider, forensic, authentication, or chain-of-custody evidence?
 
-## Later analytical questions
+## Actor questions
 
-These should only be attempted after a systematic sampling strategy exists.
+11. How are victim-facing and financial functions separately represented?
+12. How does human identity resolution differ across actor functions?
+13. Which attribution bases support stronger or weaker conduct linkage?
+14. Which alternative explanations remain plausible for actors linked only through accounts, devices, SIMs, or co-accused relationships?
 
-- change over time
-- state-level variation
-- attack-type comparisons
-- evidentiary patterns by procedural outcome
-- relationships between channel, pretext, and victim action
+## Boundary
+
+These questions describe and compare the reviewed corpus. State counts, year counts, attack-category counts, losses, convictions, and other frequencies must not be interpreted as population estimates.

@@ -18,4 +18,4 @@ for field in [
     for value, n in Counter(r.get(field,"") or "BLANK" for r in rows).most_common():
         print(f"  {value}: {n}")
 
-print("\nNOTE: v0.1 counts are schema-testing descriptives only, not population estimates.")
+print("\nNOTE: corpus counts describe the reviewed Atlas only and are not population estimates.")

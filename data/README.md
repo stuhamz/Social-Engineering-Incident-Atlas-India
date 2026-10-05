@@ -1,9 +1,15 @@
 # Data
 
-- `cases.csv`: 84 active reviewed incident records. The stable ID history runs through `SEIAI-0085`; `SEIAI-0060` is retired as a duplicate of `SEIAI-0029`.
-- `actors.csv`: 220 reviewed actor-role attribution records linked by `case_id`.
-- `data_dictionary.md`: incident-field definitions and date-precision rules.
-- `actor_data_dictionary.md`: actor fields, including v0.2.0 victim-facing and financial functional coding.
-- `controlled_vocabulary.md`: human-readable controlled values.
+The `data/` directory contains the authoritative structured research tables and dictionaries.
 
-The active corpus is a purposive methodology/research dataset, not a prevalence sample.
+## Current v0.3.0 snapshot
+
+- `cases.csv`: **233** active reviewed incident records
+- `actors.csv`: **513** reviewed actor-role records linked by `case_id`
+- `data_dictionary.md`: incident-field definitions and date-precision rules
+- `actor_data_dictionary.md`: actor-field definitions
+- `controlled_vocabulary.md`: human-readable controlled values
+
+Stable active case IDs run through `SEIAI-0234`. `SEIAI-0060` remains retired as a duplicate of `SEIAI-0029`.
+
+The corpus is purposive and source-driven. It is not a prevalence sample.

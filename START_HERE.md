@@ -1,34 +1,55 @@
 # Start Here
 
-## Before adding a case
+## Adding a candidate
 
 1. Add the candidate to `references/screening_log.csv`.
-2. Record discovery query/source and enough information to reproduce the screening decision.
-3. Apply the inclusion/exclusion and duplicate rules.
-4. If included, assign the next `SEIAI-####` ID and register every source.
-5. Create the incident note and code `data/cases.csv`.
-6. Code distinct conduct/actor roles in `data/actors.csv`, including non-exclusive victim-facing and financial function flags.
-7. Preserve allegation, defence, investigation, prima facie observation and final finding as different claim statuses.
-8. Review attribution against the specific conduct being assessed.
-9. Run `validate_dataset.py`, `validate_actors.py`, `validate_full_audit.py`, and the privacy scan.
-10. Mark records `reviewed` only after a second source-to-code pass.
+2. Record the public source URL and enough detail to reproduce the screening decision.
+3. Apply the inclusion, exclusion, and duplicate rules.
+4. If included, assign the next stable `SEIAI-####` ID.
+5. Register every source used for coding.
+6. Add the incident to `data/cases.csv`.
+7. Add conduct-specific actor records to `data/actors.csv`.
+8. Create one narrative reconstruction under `cases/`.
+9. Record uncertainty and attribution limitations explicitly.
+10. Run all validators and rebuild the public Atlas.
 
 ## Current release
 
-**v0.2.2 contains 84 active reviewed incident records and 220 reviewed actor-role records.** The stable ID history now runs through `SEIAI-0085`, with `SEIAI-0060` still retired as an exact duplicate of `SEIAI-0029`.
+**v0.3.0 contains 233 active reviewed incidents, 513 actor-role records, 243 registered sources, and 319 screening candidates.**
 
-The combined corpus remains a methodology/schema-validation set rather than a prevalence sample.
+Stable active IDs run through `SEIAI-0234`.
 
-## Do not infer
+`SEIAI-0060` remains retired as a duplicate of `SEIAI-0029`. Stable IDs are never recycled or renumbered.
 
-- national or state prevalence
-- average losses
-- comparative scam-category frequency
-- demographic risk
-- conviction rates
-- missing attack stages
-- human identity from a bank, SIM, device, IP or platform association alone
+## Core coding rule
 
-## Next stage
+> Reconstruct broadly. Attribute conservatively.
 
-Continue Wave 1 toward 100 active incidents using the v0.2.2 corrective-expansion priorities: underrepresented geographies, temporal depth, final/appellate material, second-source corroboration and richer provider/forensic evidence. Audit the corpus again at 100 before beginning the next expansion wave. Stable IDs must never be recycled or renumbered.
+Do not infer a human operator from a bank account, SIM registration, device, IP address, platform account, or transaction endpoint alone.
+
+Keep allegations, investigative claims, prima facie observations, defence claims, and final findings distinct.
+
+## Validation
+
+Run:
+
+```powershell
+python analysis/scripts/validate_dataset.py
+python analysis/scripts/validate_actors.py
+python analysis/scripts/validate_full_audit.py
+python analysis/scripts/corpus_snapshot.py
+python analysis/scripts/build_public_atlas.py
+```
+
+Then inspect:
+
+```powershell
+git diff --check
+git status --short
+```
+
+## Interpretation boundary
+
+The Atlas is purposively assembled from public sources.
+
+Do not use corpus counts to estimate national or state prevalence, category frequency in the population, average financial loss, demographic risk, arrest rates, bail rates, or conviction rates.

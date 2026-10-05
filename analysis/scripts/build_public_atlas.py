@@ -289,8 +289,8 @@ def main():
         "meta": {
             "title": "Social Engineering Incident Atlas India",
             "interface_version": "v0.2",
-            "dataset_version": "v0.2.2 Wave 1A public interface build",
-            "research_data_version": "v0.2.2 corrective expansion / v0.2.0 actor schema",
+            "dataset_version": "v0.3.0 public interface build",
+            "research_data_version": "v0.3.0 release / v0.2.0 actor schema",
             "case_count": len(public_cases),
             "actor_count": len(normalized_actors),
             "source_count": len(normalized_sources),
@@ -303,7 +303,7 @@ def main():
             "sampling_notice": "The Atlas is purposively sampled and retrieval-driven. Case counts describe the reviewed corpus and must not be interpreted as national cybercrime prevalence or state rankings.",
             "attribution_notice": "Actor records assess source-supported conduct and identity resolution. They are not findings of guilt.",
             "map_notice": "Map markers show the state or UT coded for reviewed incidents. Marker location is an approximate state centroid, not an incident coordinate.",
-            "citation": "Hamzah. (2026). Social Engineering Incident Atlas India (v0.2.2). GitHub repository.",
+            "citation": "Hamzah. (2026). Social Engineering Incident Atlas India (v0.3.0). GitHub repository.",
             "repository_url": REPO_URL,
         },
         "charts": {
