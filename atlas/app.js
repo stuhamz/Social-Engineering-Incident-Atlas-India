@@ -128,7 +128,11 @@
 
   function renderYearChart(){
     const data=state.data.charts.years,max=Math.max(...data.map(d=>d.count),1);
-    $('#yearChart').innerHTML=data.map((d,i)=>`<button class="spark-col" title="${d.year}: ${d.count} cases" data-year-jump="${d.year}"><i class="spark-bar" style="height:${Math.max(4,d.count/max*100)}%"></i>${(i===0||i===data.length-1||d.year%3===0)?`<span class="spark-year">${d.year}</span>`:''}</button>`).join('');
+    $('#yearChart').innerHTML=data.map((d,i)=>{
+      const showYear=i===0||i===data.length-1||i%4===0;
+      const height=d.count===0?2:Math.max(5,d.count/max*100);
+      return `<button class="spark-col" title="${d.year}: ${d.count} reviewed case${d.count===1?'':'s'}" aria-label="${d.year}: ${d.count} reviewed case${d.count===1?'':'s'}" data-year-jump="${d.year}"><i class="spark-bar" style="height:${height}%"></i>${showYear?`<span class="spark-year">${d.year}</span>`:''}</button>`;
+    }).join('');
     $$('[data-year-jump]').forEach(el=>el.addEventListener('click',()=>jumpToCases({yearFrom:el.dataset.yearJump,yearTo:el.dataset.yearJump})));
   }
 
