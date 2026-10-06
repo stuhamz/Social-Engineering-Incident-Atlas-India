@@ -2,10 +2,10 @@
 
 A structured public-source research dataset for studying **social-engineering-enabled cybercrime, digital evidence, actor functions, and attribution in India**.
 
-> **Current release: v0.3.0**
+> **Current release: v0.4.0**
 >
-> **233** active reviewed incidents · **513** actor-role records · **243** registered sources · **319** screened candidates
-> Stable active IDs run through `SEIAI-0234`. `SEIAI-0060` remains retired as a duplicate of `SEIAI-0029`.
+> **300** active reviewed incidents · **600** actor-role records · **310** registered sources · **412** screened candidates
+> Stable active IDs run through `SEIAI-0301`. `SEIAI-0060` remains retired as a duplicate of `SEIAI-0029`.
 
 ## Explore the Atlas
 
@@ -33,16 +33,16 @@ A bank account, SIM registration, IP address, device, platform account, or recei
 
 ## Current corpus
 
-The v0.3.0 release consolidates the current 233-incident corpus under the existing incident and actor schemas.
+The v0.4.0 release consolidates the current 300-incident corpus under the existing incident and actor schemas.
 
-- 233 active reviewed incidents
-- 513 reviewed actor-role records
-- 243 registered sources
-- 319 screening candidates
-- 215 incidents with T1 primary sources
+- 300 active reviewed incidents
+- 600 reviewed actor-role records
+- 310 registered sources
+- 412 screening candidates
+- 282 incidents with T1 primary sources
 - 18 incidents with T3 primary sources
 - 19 primary attack categories represented
-- incident years represented from 2008 through 2026, with two records coded `not_reported`
+- incident years represented from 2003 through 2026, with 16 records coded `not_reported`
 
 All retained records are source-linked and pass the repository validators before release.
 
@@ -125,8 +125,8 @@ A release should not be tagged until the validators return zero errors and the g
 ## Known limitations
 
 - The corpus is purposively assembled and retrieval-driven.
-- 143 of 233 primary sources are bail orders. Procedural stage materially affects what becomes visible.
-- 227 of 233 incidents currently have one registered source.
+- 143 of 300 primary sources are bail orders. Procedural stage materially affects what becomes visible.
+- 294 of 300 incidents currently have one registered source.
 - Geographic, temporal, and attack-category composition reflects collection strategy and public-source availability, not population prevalence.
 - Bail and interim records can contain detailed allegations without final findings of guilt.
 - Public records often expose financial, telecom, device, or account endpoints more clearly than the human who delivered the original deception.
@@ -146,7 +146,7 @@ The Atlas does not republish underlying judgments, screenshots, phone numbers, b
 
 ## Citation
 
-> Hamzah. (2026). *Social Engineering Incident Atlas India* (v0.3.0). GitHub repository.
+> Hamzah. (2026). *Social Engineering Incident Atlas India* (v0.4.0). GitHub repository.
 
 When using individual incidents, cite the original source material in `references/sources.csv` as well as the Atlas.
 
