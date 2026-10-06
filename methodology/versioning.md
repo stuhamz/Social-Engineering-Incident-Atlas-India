@@ -18,6 +18,7 @@ A repository release version summarizes a coherent public snapshot and does not 
 - `0.2.1`: repository-integrity hotfix
 - `0.2.2`: expansion to 84 active reviewed incidents without a breaking schema change
 - `0.3.0`: consolidated 233-incident public release, retaining the v0.2 actor/function schema and stable-ID rules
+- `0.4.0`: 300-active-incident public release; judgment-heavy expansion to stable ID `SEIAI-0301`, with the existing v0.2 actor/function schema retained
 
 ## Changes requiring a version note
 

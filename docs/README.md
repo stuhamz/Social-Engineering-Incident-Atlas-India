@@ -8,7 +8,7 @@ This directory contains current project documentation and historical release/aud
 - [`research_questions.md`](research_questions.md)
 - [`roadmap.md`](roadmap.md)
 - [`atlas_interface.md`](atlas_interface.md)
-- [`RELEASE_NOTES_v0.3.0.md`](RELEASE_NOTES_v0.3.0.md)
+- [`RELEASE_NOTES_v0.4.0.md`](RELEASE_NOTES_v0.4.0.md)
 
 ## Historical documentation
 

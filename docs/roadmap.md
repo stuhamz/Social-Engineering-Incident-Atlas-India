@@ -1,8 +1,8 @@
 # Roadmap
 
-## Current baseline: v0.3.0
+## Current baseline: v0.4.0
 
-The Atlas contains 233 active reviewed incidents, 513 actor-role records, 243 registered sources, 319 screening candidates, a public exploration interface, and validator-backed cross-file checks.
+The Atlas contains 300 active reviewed incidents, 600 actor-role records, 310 registered sources, 412 screening candidates, a public exploration interface, and validator-backed cross-file checks.
 
 ## Next expansion stage
 
