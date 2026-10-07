@@ -1,5 +1,7 @@
 # Social Engineering Incident Atlas India
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23209001.svg)](https://doi.org/10.5281/zenodo.23209001)
+
 A structured public-source research dataset for studying **social-engineering-enabled cybercrime, digital evidence, actor functions, and attribution in India**.
 
 > **Current release: v0.4.0**
