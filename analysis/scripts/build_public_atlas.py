@@ -303,7 +303,7 @@ def main():
             "sampling_notice": "The Atlas is purposively sampled and retrieval-driven. Case counts describe the reviewed corpus and must not be interpreted as national cybercrime prevalence or state rankings.",
             "attribution_notice": "Actor records assess source-supported conduct and identity resolution. They are not findings of guilt.",
             "map_notice": "Map markers show the state or UT coded for reviewed incidents. Marker location is an approximate state centroid, not an incident coordinate.",
-            "citation": "Hamzah. (2026). Social Engineering Incident Atlas India (v0.4.0). GitHub repository.",
+            "citation": "Hamzah. (2026). Social Engineering Incident Atlas India (Version 0.4.0) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.23209001",
             "repository_url": REPO_URL,
         },
         "charts": {

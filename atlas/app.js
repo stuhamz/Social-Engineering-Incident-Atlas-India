@@ -313,7 +313,7 @@
     return `<div class="actor-mini"><strong>${escapeHtml(a.actor_label)}</strong><div class="actor-badges"><span class="badge">${escapeHtml(titleize(a.identity_resolution))}</span>${flags.map(f=>`<span class="badge">${f}</span>`).join('')}<span class="badge">${escapeHtml(titleize(a.attribution_strength))}</span></div><p>${escapeHtml(a.conduct_assessed)}</p>${a.attribution_limitations?`<p><strong>Limit:</strong> ${escapeHtml(a.attribution_limitations)}</p>`:''}</div>`;
   }
 
-  function caseCitation(c){return `Hamzah. (2026). “${c.case_title}” (${c.case_id}). Social Engineering Incident Atlas India, v0.2.1.`;}
+  function caseCitation(c){return `Hamzah. (2026). “${c.case_title}” (${c.case_id}). Social Engineering Incident Atlas India, v0.4.0. https://doi.org/10.5281/zenodo.23209001`;}
   function caseUrl(id){const u=new URL(location.href);u.hash=`case/${id}`;return u.toString();}
 
   function openCase(caseId,options={}){
