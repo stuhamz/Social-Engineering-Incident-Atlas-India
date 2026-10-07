@@ -3,11 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A public research interface for the Social Engineering Incident Atlas India.">
+  <meta name="description" content="A public research interface for exploring documented social-engineering-enabled cybercrime incidents from India.">
   <meta name="theme-color" content="#102c2a">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Social Engineering Incident Atlas India">
+  <meta property="og:description" content="A public research interface for exploring documented social-engineering-enabled cybercrime incidents from India.">
+  <meta property="og:url" content="https://stuhamz.github.io/Social-Engineering-Incident-Atlas-India/">
+  <meta property="og:site_name" content="Social Engineering Incident Atlas India">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Social Engineering Incident Atlas India">
+  <meta name="twitter:description" content="A public research interface for exploring documented social-engineering-enabled cybercrime incidents from India.">
+
+  <link rel="canonical" href="https://stuhamz.github.io/Social-Engineering-Incident-Atlas-India/">
   <title>Social Engineering Incident Atlas India</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23102c2a%22/><path d=%22M21 69V31h16c12 0 20 6 20 18s-8 20-21 20H21zm11-9h5c6 0 9-4 9-11 0-6-3-9-9-9h-5v20zm33 9V31h11v38H65z%22 fill=%22%23f4efe4%22/></svg>">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./styles.css?v=0.4.0-3">
 </head>
 <body>
   <div class="app-shell">
@@ -231,6 +243,15 @@
       </section>
     </main>
 
+    <section class="repo-support" aria-label="Research repository">
+      <div>
+        <p class="eyebrow">OPEN RESEARCH</p>
+        <h2>Found the Atlas useful?</h2>
+        <p>If it helped your research or gave you something interesting to explore, you can star the repository on GitHub.</p>
+      </div>
+      <a class="repo-star-link" href="https://github.com/stuhamz/Social-Engineering-Incident-Atlas-India" target="_blank" rel="noreferrer">Star the repository on GitHub ↗</a>
+    </section>
+
     <footer>
       <div><strong>Social Engineering Incident Atlas India</strong><span>Public exploration layer for a versioned research dataset.</span></div>
       <div><a href="https://github.com/stuhamz/Social-Engineering-Incident-Atlas-India" target="_blank" rel="noreferrer">Dataset & methodology ↗</a><span id="footerVersion"></span></div>
@@ -250,6 +271,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <div class="loading-screen" id="loadingScreen"><div class="loading-mark">SE</div><p>Building the Atlas view…</p></div>
-  <script src="./app.js" defer></script>
+  <script src="./app.js?v=0.4.0-3" defer></script>
 </body>
 </html>
