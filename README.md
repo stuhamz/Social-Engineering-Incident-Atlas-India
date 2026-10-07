@@ -11,6 +11,8 @@ A structured public-source research dataset for studying **social-engineering-en
 
 **Public interface:** https://stuhamz.github.io/Social-Engineering-Incident-Atlas-India/
 
+**v0.4.0 DOI:** https://doi.org/10.5281/zenodo.23209001
+
 The interface is a read-only exploration layer generated from the authoritative research CSVs. It supports case search, actor-role exploration, evidence views, source navigation, filtering, comparison, and corpus-level charts.
 
 ## What the Atlas studies
@@ -24,6 +26,12 @@ The project focuses on three connected layers:
 3. **Attribution**: what the available evidence can actually connect to a person, account, device, role, or transaction, and what remains unresolved.
 
 The unit of analysis is the **incident**. A single incident may contain multiple sources and multiple analytically distinct actor records.
+
+## Citation and licensing
+
+The archived v0.4.0 dataset is identified by DOI `10.5281/zenodo.23209001`.
+
+Original structured data, coding, narrative summaries, schemas, methodology, and documentation are released under CC BY 4.0, subject to third-party rights in the underlying source material. Software and scripts remain under the repository MIT License. See `LICENSE-DATA` and `LICENSE`.
 
 ## Research principle
 

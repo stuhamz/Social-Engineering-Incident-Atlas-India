@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it."
+title: "Social Engineering Incident Atlas India"
+type: dataset
+authors:
+  - family-names: "Hamzah"
+version: "0.4.0"
+date-released: "2026-10-07"
+doi: "10.5281/zenodo.23209001"
+url: "https://stuhamz.github.io/Social-Engineering-Incident-Atlas-India/"
+repository-code: "https://github.com/stuhamz/Social-Engineering-Incident-Atlas-India"
+keywords:
+  - cybercrime
+  - social engineering
+  - digital forensics
+  - digital evidence
+  - electronic evidence
+  - cybercrime investigation
+  - incident reconstruction
+  - attribution
+  - India
