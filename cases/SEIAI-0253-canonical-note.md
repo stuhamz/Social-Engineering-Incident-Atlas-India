@@ -30,7 +30,7 @@ Source URL:
 
 ## Neutral case summary
 
-A caller posing as an SBI official told 78-year-old retired police officer B. Mohan Raj that his ATM card would be blocked unless renewed and induced him to disclose card details and OTPs. Fraudulent transactions totalling INR 606,000 followed, and another INR 58,500 was later transferred through internet banking. The consumer appeal held the bank not deficient. The caller remained unidentified.
+A caller posing as an SBI official told a complainant that his ATM card would be blocked unless renewed and induced him to disclose card details and OTPs. Fraudulent transactions totalling INR 606,000 followed, and another INR 58,500 was later transferred through internet banking. The consumer appeal held the bank not deficient. The caller remained unidentified.
 
 ## Reconstruction
 
@@ -44,7 +44,7 @@ Reconnaissance present: `not_reported`. No distinct pre-contact reconnaissance s
 
 ### 3. Initial contact
 
-On 1 September 2018, 78-year-old retired senior police officer B. Mohan Raj received a call from a person posing as a bank official.
+On 1 September 2018, the complainant received a call from a person posing as a bank official.
 
 ### 4. Pretext
 
@@ -68,7 +68,7 @@ Disclose ATM-card details and OTPs to prevent the purported card blocking and co
 
 ### 7. Victim action
 
-Mohan Raj disclosed card details and OTPs. Fraudulent withdrawals totalling INR 606,000 followed on 2 and 3 September, and a further INR 58,500 internet-banking transfer occurred on 2 October.
+The complainant disclosed card details and OTPs. Fraudulent withdrawals totalling INR 606,000 followed on 2 and 3 September, and a further INR 58,500 internet-banking transfer occurred on 2 October.
 
 ### 8. Consequence
 

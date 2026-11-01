@@ -30,7 +30,7 @@ Source URL(s):
 
 ## Neutral case summary
 
-A woman who responded to an OLX flat advertisement was allegedly contacted by a man using the false identity Ravirajsinh. Police said he developed a friendship by claiming to be the son of a policeman and promised to use family connections to secure her a police job. He then called her to a hotel in Chotila, where he allegedly committed sexual abuse, recorded it and used the recording for blackmail. Police said he also took INR 2 lakh. Aijaz Gadhwala was arrested in December 2019. The Atlas codes the deception and recorded-media coercion while keeping the unadjudicated nature of the police allegations explicit.
+Police alleged that a false online advertiser cultivated friendship using a purported police-family connection and a job promise, then arranged a private meeting followed by sexual abuse and blackmail involving a recording. Police also reported an alleged ₹2 lakh loss and an arrest in December 2019. These remain unadjudicated allegations in the registered news source.
 
 ## Reconstruction
 
@@ -48,7 +48,7 @@ The victim contacted an OLX advertisement for a flat. The advertiser allegedly u
 
 ### 4. Pretext
 
-The alleged operator promised to use his father's connections to obtain a police job for the victim, then arranged a hotel-room meeting where he recorded sexual abuse and used the recording for blackmail.
+The alleged operator used a job-assistance pretext to arrange a private meeting and subsequently threatened the complainant with allegedly recorded material.
 
 ### 5. Social-engineering mechanisms
 
@@ -68,7 +68,7 @@ Meet at the hotel under the job-related pretext and later comply with financial 
 
 ### 7. Victim action
 
-The victim went to the hotel meeting; police later reported that the accused used a recording to blackmail her and took INR 2 lakh.
+Police alleged that the complainant attended the arranged meeting and was later blackmailed using recorded material; the reported ₹2 lakh loss remains an allegation.
 
 ### 8. Consequence
 

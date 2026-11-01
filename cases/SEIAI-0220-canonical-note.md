@@ -1,4 +1,4 @@
-# SEIAI-0220: Uttarpara fake NRI matrimonial airport-clearance fraud
+# SEIAI-0220: West Bengal fake NRI matrimonial airport-clearance fraud
 
 ## Record status
 
@@ -30,7 +30,7 @@ Source URL(s):
 
 ## Neutral case summary
 
-A 22-year-old woman from Uttarpara met a prospective groom on a matrimonial website. The man presented himself as an NRI, spoke with her by phone and said he would travel from the United States to meet her for marriage. He later claimed to be stuck at New Delhi airport and asked for money for clearance. She transferred almost INR 8 lakh, after which the persona stopped communicating. Police later arrested three Nigerian nationals in Noida and said ATM CCTV helped connect them to withdrawal of the transferred money. The public record does not identify which human operated the original matrimonial profile.
+A complainant in West Bengal met a prospective groom on a matrimonial website. The man presented himself as an NRI, spoke with her by phone and said he would travel from the United States to meet her for marriage. He later claimed to be stuck at New Delhi airport and asked for money for clearance. She transferred almost INR 8 lakh, after which the persona stopped communicating. Police later arrested three Nigerian nationals in Noida and said ATM CCTV helped connect them to withdrawal of the transferred money. The public record does not identify which human operated the original matrimonial profile.
 
 ## Reconstruction
 
@@ -44,7 +44,7 @@ Reconnaissance present: `not_reported`. The reviewed source does not establish a
 
 ### 3. Initial contact
 
-A 22-year-old Uttarpara woman met a prospective groom on a matrimonial site; he presented himself as an NRI and continued the interaction by phone.
+The complainant met a prospective groom on a matrimonial site; he presented himself as an NRI and continued the interaction by phone.
 
 ### 4. Pretext
 

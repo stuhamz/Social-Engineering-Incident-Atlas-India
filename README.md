@@ -1,21 +1,18 @@
 # Social Engineering Incident Atlas India
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23209001.svg)](https://doi.org/10.5281/zenodo.23209001)
+[![Archived v0.4.0 DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23209001.svg)](https://doi.org/10.5281/zenodo.23209001)
 
-A structured public-source research dataset for studying **social-engineering-enabled cybercrime, digital evidence, actor functions, and attribution in India**.
+**What is this?** A collection of 300 incidents of social-engineering-enabled cybercrime in India, assembled from publicly accessible court decisions, other institutional records, and reporting. It is designed to help readers examine how deception is described in the records and what those records do, or do not, establish about the people involved.
 
-> **Current release: v0.4.0**
->
-> **300** active reviewed incidents · **600** actor-role records · **310** registered sources · **412** screened candidates
-> Stable active IDs run through `SEIAI-0301`. `SEIAI-0060` remains retired as a duplicate of `SEIAI-0029`.
+**Who is it for?** Researchers of crime and law, journalists, and students working with documentary evidence. You can inspect the research methods, coded data and individual case notes. You do not need specialist digital-forensics training to understand the public introduction.
 
-## Explore the Atlas
+**Central research question:** What can public records establish about the conduct and identity of people involved in social-engineering fraud, and where does that evidence stop?
 
-**Public interface:** https://stuhamz.github.io/Social-Engineering-Incident-Atlas-India/
+The dataset has **300 incident records**, **600 actor-role records**, **310 registered source entries** and **412 screening decisions**. These are differently defined records, not numbers of proven offences, individual offenders or independent underlying evidence sources.
 
-**v0.4.0 DOI:** https://doi.org/10.5281/zenodo.23209001
+**Browse:** [Atlas website](https://stuhamz.github.io/Social-Engineering-Incident-Atlas-India/) | [Case notes](cases/) | [Research methods](methodology/) | [Correction note](docs/RESEARCH_SCOPE_AND_CORRECTIONS.md)
 
-The interface is a read-only exploration layer generated from the authoritative research CSVs. It supports case search, actor-role exploration, evidence views, source navigation, filtering, comparison, and corpus-level charts.
+**Version distinction:** The Zenodo DOI identifies the frozen **v0.4.0** dataset. Changes after that release are documented in this repository and must not be attributed to the archived DOI. The public correction update retains the original 300 incident IDs, and does not amount to independent academic certification of every case.
 
 ## What the Atlas studies
 
@@ -43,7 +40,7 @@ A bank account, SIM registration, IP address, device, platform account, or recei
 
 ## Current corpus
 
-The v0.4.0 release consolidates the current 300-incident corpus under the existing incident and actor schemas.
+The v0.4.0 archive fixed the 300-incident population; the current repository also contains documented post-release corrections to selected fields and narrative wording.
 
 - 300 active reviewed incidents
 - 600 reviewed actor-role records
@@ -54,7 +51,7 @@ The v0.4.0 release consolidates the current 300-incident corpus under the existi
 - 19 primary attack categories represented
 - incident years represented from 2003 through 2026, with 16 records coded `not_reported`
 
-All retained records are source-linked and pass the repository validators before release.
+All retained records are source-linked. Automated validators check cross-file consistency, but they do not authenticate original court documents or independently verify each underlying allegation.
 
 The Atlas is **not a representative sample of Indian cybercrime**. Corpus counts describe the reviewed dataset only.
 

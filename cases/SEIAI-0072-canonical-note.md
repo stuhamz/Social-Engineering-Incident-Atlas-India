@@ -27,7 +27,7 @@ Full URLs and source-level notes are in `references/sources.csv`.
 
 ## Neutral case summary
 
-The Kerala High Court recorded a digital-arrest style fraud in which a FedEx narcotics pretext escalated to Mumbai Cyber Crime impersonation and induced a 75-year-old victim to transfer INR 10,440,111. The judgment transferred the investigation to the CBI because the perpetrators and transactions appeared spread across multiple states.
+The Kerala High Court recorded a digital-arrest style fraud in which a FedEx narcotics pretext escalated to Mumbai Cyber Crime impersonation and induced a complainant to transfer INR 10,440,111. The judgment transferred the investigation to the CBI because the perpetrators and transactions appeared spread across multiple states.
 
 ## Reconstruction
 
@@ -68,7 +68,7 @@ Transfer savings into bank accounts supplied by the purported investigators for 
 
 ### Victim action / consequence
 
-The 75-year-old petitioner transferred INR 10,440,111 into three accounts between 22 and 24 July 2024.
+The petitioner transferred INR 10,440,111 into three accounts between 22 and 24 July 2024.
 
 - Financial loss coded: `10440111`
 - Payment method: `bank_transfer`

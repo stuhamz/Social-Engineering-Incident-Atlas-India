@@ -1,41 +1,15 @@
-# Roadmap
+# Research development plan
 
-## Current baseline: v0.4.0
+## Current work
 
-The Atlas contains 300 active reviewed incidents, 600 actor-role records, 310 registered sources, 412 screening candidates, a public exploration interface, and validator-backed cross-file checks.
+The archived v0.4.0 dataset contains 300 active incident records, 600 actor-role records, 310 registered source entries and 412 screening decisions. No corpus expansion is included in the 2 November 2026 post-release correction.
 
-## Next expansion stage
+Priorities are source-faithful editorial corrections, accurate judicial-outcome classification, privacy minimization and distinguishing recorded evidence from an actor attribution inference. Changes must preserve stable IDs and be documented and reproducible.
 
-Continue expansion in bounded, reviewable batches.
+## Separate paper research
 
-Priorities:
+A narrower judicial-reasoning study should use the Atlas to identify candidate cases, then independently screen its actual judgments and code each accused-and-charge proposition under a documented protocol. Original-document provenance, chronology, differences between allegations and operative court findings, and second-reader agreement require separate attention for the paper's sampled judgments.
 
-- underrepresented states and Union Territories
-- earlier incident years where credible public material exists
-- attack categories with thin coverage
-- stronger T1 judicial or official sources where available
-- cases that add new evidence or attribution patterns rather than only increasing count
+## Versioning
 
-Every batch should:
-
-1. log candidates in `references/screening_log.csv`
-2. check incident-level duplicates
-3. register sources
-4. add the incident row
-5. add actor-function records
-6. create one narrative per active incident
-7. run all validators
-8. rebuild the public Atlas
-9. document the release-level change
-
-## Quality priorities
-
-- preserve stable IDs
-- preserve exact source provenance
-- avoid invented date precision
-- keep allegations and adjudicated findings separate
-- distinguish endpoint association from conduct attribution
-- prefer explicit unknown values over researcher inference
-- add corroborating sources where they materially improve a record
-
-Future analysis should continue to treat procedural stage, source availability, and purposive collection as part of the study design rather than as population sampling.
+Preserve the original v0.4.0 archive and DOI. Cite the updated repository's exact commit for post-release changes. Do not treat code-level checks as academic certification and do not interpret the purposive corpus as representing national incidence.

@@ -30,7 +30,7 @@ Source URL(s):
 
 ## Neutral case summary
 
-A motorcyclist travelling toward Nadiad accepted a woman's request for a lift and later agreed to an intimate encounter at a secluded place. Four men then arrived in a car, falsely presented themselves as Local Crime Branch officers, assaulted him, threatened prosecution for a sexual offence and demanded INR 50,000 as a settlement. They took INR 300, his phone and a copy of his driving licence and were transporting him toward Ahmedabad to obtain more money when genuine police stopped the car. The later Gujarat High Court judgment treated the police-impersonation extortion as proved against the relevant male accused but found the evidence insufficient to establish that the woman was part of their pre-arranged common plan.
+A complainant was drawn into a private meeting through a social pretext. Men impersonating Local Crime Branch officers threatened prosecution, assaulted him and demanded INR 50,000; INR 300 and personal items were taken before genuine police intervened. The appellate judgment distinguishes the proved conduct of relevant male defendants from insufficient evidence of a pre-arranged plan involving the woman.
 
 ## Reconstruction
 
@@ -48,7 +48,7 @@ On 4 January 2010, a woman asked the complainant for a lift while he was travell
 
 ### 4. Pretext
 
-After the complainant reached the secluded place, four men arrived and falsely posed as Local Crime Branch police officials, accused him of a sexual offence, beat him and demanded money as a purported settlement.
+At the arranged meeting, men posing as Local Crime Branch officers threatened a criminal accusation, assaulted the complainant and demanded money as a purported settlement.
 
 ### 5. Social-engineering mechanisms
 

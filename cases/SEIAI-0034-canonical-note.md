@@ -27,7 +27,7 @@ Source URL: https://indiankanoon.org/doc/121236827/
 
 ## Neutral case summary
 
-A 74-year-old Mangalore consumer searching for Amazon Prime support was redirected to another phone number and subsequently saw five INR 20,000 debits from an SBI account. The appellate consumer judgment preserves the manipulation and liability dispute but contains no offender attribution.
+A consumer searching for Amazon Prime support was redirected to another phone number and subsequently saw five INR 20,000 debits from an SBI account. The appellate consumer judgment preserves the manipulation and liability dispute but contains no offender attribution.
 
 ## Reconstruction
 
@@ -44,7 +44,7 @@ A 74-year-old Mangalore consumer searching for Amazon Prime support was redirect
 
 ### Initial contact
 
-A 74-year-old Mangalore consumer sought help for an Amazon Prime Video subscription issue using a customer-care number found through Google and was redirected to another number.
+The complainant sought help for an Amazon Prime Video subscription issue using a customer-care number found through Google and was redirected to another number.
 
 ### Pretext
 

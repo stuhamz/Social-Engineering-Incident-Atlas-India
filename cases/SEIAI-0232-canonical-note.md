@@ -30,7 +30,7 @@ Source URL(s):
 
 ## Neutral case summary
 
-A 33-year-old Ludhiana woman was contacted through a matrimonial website by a profile called Pradeep Anand, who claimed to be a businessman in Birmingham and expressed interest in marriage. On 22 December 2020, an unknown caller said Anand had been detained at Delhi airport while carrying GBP 200,000. The caller connected her to the persona, who urged her to transfer money to secure his release and promised repayment. She sent INR 20.37 lakh to bank accounts before the profile stopped responding. Police said analysis of the phone numbers and accounts used in the scheme led them to identify nine people.
+A complainant in Ludhiana was contacted through a matrimonial website by a profile called Pradeep Anand, who claimed to be a businessman in Birmingham and expressed interest in marriage. On 22 December 2020, an unknown caller said Anand had been detained at Delhi airport while carrying GBP 200,000. The caller connected her to the persona, who urged her to transfer money to secure his release and promised repayment. She sent INR 20.37 lakh to bank accounts before the profile stopped responding. Police said analysis of the phone numbers and accounts used in the scheme led them to identify nine people.
 
 ## Reconstruction
 
@@ -44,7 +44,7 @@ Reconnaissance present: `not_reported`. The reviewed source does not establish a
 
 ### 3. Initial contact
 
-A 33-year-old Ludhiana woman was contacted through a matrimonial website by a profile using the name Pradeep Anand, who claimed to be a businessman living in Birmingham and interested in marrying her.
+A complainant in Ludhiana was contacted through a matrimonial website by a profile using the name Pradeep Anand, who claimed to be a businessman living in Birmingham and interested in marrying her.
 
 ### 4. Pretext
 

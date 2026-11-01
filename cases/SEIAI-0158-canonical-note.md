@@ -1,4 +1,4 @@
-# SEIAI-0158: Mumbai Cyber Branch impersonation digital-arrest fraud against BSF-campus resident
+# SEIAI-0158: Mumbai Cyber Branch impersonation digital-arrest fraud
 
 ## Record status
 
@@ -29,7 +29,7 @@ Source URL: https://indiankanoon.org/doc/126618354/
 
 ## Neutral case summary
 
-A 59-year-old Gwalior-area complainant was contacted by a person claiming to be from the Mumbai Cyber Branch and was threatened and intimidated under a digital-arrest pretext. The complainant transferred INR 7,029,990 online. The 2026 High Court proceeding concerned a request to quash the case after compromise and treated the alleged cyber fraud as having a broader public dimension rather than as a purely private dispute.
+A complainant in Madhya Pradesh was contacted by a person claiming to be from the Mumbai Cyber Branch and was threatened and intimidated under a digital-arrest pretext. The complainant transferred INR 7,029,990 online. The 2026 High Court proceeding concerned a request to quash the case after compromise and treated the alleged cyber fraud as having a broader public dimension rather than as a purely private dispute.
 
 ## Reconstruction
 
@@ -43,7 +43,7 @@ No specific reconnaissance is reported in the public source reviewed.
 
 ### 3. Initial contact
 
-The complainant, a 59-year-old resident of the BSF STC Tekanpur area, received contact from a person presenting as a Mumbai Cyber Branch officer.
+The complainant, received contact from a person presenting as a Mumbai Cyber Branch officer.
 
 ### 4. Pretext
 

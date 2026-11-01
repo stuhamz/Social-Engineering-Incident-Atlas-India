@@ -1,4 +1,4 @@
-# SEIAI-0184: Digital-arrest fraud against 83-year-old Rajasthan woman
+# SEIAI-0184: Digital-arrest fraud involving an older complainant
 
 ## Record status
 
@@ -29,7 +29,7 @@ Source URL: https://indiankanoon.org/doc/49271215/
 
 ## Neutral case summary
 
-An 83-year-old Rajasthan woman was subjected to an organised digital-arrest scam and transferred INR 8,000,000 from her pension and savings. The proceeding records severe trauma and hospitalisation and discusses the case in the context of wider cybercrime infrastructure. Atlas keeps the focal victim loss separate from broader network/account activity and treats the applicant's exact victim-facing role conservatively.
+An older complainant was subjected to an organised digital-arrest scam and transferred INR 8,000,000 from pension and savings. The proceeding records severe trauma and hospitalisation and discusses the case in the context of wider cybercrime infrastructure. Atlas keeps the focal victim loss separate from broader network/account activity and treats the applicant's exact victim-facing role conservatively.
 
 ## Reconstruction
 
@@ -43,7 +43,7 @@ No specific reconnaissance is reported in the public source reviewed.
 
 ### 3. Initial contact
 
-An 83-year-old woman was targeted by an organised digital-arrest fraud operation.
+An older complainant was targeted by an organised digital-arrest fraud operation.
 
 ### 4. Pretext
 

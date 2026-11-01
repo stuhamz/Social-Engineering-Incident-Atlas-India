@@ -1,4 +1,4 @@
-# SEIAI-0224: Chennai fake bride serviced-apartment robbery and blackmail
+# SEIAI-0224: Chennai fake bride meeting robbery and blackmail
 
 ## Record status
 
@@ -30,7 +30,7 @@ Source URL(s):
 
 ## Neutral case summary
 
-A 42-year-old Chennai man seeking a bride placed an advertisement on a matrimonial website. A woman calling herself Priya Iyer phoned him, said she worked for a Bengaluru software company and arranged a meeting. After changing the venue several times, she led him to a serviced apartment where three men were waiting. The group allegedly robbed his phone and four-sovereign chain at knifepoint, forced him to reveal his ATM PIN and took photographs while threatening to defame him if he told his family. He went to Vadapalani police, who registered a case and began searching for the four suspects.
+A complainant seeking a bride placed an advertisement on a matrimonial website. A woman calling herself Priya Iyer phoned him, said she worked for a Bengaluru software company and arranged a meeting. After changing the venue several times, she allegedly led him to a private meeting location where three men were waiting. The group allegedly robbed his phone and four-sovereign chain at knifepoint, forced him to reveal his ATM PIN and took photographs while threatening to defame him if he told his family. He went to Vadapalani police, who registered a case and began searching for the four suspects.
 
 ## Reconstruction
 
@@ -44,11 +44,11 @@ Reconnaissance present: `not_reported`. The reviewed source does not establish a
 
 ### 3. Initial contact
 
-After Kalicharan placed a matrimonial advertisement with his phone number, a woman called as Priya Iyer, presented herself as a Bengaluru software employee and arranged to meet him.
+After the complainant placed a matrimonial advertisement, a woman called as Priya Iyer, presented herself as a Bengaluru software employee and arranged to meet him.
 
 ### 4. Pretext
 
-The meeting venue was repeatedly changed and the woman eventually led him into a serviced apartment where three men were waiting; the group then allegedly robbed him, forced disclosure of his ATM PIN and photographed him to threaten reputational harm.
+The meeting venue was repeatedly changed and the woman eventually led him to a private meeting location where three men were waiting; the group then allegedly robbed him, forced disclosure of his ATM PIN and photographed him to threaten reputational harm.
 
 ### 5. Social-engineering mechanisms
 

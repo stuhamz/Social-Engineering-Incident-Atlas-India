@@ -30,7 +30,7 @@ Source URL(s):
 
 ## Neutral case summary
 
-A 39-year-old Jayanagar woman who registered on a marriage portal in 2018 was contacted by a man presenting himself as a UK-based Indian doctor who wanted to settle in Bengaluru. The source describes the contact as a fraudulent suitor scheme in which the prospective-marriage relationship was used to introduce an overseas gift and customs-clearance payment story. The woman ultimately lost INR 33 lakh. The article was published as part of a broader report on Bengaluru cybercrime and does not identify the human operator or provide a final case outcome.
+A complainant in Bengaluru who registered on a marriage portal in 2018 was contacted by a man presenting himself as a UK-based Indian doctor who wanted to settle in Bengaluru. The source describes the contact as a fraudulent suitor scheme in which the prospective-marriage relationship was used to introduce an overseas gift and customs-clearance payment story. The woman ultimately lost INR 33 lakh. The article was published as part of a broader report on Bengaluru cybercrime and does not identify the human operator or provide a final case outcome.
 
 ## Reconstruction
 
@@ -44,7 +44,7 @@ Reconnaissance present: `not_reported`. The reviewed source does not establish a
 
 ### 3. Initial contact
 
-A 39-year-old Jayanagar woman registered with a marriage portal in 2018 and was approached by a man presenting himself as a UK-based Indian doctor who wanted to settle in Bengaluru.
+A complainant in Bengaluru registered with a marriage portal in 2018 and was approached by a man presenting himself as a UK-based Indian doctor who wanted to settle in Bengaluru.
 
 ### 4. Pretext
 

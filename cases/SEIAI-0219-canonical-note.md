@@ -30,7 +30,7 @@ Source URL(s):
 
 ## Neutral case summary
 
-A Ghaziabad woman said she accepted a Facebook request in October 2017 from a man calling himself Aniket Sharma, who claimed to be from Dehradun but living in Austria. He elicited sympathy by saying he had cancer, promised marriage and persuaded her to share personal photographs and videos while refusing to show his own face during video calls. After she ended contact in June 2018, he threatened to circulate the material. Between September and October 2018, her husband and family received personal photographs. Police registered an FIR for criminal intimidation and an Information Technology Act offence.
+A complainant reported that a person using an unverified Facebook identity cultivated trust through a claimed illness and promise of marriage, then obtained private media. After contact ended, the person allegedly threatened disclosure and sent material to people close to her. Police registered an FIR for criminal intimidation and an Information Technology Act offence; the account operator remains unidentified.
 
 ## Reconstruction
 
@@ -68,7 +68,7 @@ Share personal photographs and videos; after the relationship ended, comply unde
 
 ### 7. Victim action
 
-The victim shared personal media. After she stopped contact in June 2018, the persona threatened distribution and her husband and family later received some of the material.
+Private media was shared during the deceptive contact; after contact ended, the persona allegedly threatened distribution and sent material to others.
 
 ### 8. Consequence
 

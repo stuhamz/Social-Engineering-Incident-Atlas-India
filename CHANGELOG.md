@@ -1,5 +1,20 @@
 # Changelog
 
+## Public post-release correction, 2 November 2026 (not an archival DOI release)
+
+- Corrected 10 structured case fields across four records, including a mixed-outcome classification in SEIAI-0281; documented which judicial documents are still awaiting issuer-original verification.
+- Revised 44 lines across 16 case notes to clarify legal scope or reduce unnecessary identifying detail. Replaced 24 sensitive descriptive case-note slugs with case-ID-only filenames. The original public Git history is unaffected.
+- Replaced the website's unrestricted browser data export with a minimal, reproducible case index. The website now identifies its research question, intended audience, evidence boundaries and documented sampling limitations.
+- Retained 300 incident IDs, 600 actor roles, 310 registered sources and 412 screening decisions; no new incidents or external review certifications were added.
+- The historical Zenodo v0.4.0 release remains unchanged. Cite that DOI only for the original archival snapshot; cite the current Git commit for the corrected repository.
+
+## v0.4.0 - 2026-10-07 (archived published snapshot)
+
+- Published a frozen 300-incident corpus, with 600 actor-role records, 310 registered source entries and 412 screened candidates.
+- Preserved active IDs through `SEIAI-0301` while retaining the retired duplicate `SEIAI-0060`.
+- Published the historical public dataset on Zenodo under DOI `10.5281/zenodo.23209001`; the DOI refers to the archived v0.4.0 contents, not the later corrections described above.
+- Continued to distinguish source-reported allegations, procedural decisions, individual actor-role attribution and final judicial findings. The corpus was not certified as nationally representative or independently authenticated case-by-case.
+
 ## v0.3.0 - 2026-10-05
 
 - consolidated the current corpus at 233 active reviewed incidents, 513 actor-role records, 243 registered sources, and 319 screening candidates

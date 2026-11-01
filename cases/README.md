@@ -1,17 +1,9 @@
-# Case Notes
+# Case narratives
 
-This directory contains one narrative reconstruction for each active incident in `data/cases.csv`.
+There is one case-note Markdown file for each of the 300 active case IDs in `data/cases.csv`. `SEIAI-0060` is a retired duplicate and is not an active incident.
 
-Current v0.3.0 corpus:
+Case notes summarize public documentary records and distinguish reported allegations, procedural decisions, and judgments. A case note is a research reconstruction, not an authenticated court-certified account or an assertion that all persons mentioned committed the alleged conduct.
 
-- **233 active reviewed incidents**
-- stable active IDs through `SEIAI-0234`
-- `SEIAI-0060` is retired as a duplicate of `SEIAI-0029`
+The filename is ordinarily a descriptive slug prefixed by the stable case ID. Some sensitive notes now have the deliberately generic filename `SEIAI-XXXX-canonical-note.md` to avoid including identifying subject matter in a URL. The older titles may remain in historical releases and version history.
 
-Naming convention:
-
-`SEIAI-0001-short-slug.md`
-
-The narrative files are reconstruction aids. The structured sources of truth are `data/cases.csv`, `data/actors.csv`, and `references/sources.csv`.
-
-Every case note should preserve procedural posture, avoid unsupported precision, and distinguish association with an artefact from attribution of conduct.
+Use `references/sources.csv` to identify the registered sources and consult the originals where available. Citation of an empirical paper should identify the actual judicial documents on which its arguments rely, not only the Atlas summary.

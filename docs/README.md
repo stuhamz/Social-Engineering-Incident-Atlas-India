@@ -1,19 +1,11 @@
 # Documentation
 
-This directory contains current project documentation and historical release/audit material.
+Current public guidance:
 
-## Current documentation
+- [Research scope and corrections](RESEARCH_SCOPE_AND_CORRECTIONS.md)
+- [Research questions](research_questions.md)
+- [Project scope](project_scope.md)
+- [Public website and data minimization](atlas_interface.md)
+- [Research development plan](roadmap.md)
 
-- [`project_scope.md`](project_scope.md)
-- [`research_questions.md`](research_questions.md)
-- [`roadmap.md`](roadmap.md)
-- [`atlas_interface.md`](atlas_interface.md)
-- [`RELEASE_NOTES_v0.4.0.md`](RELEASE_NOTES_v0.4.0.md)
-
-## Historical documentation
-
-Files beginning with earlier release numbers, including `v0.1.*` and `v0.2.*`, are retained as an audit trail for the state of the project at those releases.
-
-Historical counts in those files should not be read as current corpus counts.
-
-The current repository state is summarized in the root `README.md`. Authoritative counts come from the CSVs themselves.
+Historical release notes are preserved for reproducibility. Figures in historical notes describe their respective archived versions rather than the latest repository working tree. Research figures and the public index derive from the authoritative CSVs.
