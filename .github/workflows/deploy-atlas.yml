@@ -1,14 +1,14 @@
-name: Deploy public Atlas
+name: Validate and deploy public Atlas index
 
 on:
   push:
     branches: [main]
     paths:
       - "atlas/**"
-      - "cases/**"
       - "data/cases.csv"
       - "data/actors.csv"
       - "references/sources.csv"
+      - "cases/**"
       - "analysis/scripts/build_public_atlas.py"
       - ".github/workflows/deploy-atlas.yml"
   workflow_dispatch:
@@ -24,18 +24,21 @@ concurrency:
 
 jobs:
   build-and-deploy:
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-      - name: Build public Atlas data
+          python-version: '3.12'
+      - name: Validate research files
+        run: |
+          python analysis/scripts/validate_dataset.py
+          python analysis/scripts/validate_actors.py
+          python analysis/scripts/validate_full_audit.py
+      - name: Build privacy-minimized index
         run: python analysis/scripts/build_public_atlas.py
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -44,5 +47,5 @@ jobs:
         with:
           path: atlas
       - name: Deploy
-        id: deployment
         uses: actions/deploy-pages@v4
+        id: deployment

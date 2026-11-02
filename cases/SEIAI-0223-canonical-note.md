@@ -26,11 +26,11 @@ Source URL(s):
 - Primary source stage: `journalistic_report`
 - Public case status: `arrest`
 - Conviction status: `not_yet_adjudicated`
-- Disposition: Police arrested M. Murugan after the Hosur woman's complaint and reported recoveries of jewellery, cash and more than 50 SIM cards; no final judicial outcome was reported.
+- Disposition: Police arrested M. Murugan following the focal complainant's report and reported recoveries of jewellery, cash and more than 50 SIM cards; no final judicial outcome was reported.
 
 ## Neutral case summary
 
-A 47-year-old woman from Hosur complained that she lost an eight-sovereign gold chain to a man who had advertised for a second-marriage bride. Police said the man, M. Murugan, used a regional Tamil newspaper advertisement claiming stable income and ownership of a travel company, spoke with prospective brides by phone, described a sad first marriage and persuaded them to hand over jewellery or money for supposed safekeeping. He was arrested in August 2018. Police said more than 20 women had been cheated over several years and recovered jewellery, cash and more than 50 SIM cards. The Atlas treats the Hosur complainant as the focal incident rather than aggregating the broader series.
+A complainant in Tamil Nadu complained that she lost an eight-sovereign gold chain to a man who had advertised for a second-marriage bride. Police said the man, M. Murugan, used a regional Tamil newspaper advertisement claiming stable income and ownership of a travel company, spoke with prospective brides by phone, described a sad first marriage and persuaded them to hand over jewellery or money for supposed safekeeping. He was arrested in August 2018. Police said more than 20 women had been cheated over several years and recovered jewellery, cash and more than 50 SIM cards. The Atlas treats the Hosur complainant as the focal incident rather than aggregating the broader series.
 
 ## Reconstruction
 
@@ -44,7 +44,7 @@ Reconnaissance present: `no`. Rather than reported individual reconnaissance, th
 
 ### 3. Initial contact
 
-A 47-year-old Hosur woman responded to a matrimonial advertisement placed by a man seeking a bride for a second marriage; he then spoke with her by phone to build trust.
+The complainant responded to a matrimonial advertisement placed by a man seeking a bride for a second marriage; he then spoke with her by phone to build trust.
 
 ### 4. Pretext
 
@@ -68,7 +68,7 @@ Entrust jewellery and money to the prospective husband for purported safekeeping
 
 ### 7. Victim action
 
-The focal Hosur complainant handed over an eight-sovereign gold chain and later found the man's phone switched off.
+The focal complainant handed over an eight-sovereign gold chain and later found the man's phone switched off.
 
 ### 8. Consequence
 
@@ -81,7 +81,7 @@ The focal Hosur complainant handed over an eight-sovereign gold chain and later 
 
 | Time / Date | Event | Source | Confidence / limitation |
 |---|---|---|---|
-| 2018, exact date not reported | Hosur complainant responded to the matrimonial pretext and transferred an eight-sovereign chain. | SRC-SEIAI-0223-01 | The exact contact and transfer dates are not stated. |
+| 2018, exact date not reported | Focal complainant responded to the matrimonial pretext and transferred an eight-sovereign chain. | SRC-SEIAI-0223-01 | The exact contact and transfer dates are not stated. |
 | 2018-08-14 | Police arrested the alleged operator, according to the report published the next day. | SRC-SEIAI-0223-01 | Procedural arrest context; focal incident date remains unspecified. |
 
 Structured exact-date fields:
@@ -117,7 +117,7 @@ Structured exact-date fields:
 - Secondary basis: `witness_or_statement`
 - Attribution strength: **moderate**
 - Limitations: The source is a police-sourced news report rather than a final judgment and does not individually trace every seized item to the focal complainant.
-- Alternative explanation: The report describes a serial pattern involving many women; evidence relevant to other victims should not automatically be treated as proof of every element of the focal Hosur incident.
+- Alternative explanation: The report describes a serial pattern involving many women; evidence relevant to other victims should not automatically be treated as proof of every element of the focal incident.
 
 ## Primary evidentiary gap
 
@@ -131,8 +131,8 @@ The primary source is coded at the procedural stage shown above. Allegations and
 
 ## Coding decisions
 
-The focal case is one Hosur victim. The alleged eight-year serial pattern is recorded as contextual evidence only.
+The focal case is one focal complainant. The alleged eight-year serial pattern is recorded as contextual evidence only.
 
-No INR value is assigned to the eight-sovereign gold chain because the source does not price the focal jewellery. The report states a broader serial pattern since 2010, but this record is limited to the 2018 Hosur complainant.
+No INR value is assigned to the eight-sovereign gold chain because the source does not price the focal jewellery. The report states a broader serial pattern since 2010, but this record is limited to the 2018 focal complainant.
 
 This incident was selected as part of the 2008-2020 targeted expansion wave. The wave excluded Delhi, Maharashtra, Haryana, Madhya Pradesh, Telangana, Chhattisgarh, Kerala and Odisha and prioritized identity theft, sextortion, romance fraud and relationship/honeytrap mechanisms.

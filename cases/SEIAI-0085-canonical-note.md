@@ -31,7 +31,7 @@ Source URLs:
 
 ## Neutral case summary
 
-A 27-year-old UPSC aspirant in Mandapeta joined a WhatsApp group called TRG Financial Academy, which offered financial-investment classes and promoted a purported Axis Bank Securities app represented as legitimate and SEBI-linked. Beginning in December 2024, she made a large initial investment and additional IPO, tax and account-correction payments. Her account was later shown as frozen on a pretext of incorrect bank details and further payments were demanded, bringing the alleged total to about INR 62 lakh. The bail record says Ahsan Khan provided an account used to route approximately INR 35 lakh; he claimed he had shared the account for trading in return for promised profits and was himself an indirect victim. The case adds a new state and a clean example of strong financial-endpoint evidence without victim-facing identity resolution.
+A complainant in Andhra Pradesh joined a WhatsApp group called TRG Financial Academy, which offered financial-investment classes and promoted a purported Axis Bank Securities app represented as legitimate and SEBI-linked. Beginning in December 2024, she made a large initial investment and additional IPO, tax and account-correction payments. Her account was later shown as frozen on a pretext of incorrect bank details and further payments were demanded, bringing the alleged total to about INR 62 lakh. The bail record says Ahsan Khan provided an account used to route approximately INR 35 lakh; he claimed he had shared the account for trading in return for promised profits and was himself an indirect victim. The case adds a new state and a clean example of strong financial-endpoint evidence without victim-facing identity resolution.
 
 ## Reconstruction
 
@@ -51,7 +51,7 @@ A 27-year-old UPSC aspirant in Mandapeta joined a WhatsApp group called TRG Fina
 
 ### 3. Initial contact
 
-A 27-year-old UPSC aspirant was introduced to alleged fraudsters through a WhatsApp group called TRG Financial Academy offering investment classes.
+The complainant was introduced to alleged fraudsters through a WhatsApp group called TRG Financial Academy offering investment classes.
 
 ### 4. Pretext
 

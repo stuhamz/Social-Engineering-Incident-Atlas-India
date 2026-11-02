@@ -23,8 +23,8 @@ Source URL:
 
 - Primary source stage: `final_judgment`
 - Public case status: `judgment`
-- Conviction status: `acquitted`
-- Disposition: Final criminal trial judgment; online personation attribution was not proved to the same standard as physical conduct.
+- Conviction status: `mixed`
+- Disposition: Convicted under IPC Sections 328, 379 read with 411, and 474; acquitted under IT Act Section 66D because authorship of the fake OLX account was not proved; the alternative Section 394 charge was dropped. Sentencing was listed separately.
 
 ## Neutral case summary
 

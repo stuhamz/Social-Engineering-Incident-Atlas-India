@@ -1,55 +1,31 @@
-# Start Here
+# Start here
 
-## Adding a candidate
+## What this project contains
 
-1. Add the candidate to `references/screening_log.csv`.
-2. Record the public source URL and enough detail to reproduce the screening decision.
-3. Apply the inclusion, exclusion, and duplicate rules.
-4. If included, assign the next stable `SEIAI-####` ID.
-5. Register every source used for coding.
-6. Add the incident to `data/cases.csv`.
-7. Add conduct-specific actor records to `data/actors.csv`.
-8. Create one narrative reconstruction under `cases/`.
-9. Record uncertainty and attribution limitations explicitly.
-10. Run all validators and rebuild the public Atlas.
+The Social Engineering Incident Atlas India is a public-source research corpus. The original v0.4.0 archive contains 300 incident records, 600 actor-role records, 310 registered sources and 412 screening decisions. The current repository includes a documented post-release correction, but the DOI remains a citation for the original archival snapshot.
 
-## Current release
+The public website displays an index using case IDs, broad attack categories and source types. The repository also contains coded records and case reconstructions; read their procedural stage and limitations before interpreting allegations as proven facts.
 
-**v0.3.0 contains 233 active reviewed incidents, 513 actor-role records, 243 registered sources, and 319 screening candidates.**
+## Where to begin
 
-Stable active IDs run through `SEIAI-0234`.
+- Website: `atlas/index.html`, deployed through GitHub Pages.
+- Corpus: `data/cases.csv` and `data/actors.csv`.
+- Original registered references: `references/sources.csv`.
+- Individual narratives: `cases/`.
+- Collection and coding method: `methodology/`.
+- Scope and post-release correction explanations: `docs/RESEARCH_SCOPE_AND_CORRECTIONS.md`.
 
-`SEIAI-0060` remains retired as a duplicate of `SEIAI-0029`. Stable IDs are never recycled or renumbered.
+## Rebuild and validate
 
-## Core coding rule
-
-> Reconstruct broadly. Attribute conservatively.
-
-Do not infer a human operator from a bank account, SIM registration, device, IP address, platform account, or transaction endpoint alone.
-
-Keep allegations, investigative claims, prima facie observations, defence claims, and final findings distinct.
-
-## Validation
-
-Run:
-
-```powershell
+```bash
 python analysis/scripts/validate_dataset.py
 python analysis/scripts/validate_actors.py
 python analysis/scripts/validate_full_audit.py
-python analysis/scripts/corpus_snapshot.py
 python analysis/scripts/build_public_atlas.py
 ```
 
-Then inspect:
+The last command produces only non-identifying, public-index metadata from the coded CSVs. It does not independently confirm the contents of court records.
 
-```powershell
-git diff --check
-git status --short
-```
+## Research interpretation
 
-## Interpretation boundary
-
-The Atlas is purposively assembled from public sources.
-
-Do not use corpus counts to estimate national or state prevalence, category frequency in the population, average financial loss, demographic risk, arrest rates, bail rates, or conviction rates.
+The corpus is purposive and retrieval-driven. It is not a representative sample of Indian cybercrime. The judicial record may report accusations, evidence summaries, interim rulings or final findings. Actor-role classifications are research assessments, not findings of guilt. A separately sampled paper should re-read and cite its selected judgments directly.

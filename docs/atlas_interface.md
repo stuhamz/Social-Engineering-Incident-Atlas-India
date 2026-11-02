@@ -1,41 +1,19 @@
-# Public Atlas Interface
+# Public Atlas website
 
-The public interface is a read-only exploration layer over the Social Engineering Incident Atlas India research repository.
+The website is a readable research introduction and searchable index to the frozen 300-case corpus. It opens with the project purpose, intended readers, central question and limits of public-source evidence.
 
-## Source of truth
+## Site contents
 
-The website does not maintain a second manually edited dataset. `analysis/scripts/build_public_atlas.py` derives `atlas/data/atlas.json` from:
+- Case IDs, broad attack categories, procedural source stage and source-tier labels.
+- Filters by ID or category, source stage and source tier.
+- Direct links to the repository's case narratives, methodology, and documented corrections.
 
-- `data/cases.csv`
-- `data/actors.csv`
-- `references/sources.csv`
+The public browser dataset does **not** include raw case summaries, financial amounts, individual actor labels, narrative names, registered source URLs or other sensitive field values. These omissions apply to the website payload, not to the historical v0.4.0 Git revisions or repository CSVs.
 
-The authoritative CSVs, codebooks, source registry, case narratives and validators remain the research layer.
+## Reproducibility
 
-## Interface v0.2
+`analysis/scripts/build_public_atlas.py` reads the authoritative CSV files and generates the minimal `atlas/data/atlas.json`. The GitHub Pages action validates the repository, regenerates that JSON and deploys only `atlas/` after a main-branch update.
 
-The interface includes:
+## Research boundary
 
-- corpus summary and navigation charts
-- schematic India corpus-coverage map with state/UT markers
-- case explorer with basic and advanced filters
-- shareable permanent case routes such as `#case/SEIAI-0043`
-- case-level procedural-posture warnings
-- copy-link and copy-citation actions
-- filtered CSV export
-- comparison of two to four cases with shareable `#compare/...` routes
-- actor-role explorer
-- evidence explorer
-- attack-type × evidence matrix
-- source registry
-- a dedicated Method page explaining sampling, source hierarchy, identity resolution and attribution
-
-## Interpretation boundary
-
-The Atlas is purposively sampled and retrieval-driven. Corpus counts must not be read as national prevalence, state rankings, average-loss estimates, conviction rates or demographic risk estimates.
-
-Map markers show the state or UT coded for reviewed incidents. Marker placement uses approximate state centroids for interface navigation. They are not incident coordinates.
-
-## Deployment
-
-The existing GitHub Pages workflow rebuilds `atlas/data/atlas.json` before deploying the `atlas/` directory. When research CSVs change, the public interface is therefore regenerated from the same authoritative data.
+This is a purposively assembled corpus, not national crime statistics. T1/T2/T3 classifications identify source type. Automated validation does not establish independent original-document authentication, privacy approval, or independent academic review.

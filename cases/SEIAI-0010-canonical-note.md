@@ -44,7 +44,7 @@ A Haryana complainant received a sexual video call from an unknown woman, discon
 
 ### Initial contact
 
-The complainant received an unknown video call from a nude woman and was asked through WhatsApp to become nude; he disconnected and deleted WhatsApp.
+The complainant received a deceptive sexual-video call; the subsequent coercion involved an alleged recording of the interaction.
 
 ### Pretext
 

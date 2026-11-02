@@ -24,7 +24,7 @@ Selection priorities were adjusted when earlier corpus audits revealed concentra
 
 ## Current corpus
 
-The v0.3.0 release contains 233 active reviewed incidents.
+The archived v0.4.0 release contains 300 active reviewed incidents. The 2 November 2026 public correction update retains the same incident population and documents its changes separately. No new incidents were added in that correction update.
 
 Every active incident has at least one registered public source, at least one actor-role record, one narrative reconstruction, a screening-history path, and validator-backed cross-file consistency.
 

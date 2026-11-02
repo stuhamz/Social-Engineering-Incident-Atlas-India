@@ -1,21 +1,22 @@
 cff-version: 1.2.0
-message: "If you use this dataset, please cite it."
+message: >-
+  The archived v0.4.0 dataset is available at doi:10.5281/zenodo.23209001.
+  This repository includes later corrections not contained in that archive.
+  Cite the exact Git revision when referring to corrected data.
 title: "Social Engineering Incident Atlas India"
 type: dataset
 authors:
   - family-names: "Hamzah"
-version: "0.4.0"
-date-released: "2026-10-07"
-doi: "10.5281/zenodo.23209001"
-url: "https://stuhamz.github.io/Social-Engineering-Incident-Atlas-India/"
+version: "0.4.1-working-revision"
 repository-code: "https://github.com/stuhamz/Social-Engineering-Incident-Atlas-India"
+abstract: >-
+  A purposively collected public-source corpus of 300 reported social-engineering
+  incidents in India, with separate actor-role coding, judicial-proceeding metadata
+  and documented limits of attribution and source availability.
 keywords:
   - cybercrime
   - social engineering
-  - digital forensics
+  - empirical legal research
   - digital evidence
-  - electronic evidence
-  - cybercrime investigation
-  - incident reconstruction
   - attribution
   - India
