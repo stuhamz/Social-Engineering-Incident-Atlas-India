@@ -5,7 +5,7 @@ The website is a deliberately descriptive, accessible exploration interface. It 
 ## Sections
 
 - **Overview:** corpus dimensions, primary attack categories, source stages, evidence mentions and case-level attribution codes.
-- **Cases:** searchable 300-case ID index, source-stage and attack-type filters, evidence-type filter and filtered metadata export.
+- **Cases:** searchable 300-case ID index, source-stage and attack-type filters, evidence-type filter, filtered metadata export, and one-click links to the original Markdown note for every case.
 - **Categories:** complete primary attack-category breakdown, primary contact channels and coded manipulation mechanisms.
 - **Evidence:** status-based evidence explorer displaying `yes`, `no`, `not_reported` and `not_applicable` separately, with source-stage and attack-category filters. No ambiguous absent-evidence inference.
 - **Actor roles:** aggregated coded functions, identity resolution and attribution-strength categories for 600 actor-role records. An actor record does not necessarily represent a unique person or convicted offender.
@@ -23,3 +23,7 @@ The browser's evidence statuses refer to researcher-coded mention in publicly av
 ## Archival distinction
 
 The v0.4.0 Zenodo DOI identifies the archived v0.4.0 dataset. Post-release code and data corrections in GitHub are not retroactively part of that record. For reproducibility, cite the exact Git revision or, if subsequently published, the specific DOI of a new Zenodo version.
+
+## Reliable case-note navigation
+
+The 300 case-note links on the website use stable `notes/SEIAI-XXXX.html` URLs, generated from the actual filenames in `cases/` during every build. They redirect directly to GitHub's Markdown file viewer. They never rely on GitHub code search or search indexing. Each build fails if a case note is missing or multiple filenames share a case ID. The generated redirect pages intentionally remain out of Git version control and are deployed as part of the GitHub Pages artifact. Source notes and historical Git revisions remain unchanged.
