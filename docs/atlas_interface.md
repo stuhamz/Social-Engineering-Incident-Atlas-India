@@ -1,19 +1,25 @@
-# Public Atlas website
+# Public Atlas research interface
 
-The website is a readable research introduction and searchable index to the frozen 300-case corpus. It opens with the project purpose, intended readers, central question and limits of public-source evidence.
+The website is a deliberately descriptive, accessible exploration interface. It restores the analytical capabilities of the older v0.4.0 Atlas while preserving the clearer research-purpose explanation added in the post-v0.4.0 correction.
 
-## Site contents
+## Sections
 
-- Case IDs, broad attack categories, procedural source stage and source-tier labels.
-- Filters by ID or category, source stage and source tier.
-- Direct links to the repository's case narratives, methodology, and documented corrections.
+- **Overview:** corpus dimensions, primary attack categories, source stages, evidence mentions and case-level attribution codes.
+- **Cases:** searchable 300-case ID index, source-stage and attack-type filters, evidence-type filter and filtered metadata export.
+- **Categories:** complete primary attack-category breakdown, primary contact channels and coded manipulation mechanisms.
+- **Evidence:** status-based evidence explorer displaying `yes`, `no`, `not_reported` and `not_applicable` separately, with source-stage and attack-category filters. No ambiguous absent-evidence inference.
+- **Actor roles:** aggregated coded functions, identity resolution and attribution-strength categories for 600 actor-role records. An actor record does not necessarily represent a unique person or convicted offender.
+- **Sources:** category and provenance breakdowns for 310 source records and primary document stages for 300 incident records. The denominator is explicit.
+- **Methods:** research question, coding definitions, sampling limitations, links to source registry and methodological protocols.
 
-The public browser dataset does **not** include raw case summaries, financial amounts, individual actor labels, narrative names, registered source URLs or other sensitive field values. These omissions apply to the website payload, not to the historical v0.4.0 Git revisions or repository CSVs.
+The site intentionally does **not** embed names, case titles, narrative descriptions, amounts, accused or survivor identities, underlying evidence, court documents, registered source URLs or individual actor notes in the JavaScript payload. The repository retains versioned canonical case notes and original source references. Case IDs can be used to locate notes in GitHub.
 
-## Reproducibility
+The browser's evidence statuses refer to researcher-coded mention in publicly available source material, **not** forensic authentication, admissibility, or proof of guilt. Counts are descriptive within a purposive nonrepresentative collection and must not be interpreted as prevalence, temporal trends in India's crime rate or conviction rates.
 
-`analysis/scripts/build_public_atlas.py` reads the authoritative CSV files and generates the minimal `atlas/data/atlas.json`. The GitHub Pages action validates the repository, regenerates that JSON and deploys only `atlas/` after a main-branch update.
+## Reproducibility and checks
 
-## Research boundary
+`python analysis/scripts/build_public_atlas.py` regenerates the allowlisted `atlas/data/atlas.json` using the authoritative CSV files. `python analysis/scripts/test_public_atlas_export.py` verifies population counts, field-level allowlists, metadata omission of sensitive terms and front-end element references. The Pages workflow runs these checks before deployment from `main`.
 
-This is a purposively assembled corpus, not national crime statistics. T1/T2/T3 classifications identify source type. Automated validation does not establish independent original-document authentication, privacy approval, or independent academic review.
+## Archival distinction
+
+The v0.4.0 Zenodo DOI identifies the archived v0.4.0 dataset. Post-release code and data corrections in GitHub are not retroactively part of that record. For reproducibility, cite the exact Git revision or, if subsequently published, the specific DOI of a new Zenodo version.
