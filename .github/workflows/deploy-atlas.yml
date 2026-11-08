@@ -40,6 +40,8 @@ jobs:
           python analysis/scripts/validate_full_audit.py
       - name: Build privacy-minimized index
         run: python analysis/scripts/build_public_atlas.py
+      - name: Verify research interface export
+        run: python analysis/scripts/test_public_atlas_export.py
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact

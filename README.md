@@ -10,7 +10,7 @@
 
 The dataset has **300 incident records**, **600 actor-role records**, **310 registered source entries** and **412 screening decisions**. These are differently defined records, not numbers of proven offences, individual offenders or independent underlying evidence sources.
 
-**Browse:** [Atlas website](https://stuhamz.github.io/Social-Engineering-Incident-Atlas-India/) | [Case notes](cases/) | [Research methods](methodology/) | [Correction note](docs/RESEARCH_SCOPE_AND_CORRECTIONS.md)
+**Browse the analytical dashboards:** [Atlas website](https://stuhamz.github.io/Social-Engineering-Incident-Atlas-India/) | [Case notes](cases/) | [Research methods](methodology/) | [Correction note](docs/RESEARCH_SCOPE_AND_CORRECTIONS.md)
 
 **Version distinction:** The Zenodo DOI identifies the frozen **v0.4.0** dataset. Changes after that release are documented in this repository and must not be attributed to the archived DOI. The public correction update retains the original 300 incident IDs, and does not amount to independent academic certification of every case.
 
