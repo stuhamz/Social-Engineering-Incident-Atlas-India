@@ -21,3 +21,6 @@ venv/
 Thumbs.db
 .vscode/
 .idea/
+
+# Generated stable case-note redirects (deployed by GitHub Pages action)
+atlas/notes/

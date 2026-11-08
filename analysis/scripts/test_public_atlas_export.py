@@ -46,3 +46,25 @@ for identifier in re.findall(r'\$\(\s*[\'\"]([\w-]+)[\'\"]\s*\)',js):
 assert '<script src="./app.js" defer>' in html
 assert '<link rel="stylesheet" href="./styles.css">' in html
 print('PASS: 300 cases, 600 actor roles, 310 sources; no private names, narratives, URLs or financial details in browser JSON; HTML hooks resolved')
+
+# Each public case ID must open a generated neutral link directly to its existing note.
+notes_dir=ROOT/'atlas/notes'
+assert notes_dir.is_dir(), 'Missing generated case-note directory'
+note_pages=sorted(notes_dir.glob('SEIAI-*.html'))
+assert len(note_pages)==300, f'Expected 300 direct note pages, found {len(note_pages)}'
+for case in p['cases']:
+    case_id=case['case_id']
+    page=(notes_dir/f'{case_id}.html')
+    assert page.exists(), case_id
+    text=page.read_text(encoding='utf-8')
+    assert 'github.com/stuhamz/Social-Engineering-Incident-Atlas-India/blob/main/cases/' in text
+    assert 'github.com/search' not in text and 'type=code' not in text
+    assert case_id in text
+    path_matches=list((ROOT/'cases').glob(f'{case_id}-*.md'))
+    assert len(path_matches)==1, (case_id,path_matches)
+    assert path_matches[0].name in text, case_id
+front_js=(ROOT/'atlas/app.js').read_text(encoding='utf-8')
+assert 'const caseLink=id=>`./notes/${encodeURIComponent(id)}.html`' in front_js
+assert 'Find note in GitHub' not in front_js
+assert '/search?q=' not in front_js
+print('PASS: all 300 case-note links target real Markdown files without using GitHub search')

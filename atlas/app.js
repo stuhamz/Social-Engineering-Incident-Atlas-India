@@ -21,7 +21,7 @@ const MECHANISMS={authority_mechanism:'Authority claim',fear_mechanism:'Fear or 
 const REPO='https://github.com/stuhamz/Social-Engineering-Incident-Atlas-India';
 const $=id=>document.getElementById(id);
 const label=v=>String(v??'not_reported').replaceAll('_',' ').replace(/\b\w/g,c=>c.toUpperCase());
-const caseLink=id=>`${REPO}/search?q=${encodeURIComponent(id)}&type=code`;
+const caseLink=id=>`./notes/${encodeURIComponent(id)}.html`;
 const countBy=(arr,k)=>arr.reduce((a,c)=>(a[c[k]||'not_reported']=(a[c[k]||'not_reported']||0)+1,a),{});
 function make(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e;}
 function chartBars(id,values,limit=0,formatter=label){
@@ -41,7 +41,7 @@ function drawMatrix(cases){const matrix=$('evidenceMatrix');matrix.replaceChildr
 }
 function renderCases(cases){const q=$('caseSearch').value.toLowerCase().trim().replaceAll(' ','_'),attack=$('caseAttack').value,stage=$('caseStage').value,evidence=$('caseEvidence').value;
  const filtered=cases.filter(c=>(!q||c.case_id.toLowerCase().includes(q)||c.attack_category_primary.toLowerCase().includes(q))&&(!attack||c.attack_category_primary===attack)&&(!stage||c.source_stage===stage)&&(!evidence||c.evidence[evidence]==='yes'));
- $('caseCount').textContent=`${filtered.length} of ${cases.length} incidents shown`;const tbody=$('caseTable');tbody.replaceChildren();filtered.slice(0,300).forEach(c=>{const tr=make('tr'),a=make('a','',c.case_id);a.href=caseLink(c.case_id);a.target='_blank';a.rel='noopener';const td=make('td');td.append(a);tr.append(td);for(const value of [label(c.attack_category_primary),label(c.source_stage),c.primary_source_tier,String(Object.values(c.evidence).filter(s=>s==='yes').length)]){tr.append(make('td','',value))}const last=make('td');const link=make('a','','Find note in GitHub');link.href=caseLink(c.case_id);link.target='_blank';link.rel='noopener';last.append(link);tr.append(last);tbody.append(tr)});
+ $('caseCount').textContent=`${filtered.length} of ${cases.length} incidents shown`;const tbody=$('caseTable');tbody.replaceChildren();filtered.slice(0,300).forEach(c=>{const tr=make('tr'),a=make('a','',c.case_id);a.href=caseLink(c.case_id);a.target='_blank';a.rel='noopener';const td=make('td');td.append(a);tr.append(td);for(const value of [label(c.attack_category_primary),label(c.source_stage),c.primary_source_tier,String(Object.values(c.evidence).filter(s=>s==='yes').length)]){tr.append(make('td','',value))}const last=make('td');const link=make('a','','Read case note');link.href=caseLink(c.case_id);link.target='_blank';link.rel='noopener';last.append(link);tr.append(last);tbody.append(tr)});
  $('exportCases').onclick=()=>{const lines=[['case_id','attack_category_primary','source_stage','primary_source_tier','attribution_strength'].join(',')];filtered.forEach(c=>lines.push([c.case_id,c.attack_category_primary,c.source_stage,c.primary_source_tier,c.attribution_strength].map(s=>'"'+String(s).replaceAll('"','""')+'"').join(',')));const blob=new Blob([lines.join('\n')+'\n'],{type:'text/csv;charset=utf-8'});const u=URL.createObjectURL(blob);const a=document.createElement('a');a.href=u;a.download='atlas-public-metadata-filtered.csv';a.click();URL.revokeObjectURL(u)};
 }
 function initialize(data){const cases=data.cases;const expected=300;
