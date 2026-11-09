@@ -97,11 +97,35 @@ def build():
     assert all(row['case_id'].startswith('SEIAI-') for row in cases)
     assert all(row[k] in SAFE_FLAGS for row in cases for k in EVIDENCE_FIELDS + MECHANISM_FIELDS), 'Unexpected evidence coding'
 
+    # Case-level counts retain the denominators of charts that summarize actor
+    # records or source records, rather than incorrectly equating them to cases.
+    # These counts contain code categories only, never actor identities, prose,
+    # names, source URLs, or other identifying values.
+    def grouped_counts(rows, allowed_fields):
+        mapping = {case['case_id']: {field: Counter() for field in allowed_fields} for case in cases}
+        for record in rows:
+            case_id = record['case_id']
+            assert case_id in mapping, f'Orphaned record: {case_id}'
+            for field in allowed_fields:
+                code = record[field] or 'not_reported'
+                assert re.fullmatch(r'[A-Za-z0-9_-]+', code), (field, code)
+                mapping[case_id][field][code] += 1
+        return {
+            case_id: {field: dict(sorted(counts.items())) for field, counts in by_field.items()}
+            for case_id, by_field in mapping.items()
+        }
+
+    actor_by_case = grouped_counts(actors, ACTOR_AGGREGATE_FIELDS)
+    source_fields = ('source_tier', 'source_stage', 'source_type')
+    source_by_case = grouped_counts(sources, source_fields)
+
     case_view = []
     for row in cases:
         entry = {k: row[k] for k in ALLOWED_CASE_FIELDS}
         entry['evidence'] = {k: row[k] or 'not_reported' for k in EVIDENCE_FIELDS}
         entry['mechanisms'] = {k: row[k] or 'not_reported' for k in MECHANISM_FIELDS}
+        entry['actor_counts'] = actor_by_case[row['case_id']]
+        entry['source_counts'] = source_by_case[row['case_id']]
         case_view.append(entry)
 
     result = {
@@ -120,6 +144,20 @@ def build():
         },
     }
     case_link_count = build_case_note_links(row['case_id'] for row in cases)
+    # Cross-check all drilldown counts with the visible aggregate charts.
+    for field in ACTOR_AGGREGATE_FIELDS:
+        from_cases = Counter()
+        for entry in case_view:
+            from_cases.update(entry['actor_counts'][field])
+        assert from_cases == Counter(result['actors_aggregate'][field]), field
+        assert sum(from_cases.values()) == 600, field
+    for field, aggregate in (('source_tier', 'tier'), ('source_stage', 'stage'), ('source_type', 'type')):
+        from_cases = Counter()
+        for entry in case_view:
+            from_cases.update(entry['source_counts'][field])
+        assert from_cases == Counter(result['source_aggregate'][aggregate]), field
+        assert sum(from_cases.values()) == 310, field
+
     target = ROOT / 'atlas/data/atlas.json'
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(json.dumps(result, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
